@@ -1,0 +1,176 @@
+.navigation {
+  height: 115px;
+  background: #dce6f0;
+
+  .navigation__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90.62%;
+    height: 100%;
+  }
+
+  .opening-hours {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 199px;
+    height: 29px;
+    margin-top: 18px;
+    padding-left: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 29px;
+      height: 29px;
+      background: url("../images/opening-hours-ico-320.png");
+    }
+  }
+
+  .opening-hours__title {
+    font-family: 'PTSansBoldItalic', sans-serif;
+    font-size: 12.11px;
+    line-height: 15.42px;
+    color: #ed1e24;
+  }
+
+  .opening-hours__description {
+    font-family: 'PTSansItalic', sans-serif;
+    font-size: 12.11px;
+    line-height: 15.42px;
+    color: $mainTextColor;
+  }
+
+  .opening-hours__description--red {
+    font-family: 'PTSansBoldItalic', sans-serif;
+    color: #ed1e24;
+  }
+
+  .navigation__button-check-in-a-course {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 199px;
+    height: 33px;
+    margin-top: 13px;
+    border: none;
+    background: #de5958;
+    font-family: 'PTSansRegular', sans-serif;
+    font-size: 15.86px;
+    line-height: 120%;
+    color: #ffffff;
+    box-shadow: 1px 1px #c74746,
+    2px 2px #c74746,
+    3px 3px #c74746,
+    4px 4px #c74746;
+    cursor: pointer;
+    outline: none;
+    transition: transform .2s ease-in;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      top: 4px;
+      right: -4px;
+      box-shadow: none;
+    }
+  }
+
+  .navigation__toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 27px;
+    height: 21px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #c74746;
+    }
+
+    &::after {
+      top: auto;
+      bottom: 0;
+      box-shadow: 0 -9px #c74746;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

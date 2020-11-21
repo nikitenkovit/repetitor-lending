@@ -1,0 +1,18 @@
+.block-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 203px;
+  background: url("../images/title-bg-320.jpg") no-repeat center;
+  background-size: cover;
+
+  .block-title__title {
+    width: 210px;
+    font-family: 'PTSansBold', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+  }
+}

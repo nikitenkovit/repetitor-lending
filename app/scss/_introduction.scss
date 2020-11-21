@@ -1,0 +1,66 @@
+.introduction {
+  position: relative;
+  height: 205px;
+  padding-top: 32px;
+  background: url("../images/introduction-bg-320.jpg") no-repeat bottom;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 225px;
+    background: url("../images/introduction-mgu-320.png") no-repeat center;
+  }
+
+  &::after {
+    content: "тогда записывайтесь к нам!";
+    position: absolute;
+    bottom: -53px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-50%);
+    width: 304px;
+    height: 68px;
+    padding-top: 12px;
+    background: url("../images/introduction-red-320.png") no-repeat center;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .introduction__description {
+    width: 311px;
+    min-height: 72px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #d9dada;
+    border-left: 1px solid #d9dada;
+    border-right: 1px solid #d9dada;
+    font-family: 'PTSansBold', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--left {
+      width: 114px;
+      margin-left: 12px;
+    }
+
+    &--right {
+      width: 136px;
+      margin-right: 3px;
+    }
+  }
+}
