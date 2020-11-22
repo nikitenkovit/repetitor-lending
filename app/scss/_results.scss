@@ -1,0 +1,146 @@
+.results {
+  background-color: #fbfbfb;
+  padding-bottom: 60px;
+
+  .results__title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140px;
+    margin-bottom: 42px;
+    padding: 0 15px;
+    background-color: #f3eaeb;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #ff3600;
+    text-align: center;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #ffffff;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #e4e0e1;
+      z-index: 2;
+    }
+  }
+
+  .results__container {
+    overflow: hidden;
+  }
+
+  .results__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 290px;
+    height: 675px;
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  .results__item {
+    width: 130px;
+    height: 198px;
+    margin-bottom: 21px;
+    margin-right: 30px;
+    background: url("../images/results__item-320.png") no-repeat bottom;
+    font-family: 'Myriad Pro', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    color: #334661;
+    text-align: center;
+  }
+
+  .results__image {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 4px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .results__value {
+    margin-top: 7px;
+    color: #d8142d;
+  }
+
+  .slider__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 108px;
+    margin: 0 auto;
+  }
+
+  .slider__button {
+    width: 39px;
+    height: 39px;
+    background-color: #6eb33a;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .slider__button--left {
+    &::before {
+      content: '<';
+    }
+  }
+
+  .slider__button--right {
+    &::before {
+      content: '>';
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

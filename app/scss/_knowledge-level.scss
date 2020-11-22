@@ -1,0 +1,25 @@
+.knowledge-level {
+  padding-top: 60px;
+  background-color: #8eb3dd;
+
+  .knowledge-level__title {
+    margin-bottom: 14px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .knowledge-level__description {
+    width: 294px;
+    margin-bottom: 22px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    color: #ffffff;
+    text-align: center;
+  }
+}

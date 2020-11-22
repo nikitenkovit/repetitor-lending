@@ -1,0 +1,119 @@
+.facts {
+  min-height: 686px;
+  padding-top: 50px;
+  background: url("../images/facts-bg-320.jpg") no-repeat center;
+  background-size: cover;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+
+  .facts__wrapper {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .facts__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    height: 39px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    word-spacing: -1.2px;
+    color: #ffffff;
+    background: url("../images/facts__title--bg-320.png") no-repeat center;
+  }
+
+  .facts__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    list-style: none;
+    font-size: 13px;
+    color: #5a5a5a;
+  }
+
+  .facts__item {
+    position: relative;
+    width: 50%;
+    padding-top: 75px;
+    margin-bottom: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 37px;
+      width: 114px;
+      height: 102px;
+      background: url("../images/facts__item-320.png") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .facts__value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 37px;
+    width: 84px;
+    height: 59px;
+    font-size: 22px;
+    color: #ffffff;
+    text-align: left;
+  }
+
+  .facts__description {
+    width: 155px;
+  }
+
+  .facts__item:nth-child(4) .facts__description{
+  position: relative;
+  left: -12px;
+  width: 170px;
+  letter-spacing: -0.2px;
+  word-spacing: -0.4px;
+}
+  .facts__item:nth-child(5) .facts__description{
+    width: 165px;
+    letter-spacing: -0.2px;
+    word-spacing: -0.4px;
+  }
+}
+
+@media (min-width: $iphone) {
+  .facts {
+    .facts__wrapper {
+      width: $iphone;
+    }
+
+    .facts__title {
+      width: 363px;
+      height: 46px;
+      font-size: 22px;
+      background: url("../images/facts__title--bg-375.png") no-repeat center;
+    }
+    .facts__item:nth-child(4) .facts__description{
+      position: static;
+      left: -12px;
+      width: 170px;
+      letter-spacing: -0.2px;
+      word-spacing: -0.4px;
+    }
+    .facts__item:nth-child(5) .facts__description{
+      width: 165px;
+      letter-spacing: -0.2px;
+      word-spacing: -0.4px;
+    }
+    .facts__item:nth-child(6) .facts__br--320{
+      display: none;
+    }
+  }
+}

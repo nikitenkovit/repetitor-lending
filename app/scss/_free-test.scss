@@ -1,0 +1,35 @@
+.free-test {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #8eb3dd;
+
+  .free-test__title {
+    margin-bottom: 14px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .free-test__description {
+    width: 294px;
+    margin-bottom: 22px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .main-form__label--button {
+    background: url("../images/free-test-form__button-320.png") no-repeat center;
+  }
+
+  .main-form__button {
+    position: relative;
+    top: 2px;
+  }
+}

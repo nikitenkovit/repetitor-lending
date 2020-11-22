@@ -1,0 +1,68 @@
+.main-form--with-bg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+
+  .main-form__label {
+    width: 258px;
+    height: 84px;
+    background: url("../images/main-form__input-320.png") no-repeat center;
+
+    &[data-name="f_phone"] {
+      position: absolute;
+      top: 58px;
+    }
+
+    &[data-name="f_time"] {
+      position: absolute;
+      top: 115px;
+    }
+  }
+
+  .main-form__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    color: #737373;
+    text-align: center;
+  }
+
+  .main-form__label--button {
+    position: absolute;
+    top: 182px;
+    width: 256px;
+    height: 88px;
+    background: url("../images/main-form__button-320.png") no-repeat center;
+  }
+
+  .main-form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 44px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: top;
+  }
+}
+
