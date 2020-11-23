@@ -1,0 +1,209 @@
+.why-are-we {
+  //position: relative;
+  //top: -15px;
+  margin-top: -15px;
+  padding-top: 52px;
+  padding-bottom: 71px;
+  background: #e8ebf0;
+
+  .why-are-we__title {
+    position: relative;
+    width: 290px;
+    height: 92px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+    padding-top: 5px;
+    background-color: #ffffff;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #686868;
+    vertical-align: middle;
+    overflow: hidden;
+
+    &--red {
+      color: #ff3600;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      top: 50%;
+      left: -310px;
+      background-color: #e8ebf0;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      top: 50%;
+      right: -310px;
+      background-color: #e8ebf0;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+  }
+
+  .why-are-we__container {
+    margin-top: -83px;
+    margin-bottom: 31px;
+    padding-top: 83px;
+    overflow-x: scroll;
+
+  }
+
+  .why-are-we__container::-webkit-scrollbar {
+    height: 0;
+  }
+
+  .why-are-we__list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+  }
+
+  .why-are-we__item {
+    position: relative;
+    min-width: 262px;
+    max-width: 262px;
+    height: 171px;
+    margin-right: 15px;
+    padding: 0 5px;
+    padding-top: 12px;
+    border: 2px solid #b8c0ce;
+    border-radius: 7px;
+    background-color: #f5f6f6;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -82px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 63px;
+      height: 68px;
+      background: url("../images/091.png") no-repeat center;
+      background-size: contain;
+    }
+
+    &:nth-child(2)::before {
+      background: url("../images/09.png") no-repeat center;
+      background-size: contain;
+    } &:nth-child(3)::before {
+      background: url("../images/08-01.png") no-repeat center;
+      background-size: contain;
+    } &:nth-child(4)::before {
+      background: url("../images/07.png") no-repeat center;
+      background-size: contain;
+    } &:nth-child(5)::before {
+      background: url("../images/06.png") no-repeat center;
+      background-size: contain;
+    } &:nth-child(6)::before {
+      background: url("../images/05.png") no-repeat center;
+      background-size: contain;
+    } &:nth-child(7)::before {
+      background: url("../images/04.png") no-repeat center;
+      background-size: contain;
+    } &:nth-child(8)::before {
+      background: url("../images/03.png") no-repeat center;
+      background-size: contain;
+    } &:nth-child(9)::before {
+      background: url("../images/02.png") no-repeat center;
+      background-size: contain;
+    } &:nth-child(10)::before {
+      background: url("../images/01.png") no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .why-are-we__subtitle {
+    margin-bottom: 10px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    color: #253956;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .why-are-we__description {
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #535353;
+    text-align: center;
+  }
+
+  .why-are-we__slider-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  .slider-indicators__item {
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #c9cfc5;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .slider-indicators__item--active {
+    background-color: #6eb33a;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
