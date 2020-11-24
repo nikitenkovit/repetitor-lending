@@ -1,0 +1,190 @@
+.as-well-as {
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 65px;
+  background: #f0f8f3;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid #bfbfc1;
+    background-color: #ebebeb;
+  }
+
+  .as-well-as__title {
+    margin-bottom: 66px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #70b437;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .as-well-as__article--convenient-place {
+    position: relative;
+    margin-bottom: 85px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -61px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 61px;
+      background: url("../images/as-well-as-line-320.png") no-repeat center;
+    }
+  }
+
+  .as-well-as__subtitle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 289px;
+    height: 67px;
+    background: url("../images/as-well-as__subtitle-convenient-place-320.png") no-repeat center;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 51px;
+      height: 51px;
+      background: url("../images/convenient-place-icon-320.png") no-repeat center;
+    }
+  }
+
+  .as-well-as__list {
+    width: 275px;
+    margin: 0 auto;
+    padding: 19px 0;
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #edefee;
+    border-top: none;
+  }
+
+  .as-well-as__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 236px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    padding: 13px 3px;
+    border-radius: 4px;
+    border: 1px solid #d1d1d1;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19.23px;
+    color: #555555;
+    text-align: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .as-well-as__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .as-well-as__article--many-options {
+    position: relative;
+    margin-bottom: 98px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -61px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 61px;
+      background: url("../images/as-well-as-line-320.png") no-repeat center;
+    }
+
+    .as-well-as__subtitle {
+      width: 291px;
+      height: 67px;
+      background: url("../images/as-well-as__subtitle-many-options-320.png") no-repeat center;
+
+      &::before {
+        background: url("../images/many-options-icon-320.png") no-repeat center;
+      }
+    }
+  }
+
+  .as-well-as__article--stocks {
+    position: relative;
+    margin-bottom: 94px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -61px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 61px;
+      background: url("../images/as-well-as-line-320.png") no-repeat center;
+    }
+
+    .as-well-as__subtitle {
+      width: 290px;
+      height: 45px;
+      background: url("../images/as-well-as__subtitle-stocks-320.png") no-repeat center;
+
+      &::before {
+        background: url("../images/stocks-icon-320.png") no-repeat center;
+      }
+    }
+  }
+
+  .as-well-as__article--reports {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -61px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 61px;
+      background: url("../images/as-well-as-line-320.png") no-repeat center;
+    }
+
+    .as-well-as__subtitle {
+      width: 287px;
+      height: 51px;
+      background: url("../images/as-well-as__subtitle-reports-320.png") no-repeat center;
+
+      &::before {
+        left: 146px;
+        background: url("../images/reports-icon-320.png") no-repeat center;
+      }
+    }
+  }
+}

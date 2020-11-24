@@ -1,6 +1,4 @@
 .why-are-we {
-  //position: relative;
-  //top: -15px;
   margin-top: -15px;
   padding-top: 52px;
   padding-bottom: 71px;
@@ -57,12 +55,18 @@
     margin-top: -83px;
     margin-bottom: 31px;
     padding-top: 83px;
+
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
     overflow-x: scroll;
+    overflow-y: hidden;
 
-  }
-
-  .why-are-we__container::-webkit-scrollbar {
-    height: 0;
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      height: 0;
+      display: none !important;
+      background: transparent;
+    }
   }
 
   .why-are-we__list {

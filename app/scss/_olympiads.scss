@@ -1,61 +1,262 @@
 .olympiads {
-  height: 343px;
-  background: url("../images/olympiads-bg-320.png") no-repeat center;
-  background-size: cover;
-  
-  .olympiads__wrapper {
-    position: relative;
-    padding-top: 50px;
-  }
-  
-  .olympiads__title {
-    position: absolute;
-    top: -20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 292px;
-    height: 41px;
-    background: url("../images/olympiads__title__bg--320.png") no-repeat center;
-    font-family: 'Myriad Pro', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
 
-  .olympiads__description {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 290px;
-    height: 235px;
-    padding: 0 5px;
-    border: 4px solid #ffffff;
-    font-family: 'Myriad Pro', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #ffffff;
-    text-align: center;
+  /*olympiads__top*/
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: -7px;
-      right: -20px;
-      width: 37px;
-      height: 103px;
-      background: url("../images/olympiads__description-icon2-320.png") no-repeat center;
+  .olympiads__top {
+    height: 360px;
+    background: url("../images/olympiads-bg-320.png") no-repeat center;
+    background-size: cover;
+
+    .olympiads__wrapper {
+      position: relative;
+      padding-top: 50px;
     }
-    &::after {
-      content: "";
+
+    .olympiads__title {
       position: absolute;
-      bottom: -52px;
-      left: -20px;
-      width: 135px;
-      height: 110px;
-      background: url("../images/olympiads__description-icon1-320.png") no-repeat center;
+      top: -20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 292px;
+      height: 41px;
+      background: url("../images/olympiads__title__bg--320.png") no-repeat center;
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    .olympiads__description {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 290px;
+      height: 245px;
+      padding: 0 5px;
+      border: 4px solid #ffffff;
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: #ffffff;
+      text-align: center;
+      letter-spacing: -.3px;
+      word-spacing: -.5px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -7px;
+        right: -20px;
+        width: 37px;
+        height: 103px;
+        background: url("../images/olympiads__description-icon2-320.png") no-repeat center;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -55px;
+        left: -20px;
+        width: 135px;
+        height: 110px;
+        background: url("../images/olympiads__description-icon1-320.png") no-repeat center;
+      }
+    }
+  }
+
+  /*olympiads__bottom*/
+
+  .olympiads__bottom {
+    position: relative;
+    height: 787px;
+
+    .olympiads__bottom__wrapper {
+        width: 302px;
+        height: 735px;
+        margin: 0 auto;
+        background: url("../images/olympiads__container__bg--320.png") no-repeat center;
+    }
+
+    .olympiads__container {
+      width: 260px;
+      margin: 0 auto;
+      margin-left: 35px;
+      padding-top: 53px;
+
+      -ms-overflow-style: none;
+      overflow: -moz-scrollbars-none;
+      overflow-x: scroll;
+      overflow-y: hidden;
+
+      &::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0;
+        display: none !important;
+        background: transparent;
+      }
+    }
+
+    .olympiads__list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 624px;
+      padding-left: 20px;
+      list-style: none;
+    }
+
+    .olympiads__item {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 232px;
+      height: 142px;
+      margin-right: 28px;
+      background: url("../images/olympiads__item-320.png") no-repeat center;
+      z-index: 10;
+    }
+
+    .olympiads__student-photo {
+      position: relative;
+      top: 1px;
+      left: 1px;
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+    }
+
+    .olympiads__student-name {
+      width: 90px;
+      height: 42px;
+      margin-top: 4px;
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 14.68px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .student-result {
+      margin-top: 17px;
+      margin-left: 5px;
+    }
+
+    .student-result__subtitle {
+      display: inline-block;
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 600;
+      font-size: 10px;
+      line-height: 12.1px;
+      color: #242424;
+      letter-spacing: -.2px;
+      padding-right: 15px;
+
+      &:first-child {
+        width: 110px;
+      }
+    }
+
+    .student-result__list {
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 12.1px;
+      color: #242424;
+      list-style: none;
+
+      &:last-child {
+        letter-spacing: -.3px;
+      }
+    }
+
+    .student-result__item {
+      position: relative;
+      padding-left: 8px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 4px;
+        background-color: #242424;
+        border-radius: 50%;
+      }
+    }
+
+    .slider__buttons {
+      position: absolute;
+      top: 695px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 108px;
+      margin: 0 auto;
+    }
+
+    .slider__button {
+      width: 39px;
+      height: 39px;
+      background-color: #6eb33a;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 900;
+      font-size: 20px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .slider__button--left {
+      &::before {
+        content: '<';
+      }
+    }
+
+    .slider__button--right {
+      &::before {
+        content: '>';
+      }
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
