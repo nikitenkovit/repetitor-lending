@@ -1,0 +1,135 @@
+.mini-groups {
+  position: relative;
+  margin-top: 126px;
+  background: url("../images/mini-groups-bg-320.jpg") repeat-y center;
+  background-size: cover;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: 500;
+  text-align: center;
+
+  .mini-groups__wrapper {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .mini-groups__title {
+    position: absolute;
+    top: -92px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 289px;
+    height: 62px;
+    margin: 0 auto;
+    background: url("../images/mini-groups__title-320.png") no-repeat center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .what-is {
+    width: 320px;
+    height: 445px;
+    background: url("../images/what-is-bg-320.png") no-repeat center;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -135px;
+      left: 0;
+      width: 227px;
+      height: 200px;
+      background: url("../images/mini-groups-icon-books-and-lapm.png") no-repeat center;
+      background-size: cover;
+      z-index: 2;
+    }
+
+    .what-is__title {
+      width: 145px;
+      padding-top: 29px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      font-size: 19px;
+      line-height: 23px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    ul {
+      width: 290px;
+      margin: 0 auto;
+      list-style: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -25px;
+        right: 5px;
+        width: 90px;
+        height: 117px;
+        background: url("../images/what-is__wrapper-icon-1-320.png") no-repeat center;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 247px;
+        left: 8px;
+        width: 111px;
+        height: 141px;
+        background: url("../images/what-is__wrapper-icon-2-320.png") no-repeat center;
+      }
+    }
+    
+    li {
+      position: relative;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 9px 5px 8px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      z-index: 2;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -58,7 +58,7 @@
       &::after {
         content: "";
         position: absolute;
-        bottom: -55px;
+        bottom: -65px;
         left: -20px;
         width: 135px;
         height: 110px;
@@ -103,7 +103,7 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: flex-start;
       height: 624px;
       padding-left: 20px;
       list-style: none;
@@ -116,8 +116,13 @@
       width: 232px;
       height: 142px;
       margin-right: 28px;
+      margin-bottom: 17px;
       background: url("../images/olympiads__item-320.png") no-repeat center;
       z-index: 10;
+
+      &:nth-child(4n) {
+        margin-bottom: 0;
+      }
     }
 
     .olympiads__student-photo {
@@ -146,7 +151,7 @@
       margin-left: 5px;
     }
 
-    .student-result__subtitle {
+    .student-result p strong {
       display: inline-block;
       font-family: 'Myriad Pro', sans-serif;
       font-weight: 600;
@@ -155,13 +160,13 @@
       color: #242424;
       letter-spacing: -.2px;
       padding-right: 15px;
-
-      &:first-child {
-        width: 110px;
-      }
     }
 
-    .student-result__list {
+    .student-result p:first-child strong {
+      width: 110px;
+    }
+
+    .student-result ul {
       font-family: 'Myriad Pro', sans-serif;
       font-weight: 400;
       font-size: 10px;
@@ -174,7 +179,7 @@
       }
     }
 
-    .student-result__item {
+    .student-result li {
       position: relative;
       padding-left: 8px;
 
