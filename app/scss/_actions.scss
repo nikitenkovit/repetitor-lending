@@ -90,11 +90,21 @@
     line-height: 120%;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: -.2px;
   }
 }
 
+.action--red {
+  height: 582px;
+  padding-top: 53px;
+  background-color: #e64622;
 
+  .action__wrapper {
+    height: 713px;
+    background-image: url("../images/action--red-bg-320.png"), url("../images/action-bg-red-320.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom, center top;
+  }
+}
 
 
 

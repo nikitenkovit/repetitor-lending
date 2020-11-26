@@ -303,15 +303,9 @@
 				</li>
 			</ul>
 			<ul class="problems__slider-indicators slider-indicators" aria-hidden="true">
-				<li class="slider-indicators__item slider-indicators__item--active"></li>
-				<li class="slider-indicators__item" aria-hidden="true"></li>
-				<li class="slider-indicators__item" aria-hidden="true"></li>
-				<li class="slider-indicators__item" aria-hidden="true"></li>
-				<li class="slider-indicators__item" aria-hidden="true"></li>
-				<li class="slider-indicators__item" aria-hidden="true"></li>
-				<li class="slider-indicators__item" aria-hidden="true"></li>
-				<li class="slider-indicators__item" aria-hidden="true"></li>
-				<li class="slider-indicators__item" aria-hidden="true"></li>
+				<template class="slider-indicators__template">
+					<li class="slider-indicators__item" aria-hidden="true"></li>
+				</template>
 			</ul>
 		</div>
 	</section>
@@ -735,8 +729,8 @@
 	</section>
 	<!--/	as well as-->
 
-	<!--	action-->
-	<section class="action">
+	<!--	action--green-->
+	<section class="action action--green">
 		<div class="action__wrapper">
 			<div class="action__container">
 				<h2 class="action__title">Акция!!</h2>
@@ -784,7 +778,7 @@
 			</article>
 		</div>
 	</section>
-	<!--/	action-->
+	<!--/	action--green-->
 
 	<!--	mini-groups-->
 	<section class="mini-groups">
@@ -810,7 +804,7 @@
 				<h3 class="teacher__title">Преподаватель в мини-группе</h3>
 				<ul>
 					<li>Занимается с каждым учеником без потери качества обучения</li>
-					<li>Снижает стоимость обучения за счет экономии времени</li>
+					<li>Снижает стоимость обучения <br> за счет экономии времени</li>
 				</ul>
 			</article>
 
@@ -823,7 +817,7 @@
 				</ul>
 			</article>
 
-			<article class="mini-groups__students student">
+			<article class="mini-groups__student student">
 				<h3 class="student__title">Ученик в мини-группе</h3>
 				<ul>
 					<li>Получает индивидуальный подход</li>
@@ -836,8 +830,60 @@
 	</section>
 	<!--/ mini-groups-->
 
+	<!--	action--red-->
+	<section class="action action--red">
+		<div class="action__wrapper">
+			<div class="action__container">
+				<h2 class="action__title">Акция!!</h2>
+				<p class="action__description">
+					Бесплатный тест <br class="action__br--320">
+					в форме ЕГЭ и тест <br class="action__br--320">
+					пробелов выших знаний
+				</p>
+				<ul class="action__list">
+					<li class="action__item action__item--result">Реальный результат ученика</li>
+					<li class="action__item action__item--time">Время теста неограниченно</li>
+					<li class="action__item action__item--work">Работа по первой и второй части ЕГЭ</li>
+				</ul>
+			</div>
+
+			<article class="action__article">
+				<h3 class="action__subtitle">
+					Записаться на бесплатное <br class="action__br--320">
+					2х уровневое тестирование знаний
+				</h3>
+				<form class="action__form main-form ajaxForm" enctype="multipart/form-data"
+							method="post"
+							action="/netcat/add.php?isNaked=1">
+					<input name="catalogue" type="hidden" value="1">
+					<input name="cc" type="hidden" value="52">
+					<input name="sub" type="hidden" value="25">
+					<input name="posting" type="hidden" value="1">
+					<input name="curPos" type="hidden" value="0">
+					<input name="f_Parent_Message_ID" type="hidden" value="">
+
+					<label data-name="f_name" class="main-form__label">
+						<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
+					</label>
+					<label data-name="f_phone" class="main-form__label">
+						<input class="main-form__input" type="text" placeholder="Ваш телефон" name="f_phone" required>
+					</label>
+					<label data-name="f_time" class="main-form__label">
+						<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
+									 required>
+					</label>
+					<div class="main-form__label--button">
+						<button class="main-form__button" type="submit">Записаться</button>
+					</div>
+				</form>
+			</article>
+		</div>
+	</section>
+	<!--/	action--red-->
+
 </main>
 <!--/ main-->
 <script src="js/slider.js"></script>
+<script src="js/problems-block.js"></script>
 </body>
 </html>
