@@ -38,6 +38,7 @@ function styles() {
 function startwatch() {
 	watch('app/scss/*.scss', styles);
 	watch('app/*.html').on('change', browserSync.reload);
+	watch('app/js/*.js').on('change', browserSync.reload);
 }
 
 // Экспортируем функцию browsersync() как таск browsersync. Значение после знака = это имеющаяся функция.
