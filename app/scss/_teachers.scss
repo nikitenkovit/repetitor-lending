@@ -1,0 +1,223 @@
+.teachers {
+  .teachers__wrapper {
+    position: relative;
+  }
+
+  .teachers__slider {
+    margin-bottom: 44px;
+
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      height: 0;
+      display: none !important;
+      background: transparent;
+    }
+  }
+
+  .teachers__title {
+    margin-top: 16px;
+    margin-bottom: 23px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #e31e24;
+    text-align: center;
+  }
+
+  .teachers__title--green {
+    color: #6db337;
+  }
+
+  .teachers__list {
+    display: flex;
+    list-style: none;
+  }
+
+  .teachers__item {
+    min-width: 145px;
+  }
+
+  .teachers__photo {
+    display: block;
+    width: 109px;
+    height: 111px;
+    margin: 0 auto 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #b1b1b0;
+  }
+
+  .teachers__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 10px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #525252;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .teachers__button-to-more-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 33px;
+    margin: 0 auto;
+    background-color: #6db337;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13.89px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .slider__button {
+    position: absolute;
+    top: 120px;
+    left: -12px;
+    width: 17px;
+    height: 39px;
+    border: none;
+    background: url("../images/teachers__button.png") no-repeat center;
+    background-size: cover;
+    z-index: 10;
+
+    &--right {
+      left: auto;
+      right: -12px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .more-about-teacher {
+    .more-about-teacher__list {
+      list-style: none;
+    }
+
+    .teacher-item {
+      width: 290px;
+      border: 3px solid #b7b7b7;
+      border-radius: 10px;
+    }
+
+    .short-information {
+      &::after {
+        content: "";
+        display: block;
+        width: 234px;
+        height: 1px;
+        margin: 0 auto;
+        background-color: #cccccc;
+      }
+    }
+
+    .teacher-item__photo {
+      display: block;
+      width: 166px;
+      height: 166px;
+      margin: 28px auto 23px;
+      border-radius: 50%;
+      border: 2px solid #b7b7b7;
+      object-fit: cover;
+    }
+
+    .short-information__name {
+      margin-bottom: 18px;
+      font-family: 'PTSansBold', sans-serif;
+      font-size: 17px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .short-information__table {
+      margin-bottom: 20px;
+    }
+
+    .short-information__table th {
+      margin: 0;
+      padding: 0;
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 22px;
+      color: #4f4f4f;
+      text-align: center;
+    }
+
+    .short-information__subject {
+      width: 125px;
+      border-right: 1px solid #959595;
+      font-style: italic;
+    }
+
+    .short-information__education {
+      width: 160px;
+      letter-spacing: -.2px;
+    }
+
+    .short-information__button-witch-video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 30px;
+      margin: 0 auto 26px;
+      background-color: #ed1e24;
+      font-family: 'PTSansBold', sans-serif;
+      font-size: 14px;
+      color: #ffffff;
+      border: none;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
