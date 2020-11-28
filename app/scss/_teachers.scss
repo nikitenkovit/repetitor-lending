@@ -1,5 +1,6 @@
 .teachers {
   .teachers__wrapper {
+    padding-bottom: 60px;
     position: relative;
   }
 
@@ -105,86 +106,163 @@
     }
   }
 
-  .more-about-teacher {
-    .more-about-teacher__list {
-      list-style: none;
-    }
+  /*Карточка с информацией о преподавателе*/
 
-    .teacher-item {
-      width: 290px;
-      border: 3px solid #b7b7b7;
-      border-radius: 10px;
-    }
+  .teacher-information__list {
+    list-style: none;
+  }
 
-    .short-information {
-      &::after {
-        content: "";
-        display: block;
-        width: 234px;
-        height: 1px;
-        margin: 0 auto;
-        background-color: #cccccc;
-      }
-    }
+  .teacher-item {
+    width: 290px;
+    border: 3px solid #b7b7b7;
+    border-radius: 10px;
+  }
 
-    .teacher-item__photo {
+  .short-information {
+    &::after {
+      content: "";
       display: block;
-      width: 166px;
-      height: 166px;
-      margin: 28px auto 23px;
-      border-radius: 50%;
-      border: 2px solid #b7b7b7;
-      object-fit: cover;
-    }
-
-    .short-information__name {
-      margin-bottom: 18px;
-      font-family: 'PTSansBold', sans-serif;
-      font-size: 17px;
-      line-height: 30px;
-      text-align: center;
-    }
-
-    .short-information__table {
-      margin-bottom: 20px;
-    }
-
-    .short-information__table th {
-      margin: 0;
-      padding: 0;
-      font-family: 'Myriad Pro', sans-serif;
-      font-weight: 300;
-      font-size: 16px;
-      line-height: 22px;
-      color: #4f4f4f;
-      text-align: center;
-    }
-
-    .short-information__subject {
-      width: 125px;
-      border-right: 1px solid #959595;
-      font-style: italic;
-    }
-
-    .short-information__education {
-      width: 160px;
-      letter-spacing: -.2px;
-    }
-
-    .short-information__button-witch-video {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 180px;
-      height: 30px;
-      margin: 0 auto 26px;
-      background-color: #ed1e24;
-      font-family: 'PTSansBold', sans-serif;
-      font-size: 14px;
-      color: #ffffff;
-      border: none;
+      width: 234px;
+      height: 1px;
+      margin: 0 auto;
+      background-color: #cccccc;
     }
   }
+
+  .teacher-item__photo {
+    display: block;
+    width: 166px;
+    height: 166px;
+    margin: 28px auto 23px;
+    border-radius: 50%;
+    border: 2px solid #b7b7b7;
+    object-fit: cover;
+  }
+
+  .short-information__name {
+    margin-bottom: 18px;
+    font-family: 'PTSansBold', sans-serif;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .short-information__table {
+    margin-bottom: 20px;
+  }
+
+  .short-information__table th {
+    margin: 0;
+    padding: 0;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4f4f4f;
+    text-align: center;
+  }
+
+  .short-information__subject {
+    width: 125px;
+    border-right: 1px solid #959595;
+    font-style: italic;
+  }
+
+  .short-information__education {
+    width: 160px;
+    letter-spacing: -.2px;
+  }
+
+  .short-information__button-witch-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 30px;
+    margin: 0 auto 26px;
+    background-color: #ed1e24;
+    font-family: 'PTSansBold', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+  }
+
+  /*секция с подробной информацией в каточке*/
+
+  .detailed-information {
+    padding-top: 20px;
+    padding-bottom: 35px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 21px;
+    color: #4f4f4f;
+    text-align: center;
+
+    & ul {
+      list-style: none;
+      margin-top: 35px;
+      margin-bottom: 23px;
+    }
+
+    & strong {
+      font-weight: 400;
+    }
+  }
+
+  .detailed-information__name {
+    display: none;
+  }
+
+  .detailed-information__location,
+  .detailed-information__price {
+    margin-bottom: 23px;
+  }
+
+  .detailed-information__achievements {
+    position: relative;
+    padding-top: 48px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 260px;
+      height: 3px;
+      background-color: #ee292e;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 12px;
+      width: 26.56px;
+      height: 25.06px;
+      border: 3px solid #ee292e;
+      background: url("../images/detailed-information__achievements--ico.png") no-repeat center;
+    }
+
+    & p {
+      margin-bottom: 22px;
+    }
+  }
+
+  .detailed-information__link {
+    display: block;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    color: #e31e24;
+  }
+
+  .detailed-information__link--to-more-about {
+    margin-bottom: 21px;
+  }
+
 }
 
 

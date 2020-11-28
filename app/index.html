@@ -729,7 +729,7 @@
 	</section>
 	<!--/	as well as-->
 
-	<!--	action--green-->
+	<!--	action green-->
 	<section class="action action--green">
 		<div class="action__wrapper">
 			<div class="action__container">
@@ -778,7 +778,7 @@
 			</article>
 		</div>
 	</section>
-	<!--/	action--green-->
+	<!--/	action green-->
 
 	<!--	mini-groups-->
 	<section class="mini-groups">
@@ -830,7 +830,7 @@
 	</section>
 	<!--/ mini-groups-->
 
-	<!--	action--red-->
+	<!--	action red-->
 	<section class="action action--red">
 		<div class="action__wrapper">
 			<div class="action__container">
@@ -879,7 +879,7 @@
 			</article>
 		</div>
 	</section>
-	<!--/	action--red-->
+	<!--/	action red-->
 
 	<!--	teachers-->
 	<section class="teachers">
@@ -897,7 +897,7 @@
 
 					<li class="teachers__item">
 						<img class="teachers__photo" src="images/teachers/preview_1.jpg" alt="Фотография преподователя">
-						<p class="teachers__name">Ермаков Владимирррррр Сергеевич</p>
+						<p class="teachers__name">Ермаков ДлинноеИмя Сергеевич</p>
 						<a href="#" class="teachers__button-to-more-about">Подробнее о преподавателе</a>
 					</li>
 
@@ -917,15 +917,16 @@
 				<button class="slider__button slider__button--right" aria-label="Кнопка карусель вправо"></button>
 			</div>
 
-			<article class="teachers__more-about-teacher more-about-teacher">
+			<article class="teachers__information teacher-information">
 				<h3 class="visually-hidden">Подробнее о преподавателе</h3>
-				<ul class="more-about-teacher__list">
+				<ul class="teacher-information__list">
 
-					<li class="more-about-teacher__item teacher-item">
-						<div class="teacher-item__short-information short-information">
+					<li class="teacher-information__item teacher-item">
+
+						<section class="teacher-item__short-information short-information">
 							<img class="teacher-item__photo" src="images/teachers/preview_RYA_9650.jpg" alt="Фотография преподавателя">
-							<p class="short-information__name">Баранцов Владимир Юрьевич</p>
-							<p class="short-information__subject"></p>
+							<h3 class="short-information__name">Баранцов Владимир Юрьевич</h3>
+
 							<table class="short-information__table">
 								<tr>
 									<th class="short-information__subject">
@@ -940,7 +941,42 @@
 							</table>
 
 							<button class="short-information__button-witch-video">Посмотреть видео</button>
-						</div>
+						</section>
+
+						<section class="teachers__detailed-information detailed-information">
+							<h3 class="detailed-information__name">Баранцов Владимир Юрьевич</h3>
+
+							<p>
+								Преподаватель информатики.
+								<br>
+								Окончил ФВТ ЮФУ.
+							</p>
+
+							<ul>
+								<li>Подготовка к ЕГЭ и ОГЭ по информатике (любой уровень)</li>
+								<li>Подготовка к вузовским олимпиадам.</li>
+							</ul>
+
+							<p class="detailed-information__location">
+								<strong>Район проведения занятий:</strong>
+								<span>Центр (Красноармейская/Соколова), Западный</span>
+							</p>
+
+							<p class="detailed-information__price">
+								<strong>Стоимость занятий:</strong>
+								<span>1600 руб. за занятие от 150 минут - занятие может быть дольше без доплаты.</span>
+							</p>
+
+							<div class="detailed-information__achievements">
+								<p>В 2020 году 4 ученика Владимира Юрьевича написали ЕГЭ по информатике на <span style="color:#FF0000;">100 баллов</span>!</p>
+								<p><span style="color:#FF0000;">Средний балл</span> его учеников — <span style="color:#FF0000;">92!</span></p>
+								<p>Максимальный балл учеников по математике – 98,
+									по физике — 98, по информатике — 100.</p>
+							</div>
+
+							<a class="detailed-information__link detailed-information__link--to-more-about" href="#">Подробнее о преподавателе</a>
+							<a class="detailed-information__link detailed-information__link--to-reviews" href="#">Отзывы учеников</a>
+						</section>
 					</li>
 
 				</ul>
