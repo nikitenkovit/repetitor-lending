@@ -13,11 +13,15 @@
     &[data-name="f_phone"] {
       position: absolute;
       top: 58px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     &[data-name="f_time"] {
       position: absolute;
       top: 115px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -41,6 +45,8 @@
   .main-form__label--button {
     position: absolute;
     top: 182px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 256px;
     height: 88px;
     background: url("../images/main-form__button-320.png") no-repeat center;

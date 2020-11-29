@@ -11,6 +11,8 @@
     overflow: -moz-scrollbars-none;
     overflow-x: scroll;
     overflow-y: hidden;
+    scrollbar-width: none;
+    scrollbar-height: none;
 
     &::-webkit-scrollbar {
       width: 0 !important;
@@ -262,7 +264,6 @@
   .detailed-information__link--to-more-about {
     margin-bottom: 21px;
   }
-
 }
 
 

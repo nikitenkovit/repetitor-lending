@@ -64,9 +64,11 @@
 
     &::-webkit-scrollbar {
       width: 0 !important;
-      height: 0;
+      height: 0 !important;
       display: none !important;
       background: transparent;
+      scrollbar-width: none;
+      scrollbar-height: none;
     }
   }
 
@@ -77,7 +79,7 @@
     border-spacing: 15px;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    width: 100%
+    width: 100%;
   }
 
   .why-are-we__item {

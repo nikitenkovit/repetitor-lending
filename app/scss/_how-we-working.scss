@@ -1,0 +1,21 @@
+.how-we-working {
+  .how-we-working__title {
+    width: 320px;
+    height: 87px;
+    margin: 0 auto;
+    padding-top: 20px;
+    background: url("../images/how-we-working__title-320.png") no-repeat center;
+    background-size: cover;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #747474;
+
+    &--red {
+      color: #d9472e;
+    }
+  }
+}
