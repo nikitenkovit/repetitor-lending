@@ -1,0 +1,61 @@
+.make-appointment {
+  width: 320px;
+  height: 558px;
+  margin: 0 auto -11px;
+  padding-top: 53px;
+  background: url("../images/make-appointment--bg-320.png") no-repeat center;
+  background-size: cover;
+
+  .make-appointment__title {
+    width: 215px;
+    margin: 0 auto 15px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .make-appointment__description {
+    width: 210px;
+    margin: 0 auto 18px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .main-form__input {
+    width: 275px;
+    height: 47px;
+    border: 2px solid #f2f2f2;
+    color: #5e5e5e;
+    background-color: #f2f2f2;
+
+    &::placeholder {
+      color: #5e5e5e;
+    }
+
+    &:hover,
+    &:focus {
+      border: 2px solid #5e5e5e;
+      background-color: #5e5e5e;
+      color: #ffffff;
+
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .main-form__button {
+    width: 275px;
+    height: 47px;
+  }
+
+}

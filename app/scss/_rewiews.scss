@@ -157,7 +157,6 @@
     font-size: 15px;
     line-height: 18px;
 
-
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
     scrollbar-width: none;
@@ -173,31 +172,33 @@
     & p {
       margin-bottom: 15px;
     }
-
-    /*Кастомный скроллбар*/
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 4px;
-      width: 4px;
-      height: 193px;
-      border-radius: 3px;
-      background-color: #e8e8e8;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 4px;
-      width: 6px;
-      height: 88px;
-      border-radius: 4px;
-      background-color: #6eb33a;
-    }
   }
+
+  /*Кастомный скроллбар старт*/
+
+  .scroll-container__scroll-trek {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 6px;
+    height: 100%;
+    max-height: 100%;
+    border-radius: 3px;
+    background-color: #d7d7d7;
+  }
+
+  .scroll-container__scroll-pin {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    border-radius: 4px;
+    background-color: #6eb33a;
+  }
+
+  /*Кастомный скроллбар конец*/
+
 
   .reviews-item__video {
     width: 275px;

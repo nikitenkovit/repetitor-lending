@@ -1,8 +1,40 @@
 .how-we-working {
+  position: relative;
+  padding-bottom: 67px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: #666666;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 64px;
+    height: 130px;
+    background: url("../images/how-we-working-ico1-320.png") no-repeat center;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    width: 73px;
+    height: 123px;
+    background: url("../images/how-we-working-ico2-320.png") no-repeat center;
+    background-size: cover;
+    z-index: 2;
+  }
+
   .how-we-working__title {
     width: 320px;
     height: 87px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     padding-top: 20px;
     background: url("../images/how-we-working__title-320.png") no-repeat center;
     background-size: cover;
@@ -18,4 +50,162 @@
       color: #d9472e;
     }
   }
+
+  & article {
+    position: relative;
+    width: 272px;
+    margin: 0 auto 44px;
+    padding: 70px 5px 5px;
+    background-color: #f9fbfa;
+    border: 4px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 2px #e7e7e7,
+    0 0 0 1px #e7e7e7;
+    z-index: 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+   & p {
+     margin-bottom: 18px;
+   }
+
+    ul {
+      margin-bottom: 18px;
+      padding-left: 5px;
+      list-style: none;
+      text-align: left;
+      letter-spacing: -.2px;
+    }
+    li {
+      position: relative;
+      padding-left: 10px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #666666;
+      }
+    }
+  }
+
+  .how-we-working__subtitle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -6px;
+    left: -19px;
+    width: 301px;
+    height: 58px;
+    border-radius: 0 30px 30px 0;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #727271;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      width: 14px;
+      height: 9px;
+      background-color: #3c3c3b;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: -6px;
+      transform: rotate(32deg);
+      width: 17px;
+      height: 17px;
+      background-color: #ffffff;
+    }
+  }
+
+  .number-of-lessons__title {
+    background-color: #4a5b79;
+    border-radius: 30px 0 0 30px;
+
+    &::before {
+      left: auto;
+      right: 0;
+      background-color: #364257;
+    }
+
+    &::after {
+      left: auto;
+      right: -6px;
+      transform: rotate(-32deg);
+    }
+  }
+
+  .test-papers__title {
+    background-color: #6eb33a;
+    letter-spacing: -.3px;
+
+    &::before {
+      background-color: #4c8a19;
+    }
+  }
+
+  .intensives__title {
+    background-color: #d9472e;
+    border-radius: 30px 0 0 30px;
+
+    &::before {
+      left: auto;
+      right: 0;
+      background-color: #912714;
+    }
+
+    &::after {
+      left: auto;
+      right: -6px;
+      transform: rotate(-32deg);
+    }
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

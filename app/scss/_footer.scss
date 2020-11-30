@@ -1,0 +1,147 @@
+.footer {
+  background: #e4ebf2;
+  padding: 58px 0 65px;
+
+  .footer-social__title {
+    margin-bottom: 25px;
+    font-family: 'PTSansBold', sans-serif;
+    font-size: 14px;
+    line-height: 120%;
+    color: #666666;
+    text-align: center;
+  }
+
+  .footer-social__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    list-style: none;
+  }
+
+  .footer-social__item {
+    margin-right: 21px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .footer-social--link {
+    position: relative;
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    border-radius: 15px;
+    background-color: #ff9c43;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 11px;
+      height: 17px;
+      background: url("../images/footer-social__link--ok-320.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .footer-social__link--vk {
+    background-color: #6996c7;
+
+    &::before {
+      left: 15px;
+      transform: translate(0, -50%);
+      width: 14px;
+      height: 17px;
+      background: url("../images/footer-social__link--vk-320.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .footer-social__link--yt {
+    background-color: #ff4342;
+
+    &::before {
+      left: 13px;
+      transform: translate(0, -50%);
+      width: 17px;
+      height: 19px;
+      background: url("../images/footer-social__link--yt-320.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .footer-social__link--inst {
+    background-color: #9c6e4c;
+
+    &::before {
+      left: 12px;
+      transform: translate(0, -50%);
+      width: 20px;
+      height: 20px;
+      background: url("../images/footer-social__link--inst-320.png") no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  .footer__menu-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__menu-item {
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer__menu-link {
+    font-family: 'PTSansRegular', sans-serif;
+    font-size: 14px;
+    line-height: 120%;
+    color: #666666;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
