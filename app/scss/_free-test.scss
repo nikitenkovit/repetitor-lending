@@ -1,6 +1,6 @@
 .free-test {
   padding-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   background-color: #8eb3dd;
 
   .free-test__title {
@@ -31,5 +31,27 @@
   .main-form__button {
     position: relative;
     top: 2px;
+  }
+}
+
+@media (min-width: $bigPhone) {
+  .free-test {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    background-color: #8eb3dd;
+
+    .free-test__title {
+      font-size: 24px;
+    }
+
+    .free-test__description {
+      width: 350px;
+      margin: 0 auto;
+      margin-bottom: 22px;
+    }
+
+    br {
+      display: none;
+    }
   }
 }

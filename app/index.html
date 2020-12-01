@@ -18,7 +18,10 @@
 <header class="header">
 	<div class="header__wrapper wrapper">
 		<div class="header__logo">
-			<img class="header__image" src="./images/Logo-320.png" alt="Логотип компании Репетитор Дона">
+			<picture class="header__picture">
+				<source srcset="./images/Logo-480.png" media="(min-width: 480px)">
+				<img class="header__image" src="./images/Logo-320.png" alt="Логотип компании Репетитор Дона">
+			</picture>
 		</div>
 
 		<div class="header__contacts">
@@ -54,7 +57,7 @@
 	<!--	title-->
 	<section class="block-title">
 		<h1 class="block-title__title">
-			Курсы подготовки <br class="block-title__br--320"> к ЕГЭ и олимпиадам <br class="block-title__br--320"> в
+			Курсы подготовки <br class="block-title__br--320"> к ЕГЭ <br class="block-title__br--480">и олимпиадам <br class="block-title__br--320"> в
 			ростове-на-дону <br class="block-title__br--320"> для 10-11 класса
 		</h1>
 	</section>
@@ -669,7 +672,9 @@
 						остановки:Центр(Соколова/Красноармейская), Западный(Стачки) и Северный (Квадро)
 					</li>
 				</ul>
-				<img src="images/convenient-place-320.jpg" alt="фотография занятий в классе" class="as-well-as__image">
+				<div class="as-well-as__image">
+					<img src="images/convenient-place.jpg" alt="фотография занятий в классе" class="as-well-as__image--jpg">
+				</div>
 			</article>
 
 			<article class="as-well-as__article as-well-as__article--many-options">
@@ -709,7 +714,9 @@
 						Приведи хорошего преподавателя - получи 5000 рублей
 					</li>
 				</ul>
-				<img src="images/stocks-320.jpg" alt="фотография рабочего процесса" class="as-well-as__image">
+				<div class="as-well-as__image">
+					<img src="images/stocks.jpg" alt="фотография занятий в классе" class="as-well-as__image--jpg">
+				</div>
 			</article>
 
 			<article class="as-well-as__article as-well-as__article--reports">
@@ -722,7 +729,9 @@
 						Родители всегда в курсе результатов и хода обучения
 					</li>
 				</ul>
-				<img src="images/reports-320.jpg" alt="фотография рабочего процесса" class="as-well-as__image">
+				<div class="as-well-as__image">
+					<img src="images/reports.jpg" alt="фотография занятий в классе" class="as-well-as__image--jpg">
+				</div>
 			</article>
 
 		</div>

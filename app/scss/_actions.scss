@@ -93,6 +93,54 @@
   }
 }
 
+@media (min-width: $bigPhone) {
+  .action {
+    padding-top: 65px;
+    padding-bottom: 16px;
+    background-color: #dae6d4;
+    font-family: 'Myriad Pro', sans-serif;
+    color: #ffffff;
+
+    .action__wrapper {
+      width: 457px;
+      height: 896px;
+      padding-top: 28px;
+      background: url("../images/action-bg-480.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .action__container {
+      padding-left: 88px;
+    }
+
+    .action__title {
+      margin-bottom: 5px;
+      font-weight: 600;
+      font-size: 32px;
+    }
+
+    .action__description {
+      margin-bottom: 32px;
+      font-size: 24px;
+      line-height: 33px;
+    }
+
+    .action__item {
+      font-size: 16px;
+    }
+
+    .action__article {
+      margin-top: 161px;
+    }
+
+    .action__subtitle {
+      width: 350px;
+      margin: 0 auto 45px;
+      font-size: 18px;
+    }
+  }
+}
+
 .action--red {
   height: 582px;
   padding-top: 53px;

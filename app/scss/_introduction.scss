@@ -64,3 +64,52 @@
     }
   }
 }
+
+@media (min-width: $bigPhone) {
+  .introduction {
+    min-height: 225px;
+    padding-top: 31px;
+    background: url("../images/introduction-bg-480.jpg") no-repeat bottom;
+    background-size: cover;
+
+    &::before {
+      bottom: 0;
+      width: 399px;
+      height: 210px;
+      background: url("../images/introduction-mgu-480.png") no-repeat center;
+    }
+
+    &::after {
+      bottom: -54px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 422px;
+      height: 68px;
+      background: url("../images/introduction-red-480.png") no-repeat center;
+      background-size: cover;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .introduction__description {
+      width: 93.75%;
+      min-height: 74px;
+      margin: 0 auto;
+      border: 2px solid #d9dada;
+      border-left: 2px solid #d9dada;
+      border-right: 2px solid #d9dada;
+      font-size: 18px;
+      line-height: 23.63px;
+
+      &--left {
+        width: 192px;
+        margin-left: 10px;
+      }
+
+      &--right {
+        width: 200px;
+        margin-right: 3px;
+      }
+    }
+  }
+}

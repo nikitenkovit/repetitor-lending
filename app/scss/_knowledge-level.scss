@@ -23,3 +23,24 @@
     text-align: center;
   }
 }
+
+@media (min-width: $bigPhone) {
+  .knowledge-level {
+    padding-top: 65px;
+
+    .knowledge-level__title {
+      margin-bottom: 14px;
+      font-size: 24px;
+    }
+
+    .knowledge-level__description {
+      width: 446px;
+      margin: 0 auto;
+      margin-bottom: 22px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}

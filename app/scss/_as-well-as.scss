@@ -3,7 +3,7 @@
   padding-top: 10px;
   padding-bottom: 65px;
   background: #f0f8f3;
-  
+
   &::after {
     content: "";
     position: absolute;
@@ -51,6 +51,7 @@
     align-items: center;
     width: 289px;
     height: 67px;
+    margin: 0 auto;
     background: url("../images/as-well-as__subtitle-convenient-place-320.png") no-repeat center;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: 600;
@@ -99,6 +100,7 @@
     line-height: 19.23px;
     color: #555555;
     text-align: center;
+    background-image: linear-gradient(#ffffff, #f7f7f7, #ffffff);
 
     &:last-child {
       margin-bottom: 0;
@@ -106,8 +108,22 @@
   }
 
   .as-well-as__image {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 273px;
+    height: 142px;
     margin: 0 auto;
+    background-color: #70b437;
+    border-radius: 4px;
+
+    &--jpg {
+      display: block;
+      width: 259px;
+      height: 131px;
+      border-radius: 4px;
+      object-fit: cover;
+    }
   }
 
   .as-well-as__article--many-options {
@@ -160,6 +176,17 @@
         background: url("../images/stocks-icon-320.png") no-repeat center;
       }
     }
+
+    .as-well-as__image {
+      width: 290px;
+      height: 232px;
+      background-color: #d9452c;
+
+      &--jpg {
+        width: 274px;
+        height: 219px;
+      }
+    }
   }
 
   .as-well-as__article--reports {
@@ -186,5 +213,176 @@
         background: url("../images/reports-icon-320.png") no-repeat center;
       }
     }
+
+    .as-well-as__image {
+      width: 290px;
+      height: 137px;
+      background-color: #596c8c;
+
+      &--jpg {
+        width: 274px;
+        height: 125px;
+      }
+    }
   }
 }
+
+@media (min-width: $bigPhone) {
+  .as-well-as {
+    padding-top: 10px;
+    padding-bottom: 55px;
+
+    .as-well-as__title {
+      margin-bottom: 85px;
+    }
+
+    .as-well-as__article--convenient-place {
+      position: relative;
+      margin-bottom: 85px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -61px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 61px;
+        background: url("../images/as-well-as-line-320.png") no-repeat center;
+      }
+    }
+
+    .as-well-as__br--320 {
+      display: none;
+    }
+
+    .as-well-as__subtitle {
+      width: 449px;
+      height: 49px;
+      background: url("../images/as-well-as__subtitle-convenient-place-480.png") no-repeat center;
+    }
+
+    .as-well-as__list {
+      width: 433px;
+      padding: 10px 0 14px;
+    }
+
+    .as-well-as__item {
+      width: 290px;
+      margin-bottom: 13px;
+      padding: 13px 5px;
+      font-size: 15px;
+      line-height: 19.23px;
+    }
+
+    .as-well-as__image {
+      width: 334px;
+      height: 175px;
+
+      &--jpg {
+        width: 320px;
+        height: 162px;
+      }
+    }
+
+    .as-well-as__article--many-options {
+      margin-bottom: 77px;
+
+      .as-well-as__subtitle {
+        width: 450px;
+        height: 50px;
+        background: url("../images/as-well-as__subtitle-many-options-480.png") no-repeat center;
+      }
+
+      .as-well-as__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .as-well-as__item {
+       width: 196px;
+        margin-bottom: 27px;
+      }
+    }
+
+    .as-well-as__article--stocks {
+      .as-well-as__subtitle {
+        width: 450px;
+        height: 45px;
+        background: url("../images/as-well-as__subtitle-stocks-480.png") no-repeat center;
+      }
+
+      .as-well-as__image {
+        width: 332px;
+        height: 266px;
+        background-color: #d9452c;
+
+        &--jpg {
+          width: 315px;
+          height: 252px;
+        }
+      }
+    }
+
+    .as-well-as__article--reports {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -61px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 61px;
+        background: url("../images/as-well-as-line-320.png") no-repeat center;
+      }
+
+      .as-well-as__subtitle {
+        width: 457px;
+        height: 49px;
+        background: url("../images/as-well-as__subtitle-reports-480.png") no-repeat center;
+
+        &::before {
+          left: 50%;
+          transform: translateX(-57%);
+          background: url("../images/reports-icon-320.png") no-repeat center;
+        }
+      }
+
+      .as-well-as__image {
+        width: 450px;
+        height: 214px;
+        background-color: #596c8c;
+
+        &--jpg {
+          width: 428px;
+          height: 192px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

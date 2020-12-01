@@ -116,6 +116,29 @@
   }
 }
 
+@media (min-width: $bigPhone) {
+  .results {
+    background-color: #fbfbfb;
+    padding-bottom: 49px;
+
+    .results__title {
+      min-height: 140px;
+      margin-bottom: 37px;
+      padding: 0 10px;
+      background-color: #f3eaeb;
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: -.4px;
+      word-spacing: -1px;
+    }
+
+    .results__list {
+      width: 450px;
+    }
+  }
+}
+
 
 
 

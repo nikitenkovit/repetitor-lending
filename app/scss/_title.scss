@@ -16,3 +16,21 @@
     text-align: center;
   }
 }
+
+@media (min-width: $bigPhone) {
+  .block-title {
+    height: 203px;
+    background: url("../images/title-bg-480.jpg") no-repeat center;
+    background-size: cover;
+
+    .block-title__title {
+      width: 416px;
+      font-size: 24px;
+      line-height: 32.76px;
+    }
+
+    .block-title__br--320 {
+      display: none;
+    }
+  }
+}

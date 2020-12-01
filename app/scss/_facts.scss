@@ -88,32 +88,63 @@
   }
 }
 
-@media (min-width: $iphone) {
+@media (min-width: $bigPhone) {
   .facts {
+    min-height: 511px;
+    padding-top: 59px;
+    background: url("../images/facts-bg-480.jpg") no-repeat center;
+    background-size: cover;
+
     .facts__wrapper {
-      width: $iphone;
+      width: 100%;
     }
 
     .facts__title {
-      width: 363px;
-      height: 46px;
-      font-size: 22px;
-      background: url("../images/facts__title--bg-375.png") no-repeat center;
+      width: 451px;
+      height: 39px;
+      font-size: 24px;
+      background: url("../images/facts__title--bg-480.png") no-repeat center;
     }
+
+    .facts__list {
+      font-size: 13.45px;
+    }
+
+    .facts__item {
+      width: 33.333%;
+      padding-top: 75px;
+    }
+
+    .facts__value {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 37px;
+      width: 84px;
+      height: 59px;
+      font-size: 22px;
+      color: #ffffff;
+      text-align: left;
+    }
+
+    .facts__description {
+      width: 160px;
+      letter-spacing: -.4px;
+    }
+
     .facts__item:nth-child(4) .facts__description{
-      position: static;
-      left: -12px;
-      width: 170px;
-      letter-spacing: -0.2px;
-      word-spacing: -0.4px;
+      position: relative;
+      left: 0;
+      width: 160px;
+      letter-spacing: 0;
+      word-spacing: 0;
     }
     .facts__item:nth-child(5) .facts__description{
-      width: 165px;
-      letter-spacing: -0.2px;
-      word-spacing: -0.4px;
-    }
-    .facts__item:nth-child(6) .facts__br--320{
-      display: none;
+      width: 160px;
+      letter-spacing: 0;
+      word-spacing: 0;
     }
   }
 }

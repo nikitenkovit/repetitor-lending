@@ -1,9 +1,10 @@
 .reviews {
   background: url("../images/reviews-bg-320.jpg") repeat-y top;
+  background-size: 100%;
   padding-bottom: 62px;
 
   .reviews__title {
-    width: 320px;
+    width: 100%;
     height: 208px;
     margin: 0 auto;
     padding-top: 23px;

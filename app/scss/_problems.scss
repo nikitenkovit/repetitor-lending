@@ -127,3 +127,50 @@
     background-color: #6eb33a;
   }
 }
+
+@media (min-width: $bigPhone) {
+  .problems {
+    z-index: 2;
+    height: 376px;
+    background: url("../images/problems-bg-480.png") no-repeat bottom;
+    background-size: 100%;
+
+    .problems__title {
+      height: 93px;
+      padding: 0 10px;
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: 0;
+      word-spacing: 0;
+    }
+
+    .problems__container {
+      height: 100%;
+      padding-top: 58px;
+      background: none;
+    }
+
+    .problems__list {
+      width: 290px;
+      height: 119px;
+
+      &::before {
+        width: 320px;
+        height: 103px;
+      }
+
+      &::after {
+        width: 342px;
+        height: 89px;
+      }
+    }
+
+    .problems__item {
+      width: 290px;
+      height: 119px;
+      padding: 15px 5px 0;
+      font-size: 15px;
+      line-height: 17px;
+    }
+  }
+}

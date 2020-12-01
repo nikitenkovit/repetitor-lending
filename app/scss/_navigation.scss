@@ -36,6 +36,7 @@
 
   .opening-hours__title {
     font-family: 'PTSansBoldItalic', sans-serif;
+    font-weight: normal;
     font-size: 12.11px;
     line-height: 15.42px;
     color: #ed1e24;
@@ -45,7 +46,7 @@
     font-family: 'PTSansItalic', sans-serif;
     font-size: 12.11px;
     line-height: 15.42px;
-    color: $mainTextColor;
+    color: #333333;
   }
 
   .opening-hours__description--red {
@@ -116,7 +117,77 @@
   }
 }
 
+@media (min-width: $bigPhone) {
+  .navigation {
+    height: 76px;
 
+    .navigation__wrapper {
+      flex-direction: row;
+      align-items: center;
+      width: 93.75%;
+      height: 100%;
+    }
+
+    .opening-hours {
+      width: 192px;
+      height: 26px;
+      margin-top: 0;
+      padding-left: 35px;
+
+      &::before {
+        width: 26px;
+        height: 26px;
+        background-size: cover;
+      }
+    }
+
+    .opening-hours__title {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .opening-hours__description {
+      font-family: 'PTSansItalic', sans-serif;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .navigation__button-check-in-a-course {
+      width: 173px;
+      height: 30px;
+      margin-top: -5px;
+      margin-left: 25px;
+      font-family: 'PTSansRegular', sans-serif;
+      font-size: 14.14px;
+      box-shadow: 1px 1px #c74746,
+      2px 2px #c74746,
+      3px 3px #c74746;
+      transition: transform .2s ease-in;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        top: 4px;
+        right: -4px;
+        box-shadow: none;
+      }
+    }
+
+    .navigation__toggle-button {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 31px;
+      height: 23px;
+
+      &::after {
+        box-shadow: 0 -10px #c74746;
+      }
+    }
+  }
+}
 
 
 
