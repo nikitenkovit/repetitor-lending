@@ -93,6 +93,18 @@
   }
 }
 
+.action--red {
+  height: 582px;
+  margin-bottom: 182px;
+  background-color: #e64622;
+
+  .action__wrapper {
+    background-image: url("../images/action--red-bg-320.png"), url("../images/action-bg-red-320.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom, center top;
+  }
+}
+
 @media (min-width: $bigPhone) {
   .action {
     padding-top: 65px;
@@ -139,21 +151,22 @@
       font-size: 18px;
     }
   }
-}
 
-.action--red {
-  height: 582px;
-  padding-top: 53px;
-  margin-bottom: 182px;
-  background-color: #e64622;
+  .action--red {
+    height: 781px;
+    margin-bottom: 173px;
+    background-color: #e64622;
 
-  .action__wrapper {
-    height: 713px;
-    background-image: url("../images/action--red-bg-320.png"), url("../images/action-bg-red-320.jpg");
-    background-repeat: no-repeat;
-    background-position: center bottom, center top;
+    .action__wrapper {
+      background-image: url("../images/action--red-bg-480.png"), url("../images/action-bg-red-480.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 457px 601px, 336px 386px;
+      background-position: center bottom, center top;
+    }
   }
 }
+
+
 
 
 

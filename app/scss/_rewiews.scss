@@ -60,14 +60,30 @@
   }
 
   .reviews__container {
+    width: 290px;
+    margin: 0 auto;
     overflow: hidden;
+
+
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scrollbar-height: none;
+
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      height: 0;
+      display: none !important;
+      background: transparent;
+    }
   }
 
   .reviews__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 290px;
     min-height: 1000px;
     max-height: 2400px;
     margin: 0 auto;
@@ -78,6 +94,7 @@
 
   .reviews__item {
     width: 290px;
+    background-color: #ffffff;
   }
 
   .reviews-item__information {
@@ -253,7 +270,186 @@
   }
 }
 
+@media (min-width: $bigPhone) {
+  .reviews {
+    background: url("../images/reviews-bg-480.jpg") repeat-y top;
+    background-size: 100%;
+    padding-bottom: 67px;
 
+    .reviews__title {
+      width: 100%;
+      height: 176px;
+      padding: 35px 10px 0;
+      background: url("../images/reviews__title--bg-480.png") no-repeat center;
+      background-size: cover;
+      font-size: 24px;
+
+      &--red {
+        color: #e31e24;
+      }
+
+      br {
+        display: none;
+      }
+    }
+
+    .reviews__years-list {
+      justify-content: center;
+      top: -14px;
+      width: 450px;
+    }
+
+    .reviews__years-item {
+      margin-bottom: 10px;
+      margin-right: 5px;
+
+      &:nth-child(6n) {
+        margin-right: 0;
+      }
+    }
+
+    .reviews__container {
+      width: 450px;
+    }
+
+    .reviews__list {
+      //width: 450px;
+      min-height: 700px;
+      max-height: 2400px;
+    }
+
+    .reviews__item {
+      position: relative;
+      width: 450px;
+    }
+
+    .reviews-item__information {
+      width: 100%;
+      min-height: 212px;
+      padding-top: 45px;
+      padding-left: 205px;
+      font-size: 18px;
+    }
+
+    .reviews-item__photo {
+      position: absolute;
+      top: 29px;
+      left: 13px;
+      width: 174px;
+      height: 174px;
+      padding-bottom: 0;
+      border-radius: 50%;
+      overflow: hidden;
+
+      &--img {
+        display: inline;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .reviews-item__name {
+      width: 240px;
+      margin-top: 0;
+      padding-left: 0;
+      text-align: left;
+      font-size: 22px;
+    }
+
+    .reviews-item__ege-results {
+      margin-top: 12px;
+      text-align: left;
+    }
+
+    .reviews-item__destination {
+      margin-top: 8px;
+      text-align: left;
+    }
+
+    .reviews-item__years {
+      margin-top: 24px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .reviews-item__text-container {
+      width: 429px;
+      height: 263px;
+      margin: 0 auto 0;
+      padding-top: 25px;
+      background: url("../images/reviews-text-bg-480.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .reviews-item__text {
+      position: relative;
+      width: 100%;
+      height: 157px;
+      margin: 0 auto;
+      padding: 0 15px 0 12px;
+      overflow-y: scroll;
+      font-size: 16px;
+    }
+
+    .reviews-item__video {
+      width: 410px;
+      height: 249px;
+      margin: 0 auto 0;
+      padding-top: 12px;
+      background: url("../images/reviews-item__video-bg-480.png") no-repeat center;
+      background-size: cover;
+
+      & iframe {
+        display: block;
+        width: 390px;
+        height: 174px;
+        margin: 0 auto;
+      }
+    }
+
+    .slider__buttons {
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 108px;
+    }
+
+    .slider__button {
+      width: 39px;
+      height: 39px;
+      background-color: #6eb33a;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 900;
+      font-size: 20px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .slider__button--left {
+      &::before {
+        content: '<';
+      }
+    }
+
+    .slider__button--right {
+      &::before {
+        content: '>';
+      }
+    }
+  }
+}
 
 
 
