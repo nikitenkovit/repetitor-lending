@@ -15,6 +15,10 @@
     color: #ffffff;
     text-align: center;
   }
+
+  .block-title__br--480 {
+    display: none;
+  }
 }
 
 @media (min-width: $bigPhone) {

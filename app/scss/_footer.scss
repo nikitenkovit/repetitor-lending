@@ -132,40 +132,6 @@
         margin-right: 0;
       }
     }
-
-    .footer-social--link {
-      width: 46px;
-      height: 46px;
-      border-radius: 15px;
-
-      &::before {
-        width: 11px;
-        height: 18px;
-      }
-    }
-
-    .footer-social__link--vk {
-      &::before {
-        left: 17px;
-      }
-    }
-
-    .footer-social__link--yt {
-      &::before {
-        left: 14px;
-        transform: translate(0, -50%);
-        width: 19px;
-        height: 21px;
-        background: url("../images/footer-social__link--yt-320.png") no-repeat center;
-        background-size: cover;
-      }
-    }
-
-    .footer-social__link--inst {
-      &::before {
-        left: 13px;
-      }
-    }
   }
 }
 
