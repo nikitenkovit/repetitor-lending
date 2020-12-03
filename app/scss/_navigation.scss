@@ -189,6 +189,68 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .navigation {
+    height: 105px;
+
+    .navigation__wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 94.53%;
+    }
+
+    .opening-hours {
+      width: 205px;
+      height: 30px;
+      margin-top: 14px;
+      margin-bottom: 9px;
+      padding-left: 35px;
+
+      &::before {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .opening-hours__title {
+      margin-top: -5px;
+      font-size: 13.07px;
+      line-height: 12.12px;
+    }
+
+    .opening-hours__description {
+      font-size: 13.07px;
+      line-height: 12.12px;
+    }
+
+    .navigation__button-check-in-a-course {
+      width: 195px;
+      height: 34px;
+      margin-top: 0;
+      margin-left: 0;
+      font-size: 14.68px;
+      box-shadow: 1px 1px #c74746,
+      2px 2px #c74746;
+      transition: transform .2s ease-in;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        top: 2px;
+        right: -2px;
+        box-shadow: none;
+      }
+    }
+
+    .navigation__toggle-button {
+      display: none;
+    }
+  }
+}
 
 
 

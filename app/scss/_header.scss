@@ -112,7 +112,42 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .header {
+    height: 132px;
+    background: url("../images/header-bg-768.jpg") no-repeat center;
+    background-size: cover;
 
+    .header__wrapper {
+      width: 94.53%;
+    }
+
+    .header__logo {
+      margin-top: 0;
+    }
+
+    .header__contacts {
+      margin-right: 20px;
+    }
+
+    .header__link {
+      font-size: 25.79px;
+      margin-bottom: 15px;
+    }
+
+    .header__button-request-a-call {
+      font-size: 14.51px;
+      line-height: 11.28px;
+
+      &::before {
+        left: -25px;
+        width: 17px;
+        height: 15px;
+        background: url("../images/header__button-ico-768.png") no-repeat center;
+      }
+    }
+  }
+}
 
 
 
