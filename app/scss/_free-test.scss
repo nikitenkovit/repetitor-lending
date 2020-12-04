@@ -1,6 +1,5 @@
 .free-test {
   padding-top: 40px;
-  padding-bottom: 0;
   background-color: #8eb3dd;
 
   .free-test__title {
@@ -23,22 +22,12 @@
     color: #ffffff;
     text-align: center;
   }
-
-  .main-form__label--button {
-    background: url("../images/free-test-form__button-320.png") no-repeat center;
-  }
-
-  .main-form__button {
-    position: relative;
-    top: 2px;
-  }
 }
 
 @media (min-width: $bigPhone) {
   .free-test {
     padding-top: 40px;
     padding-bottom: 10px;
-    background-color: #8eb3dd;
 
     .free-test__title {
       font-size: 24px;
@@ -49,9 +38,22 @@
       margin: 0 auto;
       margin-bottom: 22px;
     }
+  }
+}
 
-    br {
-      display: none;
+@media (min-width: $tablet) {
+  .free-test {
+    padding-top: 70px;
+    padding-bottom: 16px;
+
+    .free-test__title {
+      font-size: 28.15px;
+    }
+
+    .free-test__description {
+      width: 479px;
+      margin-bottom: 30px;
+      font-size: 18.09px;
     }
   }
 }

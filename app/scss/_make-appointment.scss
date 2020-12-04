@@ -1,10 +1,12 @@
 .make-appointment {
+  position: relative;
   width: 100%;
   height: 558px;
-  margin: 0 auto -11px;
+  margin: 0 auto -73px;
   padding-top: 53px;
-  background: url("../images/make-appointment--bg-320.png") no-repeat center;
+  background: url("../images/make-appointment--bg-320-ws.png") no-repeat center;
   background-size: cover;
+  z-index: 10;
 
   .make-appointment__title {
     width: 215px;
@@ -63,9 +65,9 @@
   .make-appointment {
     width: 100%;
     height: 551px;
-    margin: 0 auto -28px;
+    margin: 0 auto -72px;
     padding-top: 67px;
-    background: url("../images/make-appointment--bg-480.png") no-repeat center;
+    background: url("../images/make-appointment--bg-480-ws.png") no-repeat center;
     background-size: cover;
 
     .make-appointment__title {

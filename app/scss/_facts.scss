@@ -148,3 +148,55 @@
     }
   }
 }
+
+@media (min-width: $tablet) {
+  .facts {
+    position: relative;
+    min-height: 527px;
+    padding-top: 45px;
+    background: url("../images/facts-bg-768.jpg") no-repeat center;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 259px;
+      height: 466px;
+      background: url("../images/facts-photo-768.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .facts__wrapper {
+      width: 726px;
+    }
+
+    .facts__title {
+      width: 728px;
+      height: 42px;
+      font-size: 28.15px;
+      background: url("../images/facts__title--bg-768.png") no-repeat center;
+    }
+
+    .facts__list {
+      width: 478px;
+      font-size: 14px;
+    }
+
+    .facts__item {
+      &::before {
+        left: 35px;
+        width: 122px;
+        height: 109px;
+      }
+    }
+
+    .facts__value {
+      left: 35px;
+      width: 90px;
+      height: 64px;
+      font-size: 27px;
+    }
+  }
+}

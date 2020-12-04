@@ -8,16 +8,13 @@
 
   .block-title__title {
     width: 210px;
+    margin: 0 auto;
     font-family: 'PTSansBold', sans-serif;
     font-size: 20px;
     line-height: 25px;
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
-  }
-
-  .block-title__br--480 {
-    display: none;
   }
 }
 
@@ -32,9 +29,19 @@
       font-size: 24px;
       line-height: 32.76px;
     }
+  }
+}
 
-    .block-title__br--320 {
-      display: none;
+@media (min-width: $tablet) {
+  .block-title {
+    height: 204px;
+    background: url("../images/title-bg-768.jpg") no-repeat center;
+    background-size: cover;
+
+    .block-title__title {
+      width: 726px;
+      font-size: 24px;
+      line-height: 120%;
     }
   }
 }

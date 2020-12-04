@@ -1,7 +1,5 @@
 .why-are-we {
-  position: relative;
-  margin-top: -15px;
-  padding-top: 52px;
+  padding-top: 37px;
   padding-bottom: 71px;
   background: #e8ebf0;
 
@@ -11,7 +9,7 @@
     height: 92px;
     margin: 0 auto;
     margin-bottom: 115px;
-    padding-top: 5px;
+    padding: 5px 45px;
     background-color: #ffffff;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: 600;
@@ -23,7 +21,7 @@
     vertical-align: middle;
     overflow: hidden;
 
-    &--red {
+    strong {
       color: #ff3600;
     }
 
@@ -61,14 +59,14 @@
     overflow: -moz-scrollbars-none;
     overflow-x: scroll;
     overflow-y: hidden;
+    scrollbar-width: none;
+    scrollbar-height: none;
 
     &::-webkit-scrollbar {
       width: 0 !important;
       height: 0 !important;
       display: none !important;
       background: transparent;
-      scrollbar-width: none;
-      scrollbar-height: none;
     }
   }
 
@@ -79,7 +77,6 @@
     border-spacing: 15px;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    width: 100%;
   }
 
   .why-are-we__item {
@@ -200,41 +197,19 @@
 
 @media (min-width: $bigPhone) {
   .why-are-we {
-    position: static;
-    margin-top: -15px;
     padding-bottom: 70px;
 
     .why-are-we__title {
       width: 431px;
       height: 74px;
-      margin: 0 auto;
       margin-bottom: 115px;
+      padding: 0;
       padding-top: 10px;
-      background-color: #ffffff;
-      font-family: 'Myriad Pro', sans-serif;
-      font-weight: 600;
       font-size: 24px;
       line-height: 28px;
-      text-transform: uppercase;
-      text-align: center;
-      color: #686868;
-      vertical-align: middle;
-      overflow: hidden;
-
-      br {
-        display: none;
-      }
-    }
-
-    .why-are-we__container {
-      margin-top: -83px;
-      margin-bottom: 16px;
     }
 
     .why-are-we__list {
-      position: relative;
-      display: table;
-      list-style: none;
       border-spacing: 25px;
       border-left: 25px solid transparent;
       border-right: 25px solid transparent;
@@ -245,6 +220,64 @@
       min-width: 377px;
       max-width: 377px;
       height: 114px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .why-are-we {
+    margin-top: 0;
+    padding-bottom: 74px;
+
+    .why-are-we__title {
+      width: 728px;
+      height: 58px;
+      margin-bottom: 115px;
+      padding-top: 11px;
+      font-size: 28.15px;
+      line-height: 36.19px;
+      background: url("../images/why-are-we__title-768.png") no-repeat center;
+      background-size: cover;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .why-are-we__list {
+      border-spacing: 20px;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+    }
+
+    .why-are-we__item {
+      padding-top: 18px;
+      padding-bottom: 5px;
+      min-width: 330px;
+      max-width: 330px;
+      height: 150px;
+    }
+
+    .why-are-we__subtitle {
+      font-size: 15.08px;
+    }
+
+    .why-are-we__description {
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 400;
+      font-size: 14.07px;
+      line-height: 17.09px;
+    }
+
+    .why-are-we__slider-indicators {
+      width: 726px;
+    }
+
+    .slider-indicators__item {
+      width: 15px;
+      height: 15px;
+      margin-right: 14px;
     }
   }
 }

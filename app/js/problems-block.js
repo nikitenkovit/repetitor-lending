@@ -12,6 +12,13 @@
   var toLeft = -1;
   var toRight = 1;
 
+  if (document.documentElement.clientWidth >= 767) swipeValue = 1200;
+
+  window.addEventListener('resize', function () {
+    if (document.documentElement.clientWidth < 500) swipeValue = 600;
+    if (document.documentElement.clientWidth >= 500) swipeValue = 1200;
+  });
+
   /*add indicators on page start*/
   var addIndicator = function () {
     var newElement = indicatorsTemplateContent.cloneNode(true);

@@ -492,6 +492,213 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .mini-groups {
+    margin-top: 143px;
+    padding-bottom: 121px;
+    background: url("../images/mini-groups-bg-768.jpg") repeat-y center;
+    background-size: cover;
+
+    .mini-groups__title {
+      top: -116px;
+      width: 461px;
+      height: 82px;
+      padding: 0 30px;
+      background: url("../images/mini-groups__title-768.png") no-repeat center;
+      font-size: 28.15px;
+      line-height: 30.16px;
+    }
+
+    .what-is {
+      height: 453px;
+      background: url("../images/what-is-bg-768.png") no-repeat center;
+      background-size: cover;
+
+      &::before {
+        top: -222px;
+        left: 9px;
+        width: 720px;
+        height: 583px;
+        background: url("../images/mini-groups-icon-books-and-lapm-768.png") no-repeat center;
+        background-size: cover;
+        z-index: 10;
+      }
+
+      &::after {
+        bottom: -100px;
+        right: 151px;
+        //width: 40px;
+        //height: 145px;
+        //background: url("../images/mini-groups-arrow-480.png") no-repeat center;
+        //background-size: cover;
+      }
+
+      .what-is__title {
+        width: 100%;
+        padding-top: 46px;
+        padding-left: 176px;
+        font-size: 24.13px;
+      }
+
+      ul {
+        width: 540px;
+        margin-left: 207px;
+
+        &::before {
+          top: -101px;
+          right: 7px;
+          width: 146px;
+          height: 190px;
+          background: url("../images/what-is__wrapper-icon-1-768.png") no-repeat center;
+          background-size: cover;
+        }
+
+        &::after {
+          top: auto;
+          bottom: -3px;
+          left: 109px;
+          width: 227px;
+          height: 286px;
+          background: url("../images/what-is__wrapper-icon-2-768.png") no-repeat center;
+          background-size: cover;
+        }
+      }
+    }
+
+    .teacher {
+      width: 573px;
+      min-height: 297px;
+      margin: 33px auto 126px;
+      background: url("../images/teacher-desk-768.png") no-repeat center;
+      background-size: cover;
+
+      &::before {
+        top: auto;
+        bottom: -89px;
+        left: 41px;
+        width: 153px;
+        height: 311px;
+        background: url("../images/teacher-768.png") no-repeat center;
+        background-size: cover;
+      }
+
+      .teacher__title {
+        padding-top: 39px;
+        width: 372px;
+        margin: 0 auto 36px;
+        font-size: 24.13px;
+      }
+
+      li {
+        width: 276px;
+        margin-left: 206px;
+        padding-left: 50px;
+        font-size: 15px;
+        line-height: 20px;
+
+        &:first-child {
+          margin-bottom: 25px;
+        }
+
+        &:before {
+          top: 50%;
+          left: 0;
+          transform: translateY(-55%);
+          width: 50px;
+          height: 49px;
+        }
+      }
+    }
+
+    .students,
+    .student {
+      width: 603px;
+
+      .students__title,
+      .student__title {
+        width: 395px;
+        height: 39px;
+        background: url("../images/students__title-480.png") no-repeat center;
+        background-size: 100%;
+        font-size: 25.12px;
+      }
+
+      ul {
+        margin-top: 50px;
+      }
+
+      li {
+        margin-bottom: 20px;
+        font-size: 16.08px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .students {
+      position: relative;
+
+      ul {
+        width: 272px;
+        margin-bottom: 103px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 265px;
+        left: 205px;
+        width: 153px;
+        height: 42px;
+        background: url("../images/students-arrow-480.png") no-repeat center;
+        background-size: cover;
+      }
+
+      &::after {
+        position: absolute;
+        top: 52px;
+        right: 48px;
+        width: 198px;
+        height: 217px;
+        margin: 29px auto 57px;
+        background: url("../images/students-768.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    .student {
+      position: relative;
+
+      .student__title {
+        width: 341px;
+        height: 37px;
+        background: url("../images/student__title-480.png");
+      }
+
+      ul {
+        width: 240px;
+        margin-left: 310px;
+      }
+
+      &::before {
+        bottom: -75px;
+        right: 230px;
+      }
+
+      &::after {
+        top: 65px;
+        width: 234px;
+        height: 198px;
+        margin: 29px auto 0;
+        background: url("../images/student-768.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
 
 
 

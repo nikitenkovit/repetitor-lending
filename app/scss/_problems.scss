@@ -1,6 +1,10 @@
 .problems {
   position: relative;
   overflow: hidden;
+  height: 395px;
+  background: url("../images/problems-bg-320.png") no-repeat bottom;
+  background-size: 100%;
+  margin-bottom: -15px;
 
   .problems__title-container {
     display: flex;
@@ -28,10 +32,7 @@
   }
 
   .problems__container {
-    height: 298px;
     padding-top: 58px;
-    background: url("../images/problems-bg-320.png") no-repeat center;
-    background-size: cover;
   }
 
   .problems__list {
@@ -154,9 +155,7 @@
     }
 
     .problems__container {
-      height: 100%;
       padding-top: 58px;
-      background: none;
     }
 
     .problems__list {
@@ -180,6 +179,70 @@
       padding: 15px 5px 0;
       font-size: 15px;
       line-height: 17px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .problems {
+    height: 450px;
+    margin-bottom: 0;
+    background: url("../images/problems-bg-768.jpg") no-repeat bottom;
+    background-size: 100%;
+
+    .problems__title {
+      width: 350px;
+      padding: 0;
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: 0;
+      word-spacing: 0;
+    }
+
+    .problems__container {
+      padding-top: 58px;
+    }
+
+    .problems__list {
+      width: 464px;
+      height: 188px;
+
+      &::before {
+        width: 512px;
+        height: 163px;
+      }
+
+      &::after {
+        width: 548px;
+        height: 143px;
+      }
+    }
+
+    .problems__item {
+      width: 464px;
+      height: 188px;
+      padding: 15px 5px 0;
+      font-size: 15px;
+      line-height: 17px;
+
+      &::before {
+        top: -37px;
+        left: 50%;
+        width: 75px;
+        height: 75px;
+        background: url("../images/problems-sign-768.png") no-repeat center;
+      }
+    }
+
+    .problems__slider-indicators {
+      bottom: 50px;
+      width: 726px;
+    }
+
+    .slider-indicators__item {
+      width: 15px;
+      height: 15px;
+      margin-right: 14px;
     }
   }
 }

@@ -16,8 +16,7 @@
     background: url("../images/introduction-mgu-320.png") no-repeat center;
   }
 
-  &::after {
-    content: "тогда записывайтесь к нам!";
+  .introduction__red-pentagon {
     position: absolute;
     bottom: -53px;
     left: 50%;
@@ -79,10 +78,8 @@
       background: url("../images/introduction-mgu-480.png") no-repeat center;
     }
 
-    &::after {
+    .introduction__red-pentagon {
       bottom: -54px;
-      left: 50%;
-      transform: translateX(-50%);
       width: 422px;
       height: 68px;
       background: url("../images/introduction-red-480.png") no-repeat center;
@@ -94,10 +91,7 @@
     .introduction__description {
       width: 93.75%;
       min-height: 74px;
-      margin: 0 auto;
       border: 2px solid #d9dada;
-      border-left: 2px solid #d9dada;
-      border-right: 2px solid #d9dada;
       font-size: 18px;
       line-height: 23.63px;
 
@@ -109,6 +103,51 @@
       &--right {
         width: 200px;
         margin-right: 3px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .introduction {
+    min-height: 312px;
+    padding-top: 46px;
+    background: url("../images/introduction-bg-768.jpg") no-repeat bottom;
+    background-size: cover;
+
+    &::before {
+      bottom: 0;
+      width: 681px;
+      height: 360px;
+      background: url("../images/introduction-mgu-768.png") no-repeat center;
+    }
+
+    .introduction__red-pentagon {
+      bottom: -42px;
+      width: 604px;
+      height: 88px;
+      background: url("../images/introduction-red-768.png") no-repeat center;
+      background-size: cover;
+      font-size: 28.15px;
+      line-height: 120%;
+    }
+
+    .introduction__description {
+      width: 692px;
+      min-height: 80px;
+      border: 3px solid #d9dada;
+      font-size: 20.1px;
+      line-height: 120%;
+
+      &--left {
+        width: 290px;
+        margin-left: 0;
+        padding: 0 40px;
+      }
+
+      &--right {
+        width: 290px;
+        margin-right: 0;
       }
     }
   }

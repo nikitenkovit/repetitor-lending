@@ -1,6 +1,10 @@
 .results {
   background-color: #fbfbfb;
   padding-bottom: 60px;
+  background-image: url('../images/results-bg-320.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   .results__title-container {
     position: relative;
@@ -49,6 +53,8 @@
   }
 
   .results__container {
+    width: 290px;
+    margin: 0 auto;
     overflow: hidden;
   }
 
@@ -125,8 +131,8 @@
 
 @media (min-width: $bigPhone) {
   .results {
-    background-color: #fbfbfb;
-    padding-bottom: 49px;
+    padding-bottom: 50px;
+    background-image: url('../images/results-bg-480.jpg');
 
     .results__title-container {
       min-height: 140px;
@@ -135,13 +141,39 @@
     }
 
     .results__title {
+      width: 350px;
       font-size: 24px;
-      letter-spacing: -.4px;
-      word-spacing: -1px;
+      letter-spacing: 0;
+      word-spacing: 0;
+    }
+
+    .results__container {
+      width: 450px;
     }
 
     .results__list {
       width: 450px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .results {
+    background-image: url('../images/results-bg-768.jpg');
+
+    .results__title {
+      width: 644px;
+      font-size: 28.15px;
+      letter-spacing: 0;
+      word-spacing: 0;
+    }
+
+    .results__container {
+      width: 644px;
+    }
+
+    .results__list {
+      width: 644px;
     }
   }
 }
