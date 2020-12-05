@@ -118,6 +118,32 @@
   }
 }
 
+@media (min-width: $bigPhone) {
+  .contacts {
+    padding-top: 0;
+    padding-bottom: 76px;
+
+    .contacts__title {
+      margin-bottom: 32px;
+      font-size: 24px;
+    }
+
+    .map-code{
+      width: 603px;
+      margin-bottom: 47px;
+    }
+
+    li.map-code span{
+      font-size: 20.01px;
+    }
+
+    .map-code .contactsMap{
+      width: 566px;
+      height: 311px;
+    }
+  }
+}
+
 
 
 
