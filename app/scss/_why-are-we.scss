@@ -149,7 +149,18 @@
     }
   }
 
-  .why-are-we__subtitle {
+  p {
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #535353;
+    text-align: center;
+  }
+
+  p strong,
+  p b {
+    display: block;
     margin-bottom: 10px;
     font-family: 'Myriad Pro', sans-serif;
     font-weight: 600;
@@ -160,14 +171,6 @@
     text-align: center;
   }
 
-  .why-are-we__description {
-    font-family: 'Myriad Pro', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #535353;
-    text-align: center;
-  }
 
   .why-are-we__slider-indicators {
     display: flex;
@@ -259,15 +262,16 @@
       height: 150px;
     }
 
-    .why-are-we__subtitle {
-      font-size: 15.08px;
-    }
-
-    .why-are-we__description {
+    p {
       font-family: 'Myriad Pro', sans-serif;
       font-weight: 400;
       font-size: 14.07px;
       line-height: 17.09px;
+    }
+
+    p strong,
+    p b {
+      font-size: 15.08px;
     }
 
     .why-are-we__slider-indicators {
