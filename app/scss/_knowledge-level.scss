@@ -46,14 +46,33 @@
     padding-top: 69px;
 
     .knowledge-level__title {
+      font-size: 28.15px;
+      line-height: 120%;
       margin-bottom: 18.09px;
-      font-size: 120%;
     }
 
     .knowledge-level__description {
       width: 446px;
       margin: 0 auto;
       margin-bottom: 22px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .knowledge-level {
+    height: 243px;
+    padding-top: 57px;
+
+    .knowledge-level__title {
+      margin-bottom: 8px;
+      font-size: 30.69px;
+    }
+
+    .knowledge-level__description {
+      width: 820px;
+      margin-bottom: 22px;
+      font-size: 22px;
     }
   }
 }

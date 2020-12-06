@@ -149,7 +149,39 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .header {
+    height: 170px;
+    background: url("../images/header-bg-980.jpg") no-repeat top;
+    background-size: cover;
 
+    .header__wrapper {
+      width: 95.91%;
+    }
+
+    .header__contacts {
+      margin-right: 0;
+    }
+
+    .header__link {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .header__button-request-a-call {
+      font-size: 18px;
+      line-height: 14px;
+
+      &::before {
+        left: -25px;
+        width: 20px;
+        height: 18px;
+        background: url("../images/header__button-ico-768.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+}
 
 
 

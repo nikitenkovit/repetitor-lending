@@ -74,18 +74,6 @@
     4px 4px #c74746;
     cursor: pointer;
     outline: none;
-    transition: transform .2s ease-in;
-
-    &:hover,
-    &:focus {
-      transform: scale(1.1);
-    }
-
-    &:active {
-      top: 4px;
-      right: -4px;
-      box-shadow: none;
-    }
   }
 
   .navigation__toggle-button {
@@ -162,18 +150,6 @@
       box-shadow: 1px 1px #c74746,
       2px 2px #c74746,
       3px 3px #c74746;
-      transition: transform .2s ease-in;
-
-      &:hover,
-      &:focus {
-        transform: scale(1.1);
-      }
-
-      &:active {
-        top: 4px;
-        right: -4px;
-        box-shadow: none;
-      }
     }
 
     .navigation__toggle-button {
@@ -232,18 +208,6 @@
       font-size: 14.68px;
       box-shadow: 1px 1px #c74746,
       2px 2px #c74746;
-      transition: transform .2s ease-in;
-
-      &:hover,
-      &:focus {
-        transform: scale(1.1);
-      }
-
-      &:active {
-        top: 2px;
-        right: -2px;
-        box-shadow: none;
-      }
     }
 
     .navigation__toggle-button {
@@ -252,7 +216,62 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .navigation {
+    .navigation__wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 95.91%;
+    }
 
+    .opening-hours {
+      width: 220px;
+      height: 30px;
+      margin-bottom: 12px;
+      padding-left: 39px;
+
+      &::before {
+        width: 28px;
+        height: 28px;
+        background: url("../images/opening-hours-ico-768.png");
+        background-size: cover;
+      }
+    }
+
+    .opening-hours__title {
+      margin-top: 0;
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .opening-hours__description {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .navigation__button-check-in-a-course {
+      width: 213px;
+      height: 38px;
+      font-size: 18px;
+      box-shadow: 1px 1px #c74746,
+      2px 2px #c74746,
+      3px 3px #c74746;
+      transition: transform .2s ease-in;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        top: 3px;
+        right: -3px;
+        box-shadow: none;
+      }
+    }
+  }
+}
 
 
 

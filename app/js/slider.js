@@ -81,4 +81,4 @@
   //
   // setInterval(moveLeft, 7000)
 
-}());
+})();

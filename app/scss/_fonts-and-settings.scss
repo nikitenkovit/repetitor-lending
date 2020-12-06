@@ -194,6 +194,12 @@ body, ul, li, h1, h2, h3, h4, h5, h6, p, button, section, nav, header, footer, m
   }
 }
 
+@media (min-width: $desktop) {
+  .wrapper {
+    width: 940px;
+  }
+}
+
 @media (min-width: 360px) and (max-width: 374px) {
   html {
     transform: scale(1.12);

@@ -54,34 +54,35 @@
       background: url("../images/facts__item-320.png") no-repeat center;
       background-size: contain;
     }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 37px;
+      width: 84px;
+      height: 59px;
+      font-size: 22px;
+      color: #ffffff;
+      text-align: left;
+    }
+
+    p {
+      width: 155px;
+    }
   }
 
-  .facts__value {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 37px;
-    width: 84px;
-    height: 59px;
-    font-size: 22px;
-    color: #ffffff;
-    text-align: left;
+  .facts__item:nth-child(4) p {
+    position: relative;
+    left: -12px;
+    width: 170px;
+    letter-spacing: -0.2px;
+    word-spacing: -0.4px;
   }
 
-  .facts__description {
-    width: 155px;
-  }
-
-  .facts__item:nth-child(4) .facts__description{
-  position: relative;
-  left: -12px;
-  width: 170px;
-  letter-spacing: -0.2px;
-  word-spacing: -0.4px;
-}
-  .facts__item:nth-child(5) .facts__description{
+  .facts__item:nth-child(5) p {
     width: 165px;
     letter-spacing: -0.2px;
     word-spacing: -0.4px;
@@ -113,35 +114,36 @@
     .facts__item {
       width: 33.333%;
       padding-top: 75px;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 37px;
+        width: 84px;
+        height: 59px;
+        font-size: 22px;
+        color: #ffffff;
+        text-align: left;
+      }
+
+      p {
+        width: 160px;
+        letter-spacing: -.4px;
+      }
     }
 
-    .facts__value {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      top: 0;
-      left: 37px;
-      width: 84px;
-      height: 59px;
-      font-size: 22px;
-      color: #ffffff;
-      text-align: left;
-    }
-
-    .facts__description {
-      width: 160px;
-      letter-spacing: -.4px;
-    }
-
-    .facts__item:nth-child(4) .facts__description{
+    .facts__item:nth-child(4) p {
       position: relative;
       left: 0;
       width: 160px;
       letter-spacing: 0;
       word-spacing: 0;
     }
-    .facts__item:nth-child(5) .facts__description{
+
+    .facts__item:nth-child(5) p {
       width: 160px;
       letter-spacing: 0;
       word-spacing: 0;
@@ -190,13 +192,101 @@
         width: 122px;
         height: 109px;
       }
+
+      span {
+        left: 35px;
+        width: 90px;
+        height: 64px;
+        font-size: 27px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .facts {
+    min-height: 518px;
+    padding-top: 40px;
+    background: url("../images/facts-bg-980.jpg") no-repeat center;
+    background-size: cover;
+
+    &::before {
+      display: none;
     }
 
-    .facts__value {
-      left: 35px;
-      width: 90px;
-      height: 64px;
-      font-size: 27px;
+    .facts__wrapper {
+      position: relative;
+      width: 940px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        right: -20px;
+        width: 340px;
+        height: 483px;
+        background: url("../images/facts-photo-980.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    .facts__title {
+      width: 940px;
+      height: 39px;
+      padding-right: 20px;
+      font-size: 34px;
+      background: url("../images/facts__title--bg-980.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .facts__list {
+      width: 600px;
+      font-size: 16px;
+    }
+
+    .facts__item {
+      padding-top: 90px;
+
+      &::before {
+        left: 45px;
+        width: 136px;
+        height: 121px;
+        background: url("../images/facts__item-980.png") no-repeat center;
+        background-size: cover;
+      }
+
+      span {
+        left: 45px;
+        width: 99px;
+        height: 70px;
+        font-size: 32px;
+      }
+
+      p {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        z-index: 2;
+      }
+    }
+
+    .facts__item:nth-child(4) p {
+      left: 0;
+      width: 100%;
+
+      letter-spacing: 0;
+      word-spacing: 0;
+    }
+
+    .facts__item:nth-child(5) p {
+      width: 100%;
+      letter-spacing: 0;
+      word-spacing: 0;
+    }
+
+    br {
+      display: none;
     }
   }
 }
