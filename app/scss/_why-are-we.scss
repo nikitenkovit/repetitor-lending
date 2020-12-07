@@ -286,6 +286,148 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .why-are-we {
+    margin-top: 0;
+    padding-top: 45px;
+    padding-bottom: 82px;
+
+    .why-are-we__title {
+      width: 940px;
+      height: 41px;
+      margin-bottom: 38px;
+      padding-top: 0;
+      font-size: 35.16px;
+      line-height: 120%;
+      background: url("../images/why-are-we__title-980.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .why-are-we__container {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      overflow-x: visible;
+      overflow-y: visible;
+    }
+
+    .why-are-we__list {
+      position: relative;
+      display: block;
+      width: 980px;
+      height: 1050px;
+      margin: 0 auto;
+      border-spacing: 0;
+      border-left: 0;
+      border-right: 0;
+      //background: url("../images/why-we-block-bg.png") no-repeat center;
+      //background-size: 940px 982px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 940px;
+        height: 982px;
+        background: url("../images/why-we-block-bg.png") no-repeat center;
+        background-size: cover;
+        z-index: 2;
+      }
+    }
+
+    .why-are-we__item {
+      position: absolute;
+      display: block;
+      padding: 10px 5px 10px;
+      min-width: 320px;
+      max-width: 320px;
+      height: auto;
+
+      &::before {
+       display: none;
+      }
+
+
+      &:nth-child(1) {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 300px;
+        max-width: 300px;
+      }
+
+      &:nth-child(2) {
+        top: 170px;
+        right: 0;
+      }
+
+      &:nth-child(3) {
+        top: 380px;
+        right: 0;
+      }
+
+      &:nth-child(4) {
+        top: 595px;
+        right: 0;
+      }
+
+      &:nth-child(5) {
+        top: 800px;
+        right: 0;
+      }
+
+      &:nth-child(6) {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 300px;
+        max-width: 300px;
+      }
+
+      &:nth-child(7) {
+        top: 795px;
+        left: 0;
+      }
+
+      &:nth-child(8) {
+        top: 565px;
+        left: 0;
+      }
+
+      &:nth-child(9) {
+        top: 335px;
+        left: 0;
+      }
+
+      &:nth-child(10) {
+        top: 110px;
+        left: 0;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      font-family: 'Myriad Pro', sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 120%;
+    }
+
+    p strong,
+    p b {
+      font-size: 14px;
+      line-height: 120%;
+      margin-bottom: 7px;
+    }
+
+    .why-are-we__slider-indicators {
+      display: none;
+    }
+  }
+}
 
 
 

@@ -153,6 +153,45 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .olympiads-top {
+    height: 291px;
+    background: url("../images/olympiads-bg-980.png") no-repeat center;
+
+    .olympiads-top__wrapper {
+      padding: 0;
+    }
+
+    .olympiads-top__title {
+      position: static;
+      padding-top: 5px;
+      width: 940px;
+      height: auto;
+      transform: none;
+      margin: 0 auto 30px;
+      background: none;
+      font-size: 36px;
+    }
+
+    p {
+      display: block;
+      width: 990px;
+      height: 243px;
+      padding: 48px 140px 0;
+      border: none;
+      font-size: 18.32px;
+      line-height: 120%;
+      background: url("../images/olympiads-top-elements-980.png") no-repeat center;
+      z-index: 2;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
 
 
 
