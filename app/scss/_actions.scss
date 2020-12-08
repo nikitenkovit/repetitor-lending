@@ -190,22 +190,6 @@
       background-color: #6db337;
     }
 
-    //.action__title {
-    //  margin-bottom: 5px;
-    //  font-weight: 600;
-    //  font-size: 32px;
-    //}
-    //
-    //.action__description {
-    //  margin-bottom: 32px;
-    //  font-size: 24px;
-    //  line-height: 33px;
-    //}
-    //
-    //.action__item {
-    //  font-size: 16px;
-    //}
-
     .action__article {
       position: absolute;
       top: 15px;
@@ -243,6 +227,89 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .action {
+    height: 489px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .action__wrapper {
+      position: relative;
+      display: flex;
+      width: 940px;
+      height: 100%;
+      padding-top: 60px;
+      background: none;
+      background-size: cover;
+    }
+
+    .action__container {
+      width: 571px;
+      height: 400px;
+      padding-top: 40px;
+      padding-left: 60px;
+      background-color: #6db337;
+    }
+
+    .action__title {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 50.15px;
+    }
+
+    .action__description {
+      width: 400px;
+      margin-bottom: 40px;
+      font-size: 30.97px;
+      line-height: 120%;
+    }
+
+    .action__item {
+      font-size: 20px;
+      line-height: 120%;
+      margin-bottom: 11px;
+    }
+
+    .action__article {
+      position: absolute;
+      top: -80px;
+      right: -35px;
+      width: 493px;
+      height: 647px;
+      margin-top: 0;
+      padding-top: 162px;
+      background: url("../images/action__article-bg-980.png") no-repeat center;
+      background-size: cover;
+      z-index: 2;
+    }
+
+    .action__subtitle {
+      width: 380px;
+      margin: 0 auto 67px;
+      font-size: 18px;
+    }
+  }
+
+  .action--red {
+    height: 533px;
+    background-color: #fff;
+    background-image: url('../images/action--red-bg-980.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .action__container {
+      width: 571px;
+      height: 400px;
+      padding-top: 40px;
+      padding-left: 60px;
+      background: none;
+    }
+
+    .action__wrapper {
+      background-image: none;
+    }
+  }
+}
 
 
 

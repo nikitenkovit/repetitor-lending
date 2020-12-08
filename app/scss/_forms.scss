@@ -311,6 +311,29 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .main-form {
+
+    .main-form__label {
+      margin-bottom: 15px;
+
+      &[data-name="f_time"] {
+        margin-bottom: 26px;
+      }
+    }
+
+    .main-form__input {
+      width: 240px;
+      height: 43px;
+    }
+
+    .main-form__button {
+      width: 240px;
+      height: 43px;
+    }
+  }
+}
+
 
 
 

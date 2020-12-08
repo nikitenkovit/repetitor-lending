@@ -59,7 +59,7 @@
     }
   }
 
-  if (document.documentElement.clientWidth < 768)  addIndex();
+  if (document.documentElement.clientWidth < 980)  addIndex();
   /*add z-index to slider items end*/
 
   /*swipe slider item start*/
@@ -123,7 +123,7 @@
   var sliderItemsTouchstartHandler = function(element) {
 
     element.addEventListener('touchstart', function (event) {
-      if (!isMoved && document.documentElement.clientWidth < 768) {
+      if (!isMoved && document.documentElement.clientWidth < 980) {
         touchStart(event);
       }
     });
@@ -135,7 +135,7 @@
     }
   }
 
-  if (document.documentElement.clientWidth < 768) addTouchstartHandler();
+  if (document.documentElement.clientWidth < 980) addTouchstartHandler();
 
   /*add handlers end*/
 
