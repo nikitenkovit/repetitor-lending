@@ -427,6 +427,236 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .how-we-working {
+    padding-bottom: 0;
+    font-size: 16px;
+
+    &::before {
+      top: -107px;
+      width: 352px;
+      height: 661px;
+      background: url("../images/how-we-working-ico1-980.png") no-repeat center;
+      z-index: 0;
+    }
+
+    &::after {
+      bottom: 11px;
+      width: 554px;
+      height: 741px;
+      background: url("../images/how-we-working-ico2-980.png") no-repeat center;
+      z-index: 0;
+    }
+
+    .how-we-working__title {
+      height: 205px;
+      margin: 0 auto;
+      padding-top: 50px;
+      background: url("../images/how-we-working__title-980.png") no-repeat center;
+      background-size: cover;
+      font-size: 36px;
+    }
+
+    .how-we-working__wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 980px;
+      margin: 0 auto;
+      padding-bottom: 95px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5px;
+        height: calc(100% - 37px);
+        background-color: #c1c1c3;
+        z-index: 2;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -21px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 42px;
+        height: 42px;
+        border: 4px solid #727271;
+        border-radius: 50%;
+        background-color: #ebebeb;
+        z-index: 11;
+      }
+    }
+
+    & article {
+      width: 353px;
+      margin: 0;
+      padding: 90px 5px 5px;
+      border: 7px solid #ffffff;
+
+      br {
+        display: none;
+      }
+
+      p {
+        margin-bottom: 21px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        right: -202px;
+        transform: translateX(-50%);
+        width: 57px;
+        height: 57px;
+        border: 6px solid #727271;
+        border-radius: 50%;
+        background-color: #ebebeb;
+      }
+
+      &::after {
+        bottom: 80px;
+        right: -300px;
+        width: 99px;
+        height: 150px;
+        background: url("../images/how-we-working-arow-1-980.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+
+    .number-of-lessons {
+      align-self: flex-end;
+      margin-top: -67px;
+      margin-right: 20px;
+
+      &::before {
+        left: -123px;
+        border: 6px solid #e9b018;
+      }
+
+      &::after {
+        top: 80px;
+        bottom: auto;
+        left: -320px !important;
+        right: auto;
+        width: 102px;
+        height: 82px;
+        background: url("../images/how-we-working-arow-2-980.png") no-repeat center;
+        background-size: cover;
+        transform: none;
+      }
+    }
+
+    .test-papers {
+      margin-top: -250px;
+
+      &::before {
+        border: 6px solid #70b437;
+      }
+
+      &::after {
+        bottom: -150px;
+        right: -85px;
+        width: 181px;
+        height: 123px;
+        background: url("../images/how-we-working-arow-3-980.png") no-repeat center;
+        background-size: cover;
+        transform: none;
+      }
+    }
+
+    .intensives {
+      align-self: flex-end;
+      margin-top: 74px;
+      margin-right: 20px;
+
+      &::before {
+        left: -123px;
+        border: 6px solid #d9472e;
+      }
+    }
+
+    .number-of-lessons::after {
+      right: auto;
+      bottom: -137px;
+      left: -92px;
+    }
+
+    .intensives::after {
+      display: none;
+    }
+
+    .how-we-working__subtitle {
+      top: -8px;
+      left: -29px;
+      width: 420px;
+      height: 68px;
+      border-radius: 0 40px 40px 0;
+      font-size: 26px;
+
+      &::before {
+        bottom: -20px;
+        left: 0;
+        width: 21px;
+        height: 20px;
+      }
+
+      &::after {
+        bottom: -24px;
+        left: -10px;
+        transform: rotate(43deg);
+        width: 29px;
+        height: 15px;
+      }
+    }
+
+    .number-of-lessons__title {
+      left: auto;
+      right: -29px;
+      border-radius: 40px 0 0 40px;
+
+      &::before {
+        left: auto;
+        right: 0;
+      }
+
+      &::after {
+        left: auto;
+        right: -10px;
+        transform: rotate(-43deg);
+      }
+    }
+
+    .intensives__title {
+      left: auto;
+      right: -29px;
+      border-radius: 40px 0 0 40px;
+
+      &::before {
+        left: auto;
+        right: 0;
+        background-color: #912714;
+      }
+
+      &::after {
+        left: auto;
+        right: -10px;
+        transform: rotate(-43deg);
+      }
+    }
+
+    .intensives p:last-child {
+      padding-left: 0;
+    }
+  }
+}
+
 
 
 
