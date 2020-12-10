@@ -144,3 +144,43 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .make-appointment {
+    height: 515px;
+    padding-top: 44px;
+    background: url("../images/make-appointment--bg-980-ws.png") no-repeat center;
+    background-size: cover;
+
+    .make-appointment__title {
+      width: 620px;
+      margin: 0 auto 12px;
+      font-size: 36px;
+    }
+
+    .make-appointment__description {
+      width: 445px;
+      margin: 0 auto 16px;
+      font-size: 18px;
+    }
+
+    .main-form__label {
+      margin-bottom: 10px;
+
+      &[data-name="f_time"] {
+        margin-bottom: 22px;
+      }
+    }
+
+    .main-form__input {
+      width: 300px;
+      height: 45px;
+    }
+
+    .main-form__button {
+      width: 300px;
+      height: 45px;
+      font-size: 18px;
+    }
+  }
+}

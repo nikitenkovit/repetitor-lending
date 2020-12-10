@@ -92,6 +92,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    &--left {
+      margin-bottom: 22px;
+    }
   }
 
   .footer__menu-item {
@@ -126,6 +130,118 @@
 
       &:last-child {
         margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 260px;
+    padding: 49px 0 0;
+
+    .footer-social__title {
+      font-size: 14px;
+      margin-bottom: 23px;
+    }
+
+    .footer-social {
+      margin-right: 119px;
+    }
+
+    .footer-social__list {
+      width: 301px;
+      justify-content: space-between;
+      margin-bottom: 0;
+      list-style: none;
+    }
+
+    .footer-social__item {
+      margin-right: 0;
+    }
+
+    .footer-social--link {
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 22px;
+
+      &::before {
+        width: 14px;
+        height: 24px;
+        background: url("../images/footer-social__link--ok-980.png") no-repeat center;
+      }
+    }
+
+    .footer-social__link--vk {
+
+      &::before {
+        left: 21px;
+        transform: translate(0, -50%);
+        width: 20px;
+        height: 25px;
+        background: url("../images/footer-social__link--vk-980.png") no-repeat center;
+      }
+    }
+
+    .footer-social__link--yt {
+
+      &::before {
+        left: 19px;
+        width: 21px;
+        height: 23px;
+        background: url("../images/footer-social__link--yt-320.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    .footer-social__link--inst {
+
+      &::before {
+        left: 18px;
+        width: 25px;
+        height: 25px;
+        background: url("../images/footer-social__link--inst-320.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    .footer__menu-list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: self-start;
+      padding-right: 50px;
+
+      &--left {
+        position: relative;
+        margin-bottom: 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 145px;
+          background-color: #cccccc;
+        }
+      }
+
+      &--right {
+        padding-left: 59px;
+      }
+    }
+
+    .footer__menu-item {
+      margin-bottom: 21px;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }
