@@ -107,6 +107,10 @@
     padding-bottom: 25px;
     list-style: none;
     background-color: #ffffff;
+
+    &--active {
+      animation: slowShow 1s ease-in-out;
+    }
   }
 
   .reviews__item {

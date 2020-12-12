@@ -242,3 +242,12 @@ select {
   -moz-appearance: none;
   appearance: none;
 }
+
+@keyframes slowShow {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1
+  }
+}
