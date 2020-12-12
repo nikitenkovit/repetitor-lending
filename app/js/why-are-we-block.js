@@ -30,13 +30,29 @@
     currentActiveElement.classList.remove('slider-indicators__item--active');
 
    var scrolledLeft = event.target.scrollLeft;
-   var currentValue = Math.round((scrolledLeft / sliderList.offsetWidth) * 10);
+   var currentValue = Math.round((scrolledLeft / sliderList.offsetWidth) * allIndicatorsItem.length);
 
-    if (document.documentElement.clientWidth >= 768) currentValue += 1;
+    // if (document.documentElement.clientWidth >= 768) currentValue += 1;
+    if (scrolledLeft === 0) currentValue = 0;
+    if (scrolledLeft >= sliderList.offsetWidth - document.documentElement.clientWidth) currentValue = allIndicatorsItem.length - 1;
 
     allIndicatorsItem[currentValue].classList.add('slider-indicators__item--active');
-
   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
