@@ -153,9 +153,13 @@
     padding-bottom: 38px;
 
     .contacts__title {
-      width: 1020px;
+      width: 100%;
       margin-bottom: 35px;
       font-size: 36px;
+    }
+
+    .contacts__wrapper {
+      width: 100%;
     }
 
     ul {

@@ -19,10 +19,10 @@
 	<div class="header__wrapper wrapper">
 		<div class="header__logo">
 			<picture class="header__picture">
-				<source srcset="./images/Logo-980.png" media="(min-width: 980px)">
-				<source srcset="./images/Logo-768.png" media="(min-width: 768px)">
-				<source srcset="./images/Logo-480.png" media="(min-width: 480px)">
-				<img class="header__image" src="./images/Logo-320.png" alt="Логотип компании Репетитор Дона">
+				<source srcset="./images/Logo-320.png" media="(max-width: 479px)">
+				<source srcset="./images/Logo-480.png" media="(max-width: 767px)">
+				<source srcset="./images/Logo-768.png" media="(max-width: 979px)">
+				<img class="header__image" src="./images/Logo-980.png" alt="Логотип компании Репетитор Дона">
 			</picture>
 		</div>
 
@@ -37,18 +37,34 @@
 
 <!--navigation-->
 <nav class="navigation">
-	<div class="navigation__wrapper wrapper">
-		<div class="navigation__opening-hours opening-hours">
-			<strong class="opening-hours__title">Мы работаем без выходных!</strong>
-			<p class="opening-hours__description">Часы работы: <span
-					class="opening-hours__description--red">10:00 - 21:00</span></p>
+	<div class="navigation__wrapper">
+		<div class="navigation__container">
+			<div class="navigation__opening-hours opening-hours">
+				<strong class="opening-hours__title">Мы работаем без выходных!</strong>
+				<p class="opening-hours__description">Часы работы: <span
+						class="opening-hours__description--red">10:00 - 21:00</span></p>
+			</div>
+
+			<button class="navigation__button-check-in-a-course">Записаться на курс</button>
+
+			<button class="navigation__toggle-button" aria-label="Открыть/закрыть меню"></button>
 		</div>
-
-		<button class="navigation__button-check-in-a-course">Записаться на курс</button>
-
-		<button class="navigation__toggle-button" aria-label="Открыть/закрыть меню"></button>
-
-		<ul class="navigation__list"></ul>
+		<div class="navigation__list">
+			<ul class="navigation__list--first">
+				<li class="navigation__item"><a href="#results" class="navigation__link">Результаты учеников</a></li>
+				<li class="navigation__item"><a href="#reviews" class="navigation__link">Отзывы</a></li>
+				<li class="navigation__item"><a href="#teachers" class="navigation__link">Преподаватели</a></li>
+				<li class="navigation__item"><a href="#olympiads" class="navigation__link">Олимпиады</a></li>
+				<li class="navigation__item"><a href="#asWellAs" class="navigation__link">Наши преимущества</a></li>
+			</ul>
+			<ul class="navigation__list--second">
+				<li class="navigation__item"><a href="#problems" class="navigation__link">Проблемы школьников</a></li>
+				<li class="navigation__item"><a href="#whyAreWe" class="navigation__link">Почему мы?</a></li>
+				<li class="navigation__item"><a href="#miniGroups" class="navigation__link">Мини-группы</a></li>
+				<li class="navigation__item"><a href="#howWeWorking" class="navigation__link">Как мы работаем?</a></li>
+				<li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
+			</ul>
+		</div>
 	</div>
 </nav>
 <!--/ navigation-->
@@ -157,7 +173,7 @@
 	<!--/	facts-->
 
 	<!--	results-->
-	<section class="results">
+	<section class="results" id="results">
 		<div class="results__title-container">
 			<h2 class="results__title">Результаты наших учеников по физике говорят сами за себя!</h2>
 		</div>
@@ -345,7 +361,7 @@
 	<!--	free-test-->
 
 	<!--	problems-->
-	<section class="problems">
+	<section class="problems" id="problems">
 		<div class="problems__title-container">
 			<h2 class="problems__title">Проблемы, с которыми сталкиваются школьники</h2>
 		</div>
@@ -388,7 +404,7 @@
 	<!--	problems-->
 
 	<!--	why-are-we-->
-	<section class="why-are-we">
+	<section class="why-are-we" id="whyAreWe">
 		<h2 class="why-are-we__title">Почему ученики и их родители
 			<strong class="why-are-we__title--red">выбирают нас</strong></h2>
 		<div class="why-are-we__container">
@@ -470,7 +486,7 @@
 	<!--/ why-are-we-->
 
 	<!--	olympiads-->
-	<section class="olympiads-top">
+	<section class="olympiads-top" id="olympiads">
 		<div class="olympiads-top__wrapper wrapper">
 			<h2 class="olympiads-top__title">Олимпиады!</h2>
 			<p>
@@ -731,7 +747,7 @@
 	<!--/ olympiads-->
 
 	<!--as well as-->
-	<section class="as-well-as">
+	<section class="as-well-as" id="asWellAs">
 		<div class="as-well-as__wrapper wrapper">
 			<h2 class="as-well-as__title">А также...</h2>
 
@@ -862,7 +878,7 @@
 	<!--/	action green-->
 
 	<!--	mini-groups-->
-	<section class="mini-groups">
+	<section class="mini-groups" id="miniGroups">
 		<div class="mini-groups__wrapper">
 			<h2 class="mini-groups__title">Почему мини-группа лучше и выгоднее?</h2>
 
@@ -967,7 +983,7 @@
 	<!--/	action red-->
 
 	<!--	teachers-->
-	<section class="teachers">
+	<section class="teachers" id="teachers">
 		<div class="teachers__wrapper wrapper">
 			<h2 class="teachers__title">Преподаватели <span class="teachers__title--green">"Репетитор Дона"</span></h2>
 
@@ -1429,7 +1445,7 @@
 	<!--/	teachers-->
 
 	<!--	reviews-->
-	<section class="reviews">
+	<section class="reviews" id="reviews">
 		<div class="reviews__title--container">
 			<h2 class="reviews__title"><strong class="reviews__title--red">Отзывы</strong> учеников - наша гордость</h2>
 		</div>
@@ -1813,7 +1829,7 @@
 	<!--/	reviews-->
 
 	<!--	How we are working-->
-	<section class="how-we-working">
+	<section class="how-we-working" id="howWeWorking">
 		<h2 class="how-we-working__title"><span>КАК</span> МЫ РАБОТАЕМ?</h2>
 		<div class="how-we-working__wrapper">
 			<article class="how-we-working__testing testing">
@@ -1899,7 +1915,7 @@
 	<!--/	Make an appointment-->
 
 	<!--	contacts-->
-	<section class="contacts">
+	<section class="contacts" id="contacts">
 		<div class="contacts__wrapper wrapper">
 			<h2 class="contacts__title">Контакты</h2>
 
@@ -2040,6 +2056,10 @@
 </footer>
 <!--/ footer-->
 
+<button class="up-button up-button--hidden" type="button" aria-label="Кнопка вверх"></button>
+
+<script src="js/nav.js"></script>
+<script src="js/script.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/problems-block.js"></script>
 <script src="js/why-are-we-block.js"></script>

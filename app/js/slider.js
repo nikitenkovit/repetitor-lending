@@ -1,5 +1,4 @@
 (function () {
-
   var allSliders = document.querySelectorAll('.slider');
 
   var mainSliderFunction = function (currentSlider) {
@@ -35,7 +34,7 @@
     }, 700)
 
     /*moveSliderTrack function start*/
-    var moveSliderTrack = (direction) => {
+    var moveSliderTrack = function (direction) {
       sliderTrack.style.left = (parseInt(sliderTrack.style.left, 10) + ((scrollWidth + itemMarginRight)) * direction) + 'px';
 
       setTimeout(function () {
