@@ -14,20 +14,7 @@
     margin: 0 auto;
     margin-left: 35px;
     padding-top: 53px;
-
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    scrollbar-height: none;
-
-    &::-webkit-scrollbar {
-      width: 0 !important;
-      height: 0;
-      display: none !important;
-      background: transparent;
-    }
+    overflow: hidden;
   }
 
   .olympiads__list {

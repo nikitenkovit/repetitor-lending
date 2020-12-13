@@ -6,20 +6,7 @@
 
   .teachers__slider {
     margin-bottom: 44px;
-
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    scrollbar-width: none;
-    scrollbar-height: none;
-
-    &::-webkit-scrollbar {
-      width: 0 !important;
-      height: 0;
-      display: none !important;
-      background: transparent;
-    }
+    overflow: hidden;
   }
 
   .teachers__title {

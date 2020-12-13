@@ -12,7 +12,7 @@
     allTabsItems[i].classList.remove('reviews__list--active')
   }
 
-  allTabsItems[0].style.display = "block";
+  allTabsItems[0].style.display = "flex";
   allTabsLinks[0].classList.add('reviews__years-link--active');
   allTabsItems[0].classList.add('reviews__list--active')
   /*default hidden all allTabsItems and show first allTabsItems end*/
@@ -29,7 +29,7 @@
       allTabsItems[tech].classList.remove('reviews__list--active')
     }
 
-    it.style.display = "block";
+    it.style.display = "flex";
     it.classList.add('reviews__list--active')
   }
 
