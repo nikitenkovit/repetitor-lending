@@ -1,4 +1,5 @@
 (function () {
+  var slider = document.querySelector('.slider');
   var sliderTrack = document.querySelector('.slider-track');
   var sliderAllItem = sliderTrack.children;
   var buttonLeft = document.querySelector('.slider__button--left');
@@ -10,45 +11,47 @@
   sliderTrack.style.transition = '.7s left ease-out';
   var directionToLeft = -1;
   var directionToRight = 1;
+  var isMoved = false;
 
   var sliderInitiate = function () {
     sliderTrack.style.position = 'relative';
     sliderTrack.style.left = 0;
     scrollWidth = sliderAllItem[0].offsetWidth;
     itemMarginRight = parseInt(window.getComputedStyle(sliderAllItem[0], null).getPropertyValue('margin-right'), 10);
+    buttonRight.disabled = parseInt(sliderTrack.style.left) >= 0;
+    buttonLeft.disabled = slider.scrollWidth === slider.offsetWidth;
   }
+
+  buttonRight.disabled = parseInt(sliderTrack.style.left) >= 0;
+  buttonLeft.disabled = slider.scrollWidth === slider.offsetWidth;
 
   /*moveSliderTrack function start*/
   var moveSliderTrack = (direction) => {
-    sliderTrack.style.left = (parseInt(sliderTrack.style.left, 10) + (parseInt(sliderTrack.style.left) + (scrollWidth + itemMarginRight)) * direction) + 'px';
-    console.log(sliderTrack.style.left)
-    buttonLeft.removeEventListener('click', moveSliderTrack); //cancel handler
+      sliderTrack.style.left = (parseInt(sliderTrack.style.left, 10) + ((scrollWidth + itemMarginRight)) * direction) + 'px';
 
     setTimeout(function () {
-      buttonLeft.addEventListener('click', function () {
-        moveSliderTrack(direction)
-      });
-      isMoved = false
-    }, 700)
+      isMoved = false;
+
+      buttonRight.disabled = parseInt(sliderTrack.style.left) >= 0;
+      buttonLeft.disabled = slider.scrollWidth === slider.offsetWidth;
+    }, 700);
   };
   /*moveSliderTrack function end*/
 
   /*drag and drop start*/
-
-  var isMoved = false;
-
-  var touchStart = function (startEvent, callback1, callback2) {
+  var touchStart = function (startEvent) {
     var startX = startEvent.changedTouches[0].clientX;
 
     var touchMove = function (moveEvent) {
       var shiftX = startX - moveEvent.changedTouches[0].clientX;
 
-      if (shiftX > 0) {
-        callback1();
+      if (shiftX > 0 && !buttonLeft.disabled) {
+        moveSliderTrack(directionToLeft);
         sliderTrack.removeEventListener('touchmove', touchMove);
         isMoved = true;
-      } else {
-        callback2();
+      }
+      if (shiftX < 0 && !buttonRight.disabled) {
+        moveSliderTrack(directionToRight)
         sliderTrack.removeEventListener('touchmove', touchMove);
         isMoved = true;
       }
@@ -67,18 +70,17 @@
   buttonLeft.addEventListener('click', function () {
     moveSliderTrack(directionToLeft)
   });
+
   buttonRight.addEventListener('click', function () {
     moveSliderTrack(directionToRight)
   });
+
   sliderTrack.addEventListener('touchstart', function (event) {
     if (!isMoved) {
-      touchStart(event, moveSliderTrack(directionToLeft), moveSliderTrack(directionToRight));
+      touchStart(event);
     }
   });
-  window.addEventListener('resize', sliderInitiate);
 
-  // /*set interval*/
-  //
-  // setInterval(moveLeft, 7000)
+  window.addEventListener('resize', sliderInitiate);
 
 })();

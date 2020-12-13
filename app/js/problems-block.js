@@ -41,7 +41,7 @@
     var currentActiveIndicator = indicatorsList.querySelector('.slider-indicators__item--active');
     currentActiveIndicator.classList.remove('slider-indicators__item--active');
     swipeCounter++;
-    if (swipeCounter > allSliderItems.length -1) {
+    if (swipeCounter > allSliderItems.length - 1) {
       swipeCounter = 0;
     }
 
@@ -59,7 +59,7 @@
     }
   }
 
-  if (document.documentElement.clientWidth < 980)  addIndex();
+  addIndex();
   /*add z-index to slider items end*/
 
   /*swipe slider item start*/
@@ -103,7 +103,7 @@
         firstSliderItem.removeEventListener('touchmove', touchMove);
         isMoved = true;
 
-      } else  if (shiftX < 0) {
+      } else if (shiftX < 0) {
         swipeElement(startEvent.target, toRight);
         firstSliderItem.removeEventListener('touchmove', touchMove);
         isMoved = true;
@@ -120,7 +120,7 @@
   /*drag and drop end*/
 
   /*add handlers start*/
-  var sliderItemsTouchstartHandler = function(element) {
+  var sliderItemsTouchstartHandler = function (element) {
 
     element.addEventListener('touchstart', function (event) {
       if (!isMoved && document.documentElement.clientWidth < 980) {
@@ -129,14 +129,9 @@
     });
   };
 
-  var addTouchstartHandler = function () {
-    for (var i = 0; i < allSliderItems.length; i ++) {
-      sliderItemsTouchstartHandler(allSliderItems[i]);
+    for (var j = 0; j < allSliderItems.length; j++) {
+      sliderItemsTouchstartHandler(allSliderItems[j]);
     }
-  }
-
-  if (document.documentElement.clientWidth < 980) addTouchstartHandler();
-
   /*add handlers end*/
 
 })();

@@ -204,32 +204,32 @@ body {
   }
 }
 
-@media (min-width: 360px) and (max-width: 374px) {
-  html {
-    transform: scale(1.12);
-    transform-origin: left top;
-    width: calc(100% / 1.12);
-    height: calc(100% / 1.12);
-  }
-}
-
-@media (min-width: 375px) and (max-width: 411px) {
-  html {
-    transform: scale(1.17);
-    transform-origin: left top;
-    width: calc(100% / 1.17);
-    height: calc(100% / 1.17);
-  }
-}
-
-@media (min-width: 412px) and (max-width: 479px) {
-  html {
-    transform: scale(1.28);
-    transform-origin: left top;
-    width: calc(100% / 1.28);
-    height: calc(100% / 1.28);
-  }
-}
+//@media (min-width: 360px) and (max-width: 374px) {
+//  html {
+//    transform: scale(1.12);
+//    transform-origin: left top;
+//    width: calc(100% / 1.12);
+//    height: calc(100% / 1.12);
+//  }
+//}
+//
+//@media (min-width: 375px) and (max-width: 411px) {
+//  html {
+//    transform: scale(1.17);
+//    transform-origin: left top;
+//    width: calc(100% / 1.17);
+//    height: calc(100% / 1.17);
+//  }
+//}
+//
+//@media (min-width: 412px) and (max-width: 479px) {
+//  html {
+//    transform: scale(1.28);
+//    transform-origin: left top;
+//    width: calc(100% / 1.28);
+//    height: calc(100% / 1.28);
+//  }
+//}
 
 html {
   overflow-x: hidden;
@@ -250,4 +250,8 @@ select {
   to {
     opacity: 1
   }
+}
+
+button:disabled {
+  opacity: 0.5;
 }

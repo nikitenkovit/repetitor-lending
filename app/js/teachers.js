@@ -27,7 +27,7 @@
     }
 
     it.style.display = "block";
-    it.classList.add('teacher-information--active')
+    it.classList.add('teacher-information--active');
   }
 
   /*add click handler for teacher buttons tart*/
