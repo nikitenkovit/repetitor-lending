@@ -258,7 +258,7 @@
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: $bigPhone) {
   .teachers {
     .teachers__wrapper {
       padding-bottom: 52px;
@@ -335,6 +335,7 @@
     }
 
     .short-information__table th {
+      display: block;
       padding-bottom: 13px;
 
       &:last-child {
@@ -404,7 +405,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .teachers {
     .teachers__wrapper {
       padding-bottom: 60px;

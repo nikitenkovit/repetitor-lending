@@ -2,6 +2,7 @@
   position: relative;
   height: 115px;
   background: #dce6f0;
+  box-shadow: 0 5px 10px 0 rgba(1, 1, 1, 0.5);
 
   .navigation__wrapper {
     width: 90.62%;
@@ -525,7 +526,6 @@
         text-align: right;
         font-size: 18px;
         line-height: 14px;
-        letter-spacing: 0;
       }
     }
   }

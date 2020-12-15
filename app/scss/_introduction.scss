@@ -14,6 +14,7 @@
     width: 320px;
     height: 225px;
     background: url("../images/introduction-mgu-320.png") no-repeat center;
+    z-index: 1;
   }
 
   .introduction__red-pentagon {
@@ -36,12 +37,10 @@
   }
 
   .introduction__description {
+    position: relative;
     width: 311px;
     min-height: 72px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border: 2px solid #d9dada;
     border-left: 1px solid #d9dada;
     border-right: 1px solid #d9dada;
@@ -53,13 +52,19 @@
     text-align: center;
 
     &--left {
-      width: 114px;
-      margin-left: 12px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 137px;
     }
 
     &--right {
-      width: 136px;
-      margin-right: 3px;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      position: absolute;
+      width: 141px;
     }
   }
 }
@@ -86,6 +91,7 @@
       background-size: cover;
       font-size: 20px;
       line-height: 20px;
+      z-index: 2;
     }
 
     .introduction__description {
@@ -96,13 +102,11 @@
       line-height: 23.63px;
 
       &--left {
-        width: 192px;
-        margin-left: 10px;
+        width: 46.6%;
       }
 
       &--right {
-        width: 200px;
-        margin-right: 3px;
+        width: 46.6%;
       }
     }
   }
@@ -141,13 +145,10 @@
 
       &--left {
         width: 290px;
-        margin-left: 0;
-        padding: 0 40px;
       }
 
       &--right {
         width: 290px;
-        margin-right: 0;
       }
     }
   }
@@ -183,15 +184,12 @@
 
       &--left {
         width: 400px;
-        margin-left: 0;
-        padding: 0 20px 0 160px;
-        text-align: left;
+        text-align: center;
       }
 
       &--right {
         width: 400px;
-        margin-right: 0;
-        padding: 0 160px 0 20px;
+        text-align: center;
       }
     }
   }

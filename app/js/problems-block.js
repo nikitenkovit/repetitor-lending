@@ -5,9 +5,6 @@
   var allSliderItems = sliderList.children;
   var firstSliderItem = allSliderItems[0];
   var indicatorsList = document.querySelector(".problems__slider-indicators");
-  var indicatorsTemplate = document.querySelector('.slider-indicators__template');
-  var indicatorsTemplateContent = indicatorsTemplate.content;
-  var allIndicatorsItem = indicatorsList.children;
   var swipeValue = 600;
   var toLeft = -1;
   var toRight = 1;
@@ -20,16 +17,19 @@
   });
 
   /*add indicators on page start*/
-  var addIndicator = function () {
-    var newElement = indicatorsTemplateContent.cloneNode(true);
+  var createIndicator = function () {
+    var newElement = document.createElement('li');
+    newElement.classList.add('slider-indicators__item');
+
     indicatorsList.appendChild(newElement);
   }
 
   for (var i = 0; i < allSliderItems.length; i++) {
-    addIndicator();
+    createIndicator();
   }
 
-  indicatorsTemplate.remove();
+  var allIndicatorsItem = indicatorsList.children;
+
   /*add indicators on page end*/
 
   /*change active indicator start*/

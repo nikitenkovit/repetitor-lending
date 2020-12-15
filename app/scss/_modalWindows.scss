@@ -1,18 +1,30 @@
-/* ModalWindow
------------------------------------------------------------------------------*/
+.header__modal-window--overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(2, 2, 2, 0.3);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.modal-window__overlay--open {
+  animation: .6s slowShow ease-in;
+}
+
+.modal-window__overlay--close {
+  animation: .6s slowHidden ease-in;
+}
 
 .modalWindow {
-  position: fixed;
-  z-index: 10000;
-  left: 50%;
-  margin-left: -170px;
-  top: 40%;
+  z-index: 40;
   width: 340px;
   padding: 40px 0 40px 0;
-  background: url('../img/authBoxBg.jpg') center top;
-  opacity: 0;
-  display: none;
-  font-family: 'Glober Regular';
+  background: url('../images/authBoxBg.jpg') center top;
+  font-family: 'PTSansRegular', sans-serif;
   text-align: center;
   font-size: 18px;
 }
@@ -23,22 +35,31 @@
 }
 
 .closeModalWindow {
-  font-family: 'PTSansRegular';
-  content: '×';
   position: absolute;
-  z-index: 2;
-  top: -35px;
-  right: 15px;
-  color: #999999;
-  font-size: 36px;
+  top: -30px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: transparent;
   cursor: pointer;
-}
+  outline: none;
 
-.modalWindow.active {
-  position: fixed;
-  opacity: 1;
-  display: block;
-  z-index: 10000;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(45deg);
+    width: 100%;
+    height: 2px;
+    background: #999999;
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
 }
 
 .modalWindow form, .modalWindow .title {
@@ -64,6 +85,7 @@
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  font-weight: 400;
   margin: 0 auto 33px auto;
 }
 
@@ -79,7 +101,7 @@
   border-radius: 4px;
 }
 
-.modalWindow button {
+.modalWindow .pull-right {
   height: 28px;
   line-height: 31px;
   width: 100px;
@@ -93,11 +115,11 @@
   position: relative;
 }
 
-.modalWindow.getCall button {
+.modalWindow.getCall .pull-right {
   height: 37px;
   line-height: 40px;
   width: 100%;
-  margin-left: 0px;
+  margin-left: 0;
   margin-top: -1px;
 }
 
@@ -136,8 +158,252 @@
 
 @media (max-width: 1025px) {
   .modalWindow {
+    position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 375px) {
+  .modalWindow {
+    width: 320px;
+  }
+}
+//////////////////////////////////////////////////////////////////
+
+.interview {
+  position: fixed;
+  z-index: 100;
+  top: 10px;
+  right: -330px;
+  width: 330px;
+  background: #dce6f0;
+  transition: 0.3s ease-in-out;
+
+  -webkit-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 2px 7px 0px rgba(50, 50, 50, 0.5);
+}
+
+.interview.active {
+  right: 0;
+}
+
+.interview .showInterview {
+  width: 48px;
+  height: 365px;
+  position: absolute;
+  right: 330px;
+  top: 59px;
+  background: url('../images/interview.png') center no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+ .interview__button-close {
+   position: absolute;
+   top: 18px;
+   right: 20px;
+   width: 25px;
+   height: 25px;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+
+   &::before,
+   &::after {
+     content: "";
+     position: absolute;
+     top: 50%;
+     left: 0;
+     transform: translateY(-50%) rotate(45deg);
+     width: 100%;
+     height: 2px;
+     background-color: #999999;
+   }
+
+   &::after {
+     transform: translateY(-50%) rotate(-45deg);
+   }
+ }
+
+.interview__wrapper {
+  padding: 20px;
+}
+
+.interview__wrapper--top {
+  border-bottom: 1px solid #97abbf;
+}
+
+.interview__wrapper--bottom {
+  padding-top: 14px;
+}
+
+.interview .h2 {
+  font-family: 'PTSansBold', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  text-align: center;
+}
+
+.interview .h2 span {
+  color: #de5958;
+}
+
+.interview form {
+  margin: 18px 0 0 0;
+}
+
+.interview__wrapper--bottom form {
+  margin: 10px 0 0 0;
+}
+
+.interview label {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 0 14px 0;
+  font-family: 'PTSansItalic', sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #333333;
+  position: relative;
+}
+
+.interview__form-group {
+  position: relative;
+  width: 136px;
+  margin-bottom: 10px;
+  margin-left: 71px;
+  padding-left: 30px;
+}
+
+.interview .interview__label--checkbox {
+  position: static;
+  display: block;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #a4a4a4;
+    background-color: #ffffff;
+    transition:  0.3s ease-in-out;
+  }
+}
+
+.interview__checkbox:checked ~ .interview__label--checkbox:before {
+  width: 20px;
+  height: 11px;
+  border-top-style: none;
+  border-right-style: none;
+  transform: rotate(-50deg);
+  background-color: transparent;
+  border-color: #de5958;
+}
+
+.interview .interview__input {
+  width: 220px;
+  margin: 0;
+  height: 36px;
+  border: 1px solid #a4a4a4;
+  padding: 3px 5px;
+}
+
+.interview .greenModal,
+.interview .redModal {
+  width: 100%;
+  height: 57px;
+  line-height: 57px;
+  font-family: 'PTSansBold', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 8px;
+  border: none;
+  position: relative;
+}
+
+.greenModal {
+  text-shadow: 0px -1px 0px rgba(78, 135, 37, 1);
+  background: #6db337;
+}
+
+.redModal {
+  text-shadow: 0px -1px 0px rgba(173, 43, 42, 1);
+  background: #de5958;
+}
+
+.interview .warnText {
+  position: absolute;
+  z-index: 40;
+  top: 18%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #6db337;
+  padding: 20px;
+  color: #000;
+  text-align: center;
+  display: none;
+}
+
+.interview button .preloader {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+
+@media (max-width: 979px) {
+  .interview .showInterview {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .interview {
+    top: 0;
+  }
+
+  .interview__button-close {
+    right: 10px;
+  }
+
+  .interview__wrapper {
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
+
+  .interview__form-group {
+    display: inline-block;
+    width: 136px;
+    height: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding-left: 30px;
+  }
+
+  .interview .greenModal,
+  .interview .redModal {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-family: 'PTSansBold', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 8px;
+    border: none;
+    position: relative;
   }
 }

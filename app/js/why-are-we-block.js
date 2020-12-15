@@ -5,21 +5,19 @@
   var sliderList = document.querySelector('.why-are-we__list');
   var allSliderItems = sliderList.children;
   var indicatorsList = document.querySelector(".why-are-we__slider-indicators");
-  var indicatorsTemplate = indicatorsList.querySelector('.slider-indicators__template');
-  var indicatorsTemplateContent = indicatorsTemplate.content;
-  var allIndicatorsItem = indicatorsList.children;
 
   /*add indicators on page start*/
-  var addIndicator = function () {
-    var newElement = indicatorsTemplateContent.cloneNode(true);
+  var createIndicator = function () {
+    var newElement = document.createElement('li');
+    newElement.classList.add('slider-indicators__item');
+
     indicatorsList.appendChild(newElement);
   }
 
   for (var i = 0; i < allSliderItems.length; i++) {
-    addIndicator();
+    createIndicator();
   }
-
-  indicatorsTemplate.remove();
+  var allIndicatorsItem = indicatorsList.children;
   /*add indicators on page end*/
 
   allIndicatorsItem[0].classList.add('slider-indicators__item--active');

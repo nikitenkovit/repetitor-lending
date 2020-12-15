@@ -77,12 +77,12 @@
     /*add scroll handler end*/
 
     /*add drag`n drop handler start*/
-    var onMouseDown = evt => {
+    var onMouseDown = function (evt) {
       evt.preventDefault();
 
       var startY = evt.clientY;
 
-      var onMouseMove = moveEvt => {
+      var onMouseMove = function (moveEvt) {
         moveEvt.preventDefault();
 
         var shiftY = startY - moveEvt.clientY;
@@ -101,7 +101,7 @@
         scrollElement.scrollTop = scrollElement.scrollTop - (shiftY + ((shiftY / 100) * 150));
       };
 
-      var onMouseUp = upEvt => {
+      var onMouseUp = function (upEvt) {
         upEvt.preventDefault();
         document.removeEventListener('mousemove', onMouseMove);
         document.removeEventListener('mouseup', onMouseUp);
@@ -118,14 +118,14 @@
 
   /*find all scroll elements and add all scroll bars on page start*/
   var allScrollElements = document.querySelectorAll('.scroll-container');
+  var scrollTrek = document.querySelector('.scroll-container__scroll-trek');
 
   var addAllScrollBars = function () {
-    var scrollTrek = document.querySelector('.scroll-container__scroll-trek');
-    var AllScrollTreks = document.querySelectorAll('.scroll-container__scroll-trek');
 
     if (scrollTrek) {
-      for (var el = 0; el < AllScrollTreks.length; el++) {
-        AllScrollTreks[el].remove();
+      for (var el = 0; el < allScrollElements.length; el++) {
+        var currentScrollTrek = allScrollElements[el].querySelector('.scroll-container__scroll-trek');
+        allScrollElements[el].removeChild(currentScrollTrek);
       }
     }
     for (var e = 0; e < allScrollElements.length; e++) {
@@ -142,5 +142,17 @@
   });
   /*re-initiate if the window has changed end*/
 
+  /*re-initiate if tab link click start*/
+  var allTabsLinks = document.querySelectorAll('.reviews__years-link');
 
+  var tabLinkClickHandler = function (element) {
+    element.addEventListener('click', function () {
+      addAllScrollBars();
+    });
+  };
+
+  for (var link = 0; link < allTabsLinks.length; link++) {
+    tabLinkClickHandler(allTabsLinks[link]);
+  }
+  /*re-initiate if tab link click end*/
 })();
