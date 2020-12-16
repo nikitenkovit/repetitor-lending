@@ -1,6 +1,7 @@
 "use strict";
 
 (function () {
+  var startWindowWidth = window.utils.valueWindowWidth();
 
   var mainScrollFunction = function (scrollElement) {
 
@@ -118,18 +119,17 @@
 
   /*find all scroll elements and add all scroll bars on page start*/
   var allScrollElements = document.querySelectorAll('.scroll-container');
-  var scrollTrek = document.querySelector('.scroll-container__scroll-trek');
 
   var addAllScrollBars = function () {
-
-    if (scrollTrek) {
       for (var el = 0; el < allScrollElements.length; el++) {
         var currentScrollTrek = allScrollElements[el].querySelector('.scroll-container__scroll-trek');
-        allScrollElements[el].removeChild(currentScrollTrek);
+
+        if (currentScrollTrek) {
+          allScrollElements[el].removeChild(currentScrollTrek);
+        }
       }
-    }
-    for (var e = 0; e < allScrollElements.length; e++) {
-      mainScrollFunction(allScrollElements[e]);
+    for (var element = 0; element < allScrollElements.length; element++) {
+      mainScrollFunction(allScrollElements[element]);
     }
   };
 
@@ -137,9 +137,16 @@
   /*find all scroll elements and add all scroll bars on page end*/
 
   /*re-initiate if the window has changed start*/
-  window.addEventListener('resize', function () {
-    addAllScrollBars();
-  });
+  var reAddAllScrollBars = window.utils.debounce(function () {
+    var currentWindowWidth = window.utils.valueWindowWidth();
+
+    if (currentWindowWidth !== startWindowWidth) {
+      addAllScrollBars();
+    }
+    startWindowWidth = window.utils.valueWindowWidth();
+  },1000);
+
+  window.addEventListener('resize', reAddAllScrollBars);
   /*re-initiate if the window has changed end*/
 
   /*re-initiate if tab link click start*/

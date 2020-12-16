@@ -1,29 +1,6 @@
 (function () {
   var allSliders = document.querySelectorAll('.slider');
-
-  function valueWindowWidth () {
-    var windowWidth = document.documentElement.clientWidth;
-    if (windowWidth >= 320 && windowWidth < 480) return 'phone';
-    if (windowWidth >= 480 && windowWidth < 768) return 'bigPhone';
-    if (windowWidth >= 768 && windowWidth < 980) return 'tablet';
-    if (windowWidth >= 980) return 'desktop';
-  }
-
-  var startWindowWidth = valueWindowWidth();
-
-  var debounce = function (func, wait, immediate) {
-    var timeout;
-    return function() {
-      var context = this, args = arguments;
-      clearTimeout(timeout);
-      timeout = setTimeout(function() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      }, wait);
-      if (immediate && !timeout) func.apply(context, args);
-    };
-  }
-
+  var startWindowWidth = window.utils.valueWindowWidth();
 
   var mainSliderFunction = function (currentSlider) {
     var slider = currentSlider;
@@ -117,19 +94,18 @@
     });
 
     /*re-initiate slider if changed window width start*/
-    var reInitiateSliders = debounce(function () {
-      var currentWindowWidth = valueWindowWidth();
+    var reInitiateSliders = window.utils.debounce(function () {
+      var currentWindowWidth = window.utils.valueWindowWidth();
 
       if (currentWindowWidth !== startWindowWidth) {
         sliderInitiate();
       }
-      startWindowWidth = valueWindowWidth();
+      startWindowWidth = window.utils.valueWindowWidth();
     },1000)
 
     window.addEventListener('resize', reInitiateSliders)
     /*re-initiate slider if changed window width end*/
     /*add handlers end*/
-
 
     /*behavior only reviews block start*/
     if (currentSlider.classList.contains('reviews__container')) {
