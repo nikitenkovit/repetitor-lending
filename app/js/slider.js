@@ -20,6 +20,7 @@
     var sliderInitiate = function () {
       sliderTrack.style.position = 'relative';
       sliderTrack.style.left = 0;
+      sliderTrack.style.transition = '.7s left ease-out';
       scrollWidth = sliderAllItem[0].offsetWidth;
       itemMarginRight = parseInt(window.getComputedStyle(sliderAllItem[0], null).getPropertyValue('margin-right'), 10);
       setTimeout(function () {
@@ -100,8 +101,10 @@
       if (currentWindowWidth !== startWindowWidth) {
         sliderInitiate();
       }
-      startWindowWidth = window.utils.valueWindowWidth();
-    },1000)
+      setTimeout(function () {
+        startWindowWidth = window.utils.valueWindowWidth();
+      }, 1000)
+    }, 1000)
 
     window.addEventListener('resize', reInitiateSliders)
     /*re-initiate slider if changed window width end*/
@@ -125,9 +128,14 @@
           for (var t = 0; t < allReviewsList.length; t++) {
             if (allReviewsList[t].id === hrefAttributeValue) {
               sliderTrack = allReviewsList[t];
+              sliderAllItem = sliderTrack.children;
+              buttonLeft = slider.querySelector('.slider__button--left');
+              buttonRight = slider.querySelector('.slider__button--right');
             }
           }
+          setTimeout(function () {
             sliderInitiate();
+          }, 100)
         });
       };
 
