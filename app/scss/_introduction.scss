@@ -14,7 +14,7 @@
     width: 320px;
     height: 225px;
     background: url("../images/introduction-mgu-320.png") no-repeat center;
-    z-index: 1;
+    z-index: 2;
   }
 
   .introduction__red-pentagon {
@@ -52,6 +52,7 @@
     text-align: center;
 
     &--left {
+      outline: 1px solid red;
       position: absolute;
       top: 50%;
       left: 0;
@@ -60,6 +61,7 @@
     }
 
     &--right {
+      outline: 1px solid red;
       top: 50%;
       right: 0;
       transform: translateY(-50%);
@@ -91,7 +93,7 @@
       background-size: cover;
       font-size: 20px;
       line-height: 20px;
-      z-index: 2;
+      z-index: 4;
     }
 
     .introduction__description {

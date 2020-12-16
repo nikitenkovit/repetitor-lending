@@ -1,6 +1,30 @@
 (function () {
   var allSliders = document.querySelectorAll('.slider');
 
+  function valueWindowWidth () {
+    var windowWidth = document.documentElement.clientWidth;
+    if (windowWidth >= 320 && windowWidth < 480) return 'phone';
+    if (windowWidth >= 480 && windowWidth < 768) return 'bigPhone';
+    if (windowWidth >= 768 && windowWidth < 980) return 'tablet';
+    if (windowWidth >= 980) return 'desktop';
+  }
+
+  var startWindowWidth = valueWindowWidth();
+
+  var debounce = function (func, wait, immediate) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      clearTimeout(timeout);
+      timeout = setTimeout(function() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      }, wait);
+      if (immediate && !timeout) func.apply(context, args);
+    };
+  }
+
+
   var mainSliderFunction = function (currentSlider) {
     var slider = currentSlider;
     var sliderTrack = slider.querySelector('.slider-track');
@@ -19,7 +43,6 @@
     var sliderInitiate = function () {
       sliderTrack.style.position = 'relative';
       sliderTrack.style.left = 0;
-      sliderTrack.style.transition = '.7s left ease-out';
       scrollWidth = sliderAllItem[0].offsetWidth;
       itemMarginRight = parseInt(window.getComputedStyle(sliderAllItem[0], null).getPropertyValue('margin-right'), 10);
       setTimeout(function () {
@@ -93,7 +116,18 @@
       }
     });
 
-    window.addEventListener('resize', sliderInitiate);
+    /*re-initiate slider if changed window width start*/
+    var reInitiateSliders = debounce(function () {
+      var currentWindowWidth = valueWindowWidth();
+
+      if (currentWindowWidth !== startWindowWidth) {
+        sliderInitiate();
+      }
+      startWindowWidth = valueWindowWidth();
+    },1000)
+
+    window.addEventListener('resize', reInitiateSliders)
+    /*re-initiate slider if changed window width end*/
     /*add handlers end*/
 
 
@@ -112,14 +146,12 @@
 
           var hrefAttributeValue = getHref(element);
 
-
           for (var t = 0; t < allReviewsList.length; t++) {
             if (allReviewsList[t].id === hrefAttributeValue) {
               sliderTrack = allReviewsList[t];
             }
           }
-
-          sliderInitiate();
+            sliderInitiate();
         });
       };
 
