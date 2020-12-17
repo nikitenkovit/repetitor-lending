@@ -25,7 +25,7 @@
   /*modal window from header start*/
   var headerModalOverlay = document.querySelector('.header__modal-window--overlay');
   var headerButton = document.querySelector('.header__button-request-a-call');
-  var headerModalWindow = document.querySelector('.getCall');
+  var headerModalWindow = document.querySelector('.modalWindow');
   var closeModalWindow = document.querySelector('.closeModalWindow');
   var htmlTag = document.querySelector('html');
   var headerTag = document.querySelector('header');
@@ -44,9 +44,8 @@
   };
 
   var pressEsc = function (evt) {
-    evt.preventDefault();
-
     if (evt.keyCode === escapeCode) {
+      evt.preventDefault();
       headerModalHandler();
     }
   }
@@ -101,8 +100,8 @@
   /*mask for phone number start*/
   var allTelNumber = document.querySelectorAll(".f_phone");
 
-  window.addEventListener("DOMContentLoaded", () => {
-    var setCursorPosition = (pos, elem) => {
+  window.addEventListener("DOMContentLoaded", function () {
+    var setCursorPosition = function (pos, elem){
       elem.focus();
 
       if (elem.setSelectionRange) {
@@ -123,7 +122,7 @@
       var def = matrix.replace(/\D/g, "");
       var val = this.value.replace(/\D/g, "");
       if (def.length >= val.length) val = def;
-      this.value = matrix.replace(/./g, (a) => {
+      this.value = matrix.replace(/./g, function (a) {
         return /[_\d]/.test(a) && count < val.length ? val.charAt(count++) : count >= val.length ? "" : a
       });
       if (event.type == "blur") {
@@ -132,13 +131,13 @@
     }
 
     var telNumberClickHandler = function (element) {
-      element.addEventListener("input", mask, false);
-      element.addEventListener("focus", mask, false);
-      element.addEventListener("blur", mask, false);
+        element.addEventListener("input", mask, false);
+        element.addEventListener("focus", mask, false);
+        element.addEventListener("blur", mask, false);
     }
 
-    for (var i =0; allTelNumber.length; i++) {
-      telNumberClickHandler(allTelNumber[i]);
+    for (var i =0; i < allTelNumber.length; i++) {
+        telNumberClickHandler(allTelNumber[i]);
     }
     /*mask for phone number end*/
   });

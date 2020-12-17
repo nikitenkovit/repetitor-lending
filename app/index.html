@@ -72,7 +72,7 @@
 <!--/ navigation-->
 
 <!--main-->
-<main class="main-physics">
+<main class="main">
 
 	<!--	title-->
 	<section class="block-title">
@@ -2402,7 +2402,8 @@
 			</label>
 			<label>
 				Телефон
-				<input class="interview__input f_phone" name="f_objectPhone" size="50" type="text" maxlength="255" required value="">
+				<input class="interview__input f_phone" name="f_objectPhone" size="50" type="text" maxlength="255" required
+							 value="">
 			</label>
 			<button class="greenModal"><span class='preloader'></span>Записаться</button>
 		</form>
@@ -2443,35 +2444,34 @@
 </section>
 
 <section class="header__modal-window header__modal-window--overlay modal-window__overlay--close">
-	<div class='modalWindow getCall'>
-		<div class='type_block'>
-			<button class="closeModalWindow" aria-label="закрыть окно формы"></button>
-			<h2 class="title">Заказать обратный звонок</h2>
-			<form name='adminForm' id='adminForm' class='ajaxForm nc-form' enctype='multipart/form-data' method='post'
-						action='/netcat/add.php?isNaked=1'>
+	<div class='modalWindow'>
+		<button class="closeModalWindow" aria-label="закрыть окно формы"></button>
+		<h2 class="title">Заказать обратный звонок</h2>
+		<form name='adminForm' id='adminForm' class='ajaxForm nc-form' enctype='multipart/form-data' method='post'
+					action='/netcat/add.php?isNaked=1'>
 
-				<input name='catalogue' type='hidden' value='1'/>
-				<input name='cc' type='hidden' value='14'/>
-				<input name='sub' type='hidden' value='16'/><input name='posting' type='hidden' value='1'/>
-				<input name='curPos' type='hidden' value='0'/>
-				<input name='f_Parent_Message_ID' type='hidden' value=''/>
+			<input name='catalogue' type='hidden' value='1'/>
+			<input name='cc' type='hidden' value='14'/>
+			<input name='sub' type='hidden' value='16'/><input name='posting' type='hidden' value='1'/>
+			<input name='curPos' type='hidden' value='0'/>
+			<input name='f_Parent_Message_ID' type='hidden' value=''/>
 
-				<span class="warnText"></span>
+			<span class="warnText"></span>
 
-				<div class="block">
-					<input name='f_objectName' size='50' type='text' maxlength='255' placeholder='Ваше имя' required value=''/>
-				</div>
-				<div class="block">
-					<input class="f_phone" name='f_objectPhone' size='50' type='text' maxlength='255' placeholder='Ваш телефон' required
-								 value=''/></div>
-				<div class="block">
-					<input name='f_objectTime' size='50' type='text' placeholder='Удобное время для звонк' maxlength='255'
-								 required value=''/></div>
-				<div class="formButton">
-					<button class="pull-right"><span class='preloader'></span>Записаться</button>
-				</div>
-			</form>
-		</div>
+			<label class="block">
+				<input name='f_objectName' size='50' type='text' maxlength='255' placeholder='Ваше имя' required/>
+			</label>
+			<label class="block">
+				<input class="f_phone" name='f_objectPhone' size='50' type='text' maxlength='255' placeholder='Ваш телефон'
+							 required/></label>
+			<label class="block">
+				<input name='f_objectTime' size='50' type='text' placeholder='Удобное время для звонк' maxlength='255'
+							 required/>
+			</label>
+			<div class="formButton">
+				<button class="pull-right">Записаться</button>
+			</div>
+		</form>
 	</div>
 </section>
 <!--/ Modal windows-->
@@ -2481,7 +2481,8 @@
 <script src="js/nav.js"></script><!-- переключатель окна мобильной версии меню и логика плавного скролла до якоря-->
 <script src="js/slider.js"></script><!-- модуль на все слайдеры-->
 <script src="js/problems-block.js"></script><!-- логика работы мобильной версии блока "Проблемы учеников"-->
-<script src="js/why-are-we-block.js"></script><!-- логика работы мобильной версии блока "ПОЧЕМУ УЧЕНИКИ И ИХ РОДИТЕЛИ ВЫБИРАЮТ НАС"-->
+<script src="js/why-are-we-block.js"></script>
+<!-- логика работы мобильной версии блока "ПОЧЕМУ УЧЕНИКИ И ИХ РОДИТЕЛИ ВЫБИРАЮТ НАС"-->
 <script src="js/teachers.js"></script><!-- переключение карточки с продробной информацией о преподавателе-->
 <script src="js/reviews.js"></script><!-- переключение отзывов, скролл к первому отзыву, есл нажата кнопка слайдера-->
 <script src="js/scroll.js"></script><!-- кастомные скролл бары в блоке "Отзывы"-->

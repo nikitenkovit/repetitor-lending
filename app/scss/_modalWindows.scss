@@ -8,7 +8,6 @@
   height: 100vh;
   background: rgba(2, 2, 2, 0.3);
   z-index: 10;
-  overflow: hidden;
 }
 
 .modal-window__overlay--open {
@@ -20,7 +19,9 @@
 }
 
 .modalWindow {
-  z-index: 40;
+  position: relative;
+  display: block;
+  z-index: 50;
   width: 340px;
   padding: 40px 0 40px 0;
   background: url('../images/authBoxBg.jpg') center top;
@@ -29,14 +30,14 @@
   font-size: 18px;
 }
 
-.type_block {
-  position: relative;
-  z-index: 10000;
+.modalWindow form {
+  z-index: 60;
+
 }
 
 .closeModalWindow {
   position: absolute;
-  top: -30px;
+  top: 10px;
   right: 10px;
   width: 25px;
   height: 25px;
@@ -67,18 +68,9 @@
   margin: 0 auto;
 }
 
-#cboxOverlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  background: rgba(0, 0, 0, 0.7);
-}
-
 .modalWindow .block {
-  margin: 0 0 25px 0;
+  display: block;
+  margin: 0 0 21px 0;
 }
 
 .modalWindow .title {
@@ -89,8 +81,7 @@
   margin: 0 auto 33px auto;
 }
 
-.modalWindow input[type="text"],
-.modalWindow input[type="password"] {
+.modalWindow input[type="text"] {
   height: 35px;
   line-height: 36px;
   width: 100%;
@@ -102,58 +93,20 @@
 }
 
 .modalWindow .pull-right {
-  height: 28px;
-  line-height: 31px;
-  width: 100px;
+  height: 37px;
+  line-height: 40px;
+  width: 100%;
   text-align: center;
   font-size: 18px;
   color: #fffefe;
   background: #6db337;
   border: none;
-  margin-left: -5px;
   margin-top: -1px;
   position: relative;
 }
 
-.modalWindow.getCall .pull-right {
-  height: 37px;
-  line-height: 40px;
-  width: 100%;
-  margin-left: 0;
-  margin-top: -1px;
-}
-
-.modalWindow .save {
-  margin: -3px 0 0 -18px;
-  padding: 0 0 40px 0;
-}
-
-.modalWindow .save input[type='checkbox'] {
-  position: relative;
-  left: 16px;
-}
-
-.modalWindow a.remindPwd {
-  font-size: 18px;
-  color: #cc3333;
-  text-decoration: underline;
-  margin-left: 14px;
-  position: relative;
-  top: 6px;
-}
-
-.hideText {
-  position: relative;
-  left: -25px;
-  top: 2px;
-}
-
-.modalWindow.getCall .title {
+.modalWindow.title {
   margin: 0 auto 28px auto;
-}
-
-.modalWindow.getCall .block {
-  margin: 0 0 21px 0;
 }
 
 @media (max-width: 1025px) {
@@ -170,6 +123,7 @@
     width: 320px;
   }
 }
+
 //////////////////////////////////////////////////////////////////
 
 .interview {
@@ -202,32 +156,32 @@
   outline: none;
 }
 
- .interview__button-close {
-   position: absolute;
-   top: 18px;
-   right: 20px;
-   width: 25px;
-   height: 25px;
-   border: none;
-   background-color: transparent;
-   cursor: pointer;
+.interview__button-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 
-   &::before,
-   &::after {
-     content: "";
-     position: absolute;
-     top: 50%;
-     left: 0;
-     transform: translateY(-50%) rotate(45deg);
-     width: 100%;
-     height: 2px;
-     background-color: #999999;
-   }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(45deg);
+    width: 100%;
+    height: 2px;
+    background-color: #999999;
+  }
 
-   &::after {
-     transform: translateY(-50%) rotate(-45deg);
-   }
- }
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
 
 .interview__wrapper {
   padding: 20px;
@@ -295,7 +249,7 @@
     height: 18px;
     border: 1px solid #a4a4a4;
     background-color: #ffffff;
-    transition:  0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 }
 
