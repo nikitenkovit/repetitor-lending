@@ -52,7 +52,6 @@
     text-align: center;
 
     &--left {
-      outline: 1px solid red;
       position: absolute;
       top: 50%;
       left: 0;
@@ -61,11 +60,10 @@
     }
 
     &--right {
-      outline: 1px solid red;
+      position: absolute;
       top: 50%;
       right: 0;
       transform: translateY(-50%);
-      position: absolute;
       width: 141px;
     }
   }
@@ -186,12 +184,10 @@
 
       &--left {
         width: 400px;
-        text-align: center;
       }
 
       &--right {
         width: 400px;
-        text-align: center;
       }
     }
   }

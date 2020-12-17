@@ -120,7 +120,7 @@
 					<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
 				</label>
 				<label data-name="f_phone" class="main-form__label">
-					<input class="main-form__input" type="text" placeholder="Ваш телефон" name="f_phone" required>
+					<input class="main-form__input f_phone" type="text" placeholder="Ваш телефон" name="f_phone" required>
 				</label>
 				<label data-name="f_time" class="main-form__label">
 					<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
@@ -303,7 +303,7 @@
 					<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
 				</label>
 				<label data-name="f_phone" class="main-form__label">
-					<input class="main-form__input" type="text" placeholder="Ваш телефон" name="f_phone" required>
+					<input class="main-form__input f_phone" type="text" placeholder="Ваш телефон" name="f_phone" required>
 				</label>
 				<label data-name="f_time" class="main-form__label">
 					<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
@@ -807,7 +807,7 @@
 						<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
 					</label>
 					<label data-name="f_phone" class="main-form__label">
-						<input class="main-form__input" type="text" placeholder="Ваш телефон" name="f_phone" required>
+						<input class="main-form__input f_phone" type="text" placeholder="Ваш телефон" name="f_phone" required>
 					</label>
 					<label data-name="f_time" class="main-form__label">
 						<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
@@ -912,7 +912,7 @@
 						<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
 					</label>
 					<label data-name="f_phone" class="main-form__label">
-						<input class="main-form__input" type="text" placeholder="Ваш телефон" name="f_phone" required>
+						<input class="main-form__input f_phone" type="text" placeholder="Ваш телефон" name="f_phone" required>
 					</label>
 					<label data-name="f_time" class="main-form__label">
 						<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
@@ -2214,7 +2214,7 @@
 				<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
 			</label>
 			<label data-name="f_phone" class="main-form__label">
-				<input class="main-form__input" type="text" placeholder="Ваш телефон" name="f_phone" required>
+				<input class="main-form__input f_phone" type="text" placeholder="Ваш телефон" name="f_phone" required>
 			</label>
 			<label data-name="f_time" class="main-form__label">
 				<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
@@ -2402,7 +2402,7 @@
 			</label>
 			<label>
 				Телефон
-				<input class="interview__input" name="f_objectPhone" size="50" type="text" maxlength="255" required value="">
+				<input class="interview__input f_phone" name="f_objectPhone" size="50" type="text" maxlength="255" required value="">
 			</label>
 			<button class="greenModal"><span class='preloader'></span>Записаться</button>
 		</form>
@@ -2462,7 +2462,7 @@
 					<input name='f_objectName' size='50' type='text' maxlength='255' placeholder='Ваше имя' required value=''/>
 				</div>
 				<div class="block">
-					<input name='f_objectPhone' size='50' type='text' maxlength='255' placeholder='Ваш телефон' required
+					<input class="f_phone" name='f_objectPhone' size='50' type='text' maxlength='255' placeholder='Ваш телефон' required
 								 value=''/></div>
 				<div class="block">
 					<input name='f_objectTime' size='50' type='text' placeholder='Удобное время для звонк' maxlength='255'
@@ -2477,12 +2477,11 @@
 <!--/ Modal windows-->
 
 <script src="js/utils.js"></script><!-- функции-утилиты-->
-<script src="js/script.js" defer></script> <!-- кнопка вверх, модальное окно в шапке, главный попап справа-->
+<script src="js/script.js"></script> <!-- кнопка вверх, модальное окно в шапке, главный попап справа-->
 <script src="js/nav.js"></script><!-- переключатель окна мобильной версии меню и логика плавного скролла до якоря-->
 <script src="js/slider.js"></script><!-- модуль на все слайдеры-->
 <script src="js/problems-block.js"></script><!-- логика работы мобильной версии блока "Проблемы учеников"-->
-<script src="js/why-are-we-block.js"></script>
-<!-- логика работы мобильной версии блока "ПОЧЕМУ УЧЕНИКИ И ИХ РОДИТЕЛИ ВЫБИРАЮТ НАС"-->
+<script src="js/why-are-we-block.js"></script><!-- логика работы мобильной версии блока "ПОЧЕМУ УЧЕНИКИ И ИХ РОДИТЕЛИ ВЫБИРАЮТ НАС"-->
 <script src="js/teachers.js"></script><!-- переключение карточки с продробной информацией о преподавателе-->
 <script src="js/reviews.js"></script><!-- переключение отзывов, скролл к первому отзыву, есл нажата кнопка слайдера-->
 <script src="js/scroll.js"></script><!-- кастомные скролл бары в блоке "Отзывы"-->
