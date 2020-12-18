@@ -65,8 +65,10 @@
   }
 
   .student-result {
+    width: 130px;
     margin-top: 17px;
     margin-left: 5px;
+    overflow-y: scroll;
   }
 
   .student-result p strong {

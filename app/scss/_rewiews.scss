@@ -87,7 +87,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    min-height: 1000px;
+    min-height: 300px;
     max-height: 2210px;
     margin: 0 auto;
     padding-bottom: 25px;
@@ -322,7 +322,6 @@
     }
 
     .reviews__list {
-      min-height: 700px;
       max-height: 2200px;
     }
 
@@ -499,7 +498,6 @@
     }
 
     .reviews__list {
-      min-height: 500px;
       max-height: 2600px;
     }
 
@@ -640,7 +638,6 @@
     }
 
     .reviews__list {
-      min-height: 500px;
       max-height: 3400px;
     }
 
