@@ -32,7 +32,6 @@
 
 .modalWindow form {
   z-index: 60;
-
 }
 
 .closeModalWindow {
@@ -107,6 +106,31 @@
 
 .modalWindow.title {
   margin: 0 auto 28px auto;
+}
+
+.modalWindow label {
+  opacity: 1;
+  transition: opacity .3s ease;
+}
+
+.modalWindow .label-hidden {
+  opacity: 0;
+}
+
+.modalWindow .warnText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 20px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .3s ease;
+
+  &--active {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1025px) {
@@ -296,9 +320,13 @@
   background: #de5958;
 }
 
+.interview form {
+  position: relative;
+}
+
 .interview .warnText {
   position: absolute;
-  z-index: 40;
+  z-index: -1;
   top: 18%;
   left: 0;
   width: 100%;
@@ -307,7 +335,13 @@
   padding: 20px;
   color: #000;
   text-align: center;
-  display: none;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.interview .warnText--active {
+  z-index: 40;
+  opacity: 1;
 }
 
 .interview button .preloader {

@@ -59,6 +59,11 @@
     width: 275px;
     height: 47px;
   }
+
+  .warnText {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+  }
 }
 
 @media (min-width: $bigPhone) {

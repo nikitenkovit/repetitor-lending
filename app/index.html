@@ -116,6 +116,7 @@
 				<input name="curPos" type="hidden" value="0">
 				<input name="f_Parent_Message_ID" type="hidden" value="">
 
+				<div class="warnText">Заявка успешно отправлена!</div>
 				<label data-name="f_name" class="main-form__label">
 					<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
 				</label>
@@ -126,9 +127,9 @@
 					<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
 								 required>
 				</label>
-				<div class="main-form__label--button">
+				<label class="main-form__label--button">
 					<button class="main-form__button" type="submit">Записаться</button>
-				</div>
+				</label>
 			</form>
 		</div>
 	</section>
@@ -299,6 +300,7 @@
 				<input name="curPos" type="hidden" value="0">
 				<input name="f_Parent_Message_ID" type="hidden" value="">
 
+				<div class="warnText">Заявка успешно отправлена!</div>
 				<label data-name="f_name" class="main-form__label">
 					<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
 				</label>
@@ -309,9 +311,9 @@
 					<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
 								 required>
 				</label>
-				<div class="main-form__label--button">
+				<label class="main-form__label--button">
 					<button class="main-form__button" type="submit">Хочу такой результат</button>
-				</div>
+				</label>
 			</form>
 		</div>
 	</section>
@@ -819,6 +821,7 @@
 					<input name="curPos" type="hidden" value="0">
 					<input name="f_Parent_Message_ID" type="hidden" value="">
 
+					<div class="warnText">Заявка успешно отправлена!</div>
 					<label data-name="f_name" class="main-form__label">
 						<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
 					</label>
@@ -829,9 +832,9 @@
 						<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
 									 required>
 					</label>
-					<div class="main-form__label--button">
+					<label class="main-form__label--button">
 						<button class="main-form__button" type="submit">Записаться</button>
-					</div>
+					</label>
 				</form>
 			</article>
 		</div>
@@ -924,6 +927,7 @@
 					<input name="curPos" type="hidden" value="0">
 					<input name="f_Parent_Message_ID" type="hidden" value="">
 
+					<div class="warnText">Заявка успешно отправлена!</div>
 					<label data-name="f_name" class="main-form__label">
 						<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
 					</label>
@@ -934,9 +938,9 @@
 						<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
 									 required>
 					</label>
-					<div class="main-form__label--button">
+					<label class="main-form__label--button">
 						<button class="main-form__button" type="submit">Записаться</button>
-					</div>
+					</label>
 				</form>
 			</article>
 		</div>
@@ -2226,6 +2230,7 @@
 			<input name="curPos" type="hidden" value="0">
 			<input name="f_Parent_Message_ID" type="hidden" value="">
 
+			<div class="warnText">Заявка успешно отправлена!</div>
 			<label data-name="f_name" class="main-form__label">
 				<input class="main-form__input" type="text" placeholder="Ваше имя" name="f_name" required>
 			</label>
@@ -2236,9 +2241,9 @@
 				<input class="main-form__input" type="text" placeholder="Удобное время для звонка" name="f_time"
 							 required>
 			</label>
-			<div class="main-form__label--button">
+			<label class="main-form__label--button">
 				<button class="main-form__button" type="submit">Записаться на встречу</button>
-			</div>
+			</label>
 		</form>
 
 	</section>
@@ -2410,18 +2415,17 @@
 				<input name="f_Parent_Message_ID" type="hidden" value="">
 				<input type="hidden" name="f_Checked" value="1"></div>
 
-			<span class="warnText"></span>
+			<span class="warnText">Заявка успешно отправлена!</span>
 
 			<label>
 				Имя
-				<input class="interview__input" name="f_objectName" size="50" type="text" maxlength="255" required value="">
+				<input class="interview__input" name="f_objectName" size="50" type="text" maxlength="255" required>
 			</label>
 			<label>
 				Телефон
-				<input class="interview__input f_phone" name="f_objectPhone" size="50" type="text" maxlength="255" required
-							 value="">
+				<input class="interview__input f_phone" name="f_objectPhone" size="50" type="text" maxlength="255" required>
 			</label>
-			<button class="greenModal"><span class='preloader'></span>Записаться</button>
+			<label><button class="greenModal"><span class='preloader'></span>Записаться</button></label>
 		</form>
 	</div>
 
@@ -2435,14 +2439,14 @@
 			<input type='hidden' name='cc' value='16'/>
 			<input type='hidden' name='posting' value='1'/>
 
-			<span class="warnText"></span>
+			<span class="warnText">Заявка успешно отправлена!</span>
 			<label>
 				Имя
-				<input class="interview__input" type="text" name='fields[Login]'>
+				<input class="interview__input" type="text" name='fields[Login]' required>
 			</label>
 			<label>
 				E-mail
-				<input class="interview__input" type="text" name='fields[Email]'>
+				<input class="interview__input" type="email" name='fields[Email]' required>
 			</label>
 			<div class="interview__form-group">
 				<input class="visually-hidden interview__checkbox" id="interviewParent" type="checkbox" value="1"
@@ -2454,7 +2458,7 @@
 							 name='fields[Type]'>
 				<label class="interview__label--checkbox" for="interviewEnrollee">Абитуриент</label>
 			</div>
-			<button class="redModal">Записаться</button>
+			<label><button class="redModal">Записаться</button></label>
 		</form>
 	</div>
 </section>
@@ -2463,7 +2467,7 @@
 	<div class='modalWindow'>
 		<button class="closeModalWindow" aria-label="закрыть окно формы"></button>
 		<h2 class="title">Заказать обратный звонок</h2>
-		<form name='adminForm' id='adminForm' class='ajaxForm nc-form' enctype='multipart/form-data' method='post'
+		<form name='adminForm' id='adminForm' class='ajaxForm' enctype='multipart/form-data' method='post'
 					action='/netcat/add.php?isNaked=1'>
 
 			<input name='catalogue' type='hidden' value='1'/>
@@ -2472,7 +2476,7 @@
 			<input name='curPos' type='hidden' value='0'/>
 			<input name='f_Parent_Message_ID' type='hidden' value=''/>
 
-			<span class="warnText"></span>
+			<span class="warnText">Заявка успешно отправлена!</span>
 
 			<label class="block">
 				<input name='f_objectName' size='50' type='text' maxlength='255' placeholder='Ваше имя' required/>
@@ -2485,7 +2489,7 @@
 							 required/>
 			</label>
 			<div class="formButton">
-				<button class="pull-right">Записаться</button>
+				<label><button class="pull-right">Записаться</button></label>
 			</div>
 		</form>
 	</div>

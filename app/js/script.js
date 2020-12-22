@@ -140,5 +140,94 @@
         telNumberClickHandler(allTelNumber[i]);
     }
     /*mask for phone number end*/
+
+    /*form submit start*/
+
+    var allAjaxForm = document.querySelectorAll('.ajaxForm');
+
+    for (var af = 0; af < allAjaxForm.length; af++) {
+      allAjaxForm[af].addEventListener('submit', function(evt) {
+        evt.preventDefault();
+
+        var action = this.getAttribute('action');
+        var warnText = this.querySelector('.warnText');
+        var allLabel = this.querySelectorAll('label');
+        var allInput = this.querySelectorAll('input');
+
+        for (var label = 0; label < allLabel.length; label++) {
+          allLabel[label].classList.add('label-hidden');
+        }
+
+        setTimeout(function () {
+          warnText.classList.add('warnText--active');
+        }, 300)
+
+//////////////////////////////////////////////////////////
+        var inputsValues = {}
+
+        for (var input = 0; input < allInput.length; input++) {
+            inputsValues[allInput[input].name] = allInput[input].value;
+        }
+
+        var request = new XMLHttpRequest();
+        request.open('POST', action,true);
+        request.send(inputsValues)
+
+///////////////////////////////////////////////////////////
+
+        for (var inp = 0; inp < allInput.length; inp++) {
+
+          if (allInput[inp].type === 'text' || allInput[inp].type === 'email') {
+            allInput[inp].value = "";
+          }
+        }
+
+        setTimeout(function () {
+          warnText.classList.remove('warnText--active');
+
+          for (var la = 0; la < allLabel.length; la++) {
+            allLabel[la].classList.remove('label-hidden');
+          }
+        }, 3000)
+      })
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   });
 })();
