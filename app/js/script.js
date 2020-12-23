@@ -149,7 +149,6 @@
       allAjaxForm[af].addEventListener('submit', function(evt) {
         evt.preventDefault();
 
-        var action = this.getAttribute('action');
         var warnText = this.querySelector('.warnText');
         var allLabel = this.querySelectorAll('label');
         var allInput = this.querySelectorAll('input');
@@ -163,15 +162,23 @@
         }, 300)
 
 //////////////////////////////////////////////////////////
-        var inputsValues = {}
 
-        for (var input = 0; input < allInput.length; input++) {
-            inputsValues[allInput[input].name] = allInput[input].value;
-        }
+          var request = new XMLHttpRequest();
+          request.onreadystatechange = function() {
+            console.log("readyState=", this.readyState, "status=", this.status);
+            if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+              console.log("SUCCESS", this);
+            }
+          }
 
-        var request = new XMLHttpRequest();
-        request.open('POST', action,true);
-        request.send(inputsValues)
+          request.open(this.method, this.action, true);
+          request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+          var data = new FormData(this);
+          for (var key of data.keys())
+            console.log(key, data.get(key));
+
+          request.send(data);
 
 ///////////////////////////////////////////////////////////
 
@@ -189,45 +196,8 @@
             allLabel[la].classList.remove('label-hidden');
           }
         }, 3000)
-      })
+
+      });
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   });
 })();
