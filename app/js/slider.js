@@ -17,6 +17,14 @@
     var directionToRight = 1;
     var isMoved = false;
 
+    if (currentSlider.classList.contains('teachers__slider') && document.documentElement.clientWidth > 767) {
+      sliderTrack.style.justifyContent = 'center';
+    } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length === 1 && document.documentElement.clientWidth <= 767) {
+      sliderTrack.style.justifyContent = 'center';
+    } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length > 1 && document.documentElement.clientWidth <= 767) {
+      sliderTrack.style.justifyContent = 'flex-start';
+    }
+
     var sliderInitiate = function () {
       sliderTrack.style.position = 'relative';
       sliderTrack.style.left = 0;
@@ -27,7 +35,14 @@
         buttonRight.disabled = parseInt(sliderTrack.style.left) >= 0;
         buttonLeft.disabled = slider.scrollWidth === slider.offsetWidth;
       }, 700)
-    }
+      if (document.documentElement.clientWidth > 767) {
+        sliderTrack.style.justifyContent = 'center';
+      } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length === 1 && document.documentElement.clientWidth <= 767) {
+        sliderTrack.style.justifyContent = 'center';
+      } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length > 1 && document.documentElement.clientWidth <= 767) {
+        sliderTrack.style.justifyContent = 'flex-start';
+      }
+    };
 
     setTimeout(function () {
       buttonRight.disabled = parseInt(sliderTrack.style.left) >= 0;
