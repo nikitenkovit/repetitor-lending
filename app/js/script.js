@@ -172,11 +172,10 @@
           }
 
           request.open(this.method, this.action, true);
-          request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
           var data = new FormData(this);
-          for (var key of data.keys())
-            console.log(key, data.get(key));
+          // for (var key of data.keys())
+          //   console.log(key, data.get(key));
 
           request.send(data);
 

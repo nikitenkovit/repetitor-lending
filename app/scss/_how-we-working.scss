@@ -531,9 +531,11 @@
     }
 
     .number-of-lessons {
-      align-self: flex-end;
-      margin-top: -67px;
-      margin-right: 20px;
+      margin-top: 0;
+      margin-right: 0;
+      position: absolute;
+      top: 200px;
+      right: 20px;
 
       &::before {
         left: -123px;
@@ -554,7 +556,7 @@
     }
 
     .test-papers {
-      margin-top: -250px;
+      margin-top: 112px;
 
       &::before {
         border: 6px solid #70b437;
