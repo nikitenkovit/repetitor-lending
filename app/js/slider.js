@@ -17,11 +17,13 @@
     var directionToRight = 1;
     var isMoved = false;
 
-    if (currentSlider.classList.contains('teachers__slider') && document.documentElement.clientWidth > 767) {
+    if (currentSlider.classList.contains('teachers__slider') && document.documentElement.clientWidth > 979 && sliderAllItem.length > 5) {
+      sliderTrack.style.justifyContent = 'flex-start';
+    } else if (currentSlider.classList.contains('teachers__slider') && document.documentElement.clientWidth > 979 && sliderAllItem.length < 5) {
       sliderTrack.style.justifyContent = 'center';
-    } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length === 1 && document.documentElement.clientWidth <= 767) {
+    } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length === 1 && document.documentElement.clientWidth <= 979) {
       sliderTrack.style.justifyContent = 'center';
-    } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length > 1 && document.documentElement.clientWidth <= 767) {
+    } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length > 1 && document.documentElement.clientWidth <= 979) {
       sliderTrack.style.justifyContent = 'flex-start';
     }
 
@@ -35,11 +37,13 @@
         buttonRight.disabled = parseInt(sliderTrack.style.left) >= 0;
         buttonLeft.disabled = slider.scrollWidth === slider.offsetWidth;
       }, 700)
-      if (document.documentElement.clientWidth > 767) {
+      if (currentSlider.classList.contains('teachers__slider') && document.documentElement.clientWidth > 979 && sliderAllItem.length > 5) {
+        sliderTrack.style.justifyContent = 'flex-start';
+      } else if (currentSlider.classList.contains('teachers__slider') && document.documentElement.clientWidth > 979 && sliderAllItem.length < 5) {
         sliderTrack.style.justifyContent = 'center';
-      } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length === 1 && document.documentElement.clientWidth <= 767) {
+      } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length === 1 && document.documentElement.clientWidth <= 979) {
         sliderTrack.style.justifyContent = 'center';
-      } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length > 1 && document.documentElement.clientWidth <= 767) {
+      } else if (currentSlider.classList.contains('teachers__slider') && sliderAllItem.length > 1 && document.documentElement.clientWidth <= 979) {
         sliderTrack.style.justifyContent = 'flex-start';
       }
     };
