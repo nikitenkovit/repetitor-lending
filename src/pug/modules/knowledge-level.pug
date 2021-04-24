@@ -1,0 +1,25 @@
+section.knowledge-level
+    div(class='knowledge-level__wrapper wrapper')
+        h2(class='knowledge-level__title') Узнайте свой РЕАЛЬНЫЙ УРОВЕНЬ ЗНАНИЙ
+        p(class='knowledge-level__description')
+            | Увеличь свой балл до +80
+            | к своему начальному результату.
+            | Запишись на бесплатное тестирование
+            | в формате ЕГЭ и выяви свой
+            | текущий уровень
+        form(class='knowledge-level__form main-form--with-bg ajaxForm' enctype='multipart/form-data' method='post' action='/netcat/add.php?isNaked=1')
+            input(name='catalogue' type='hidden' value='1')
+            input(name='cc' type='hidden' value='52')
+            input(name='sub' type='hidden' value='25')
+            input(name='posting' type='hidden' value='1')
+            input(name='curPos' type='hidden' value='0')
+            input(name='f_Parent_Message_ID' type='hidden' value='')
+            .warnText Заявка успешно отправлена!
+            label(data-name='f_name' class='main-form__label')
+                input(class='main-form__input' type='text' placeholder='Ваше имя' name='f_name' required)
+            label(data-name='f_phone' class='main-form__label')
+                input(class='main-form__input f_phone' type='text' placeholder='Ваш телефон' name='f_phone' required)
+            label(data-name='f_time' class='main-form__label')
+                input(class='main-form__input' type='text' placeholder='Удобное время для звонка' name='f_time' required)
+            label(class='main-form__label--button')
+                button(class='main-form__button' type='submit') Записаться

@@ -1,0 +1,35 @@
+section.action.action--red
+    div(class='action__wrapper')
+        div(class='action__container')
+            h2(class='action__title') Акция!!
+            p(class='action__description')
+                | Бесплатный тест
+                br(class='action__br--320')
+                | в форме ЕГЭ и тест
+                br(class='action__br--320')
+                | пробелов выших знаний
+            ul(class='action__list')
+                li(class='action__item action__item--result') Реальный результат ученика
+                li(class='action__item action__item--time') Время теста неограниченно
+                li(class='action__item action__item--work') Работа по первой и второй части ЕГЭ
+        article(class='action__article')
+            h3(class='action__subtitle')
+                | Записаться на бесплатное
+                br(class='action__br--320')
+                | 2х уровневое тестирование знаний
+            form(class='action__form main-form ajaxForm' enctype='multipart/form-data' method='post' action='/netcat/add.php?isNaked=1')
+                input(name='catalogue' type='hidden' value='1')
+                input(name='cc' type='hidden' value='52')
+                input(name='sub' type='hidden' value='25')
+                input(name='posting' type='hidden' value='1')
+                input(name='curPos' type='hidden' value='0')
+                input(name='f_Parent_Message_ID' type='hidden' value='')
+                .warnText Заявка успешно отправлена!
+                label(data-name='f_name' class='main-form__label')
+                    input(class='main-form__input' type='text' placeholder='Ваше имя' name='f_name' required)
+                label(data-name='f_phone' class='main-form__label')
+                    input(class='main-form__input f_phone' type='text' placeholder='Ваш телефон' name='f_phone' required)
+                label(data-name='f_time' class='main-form__label')
+                    input(class='main-form__input' type='text' placeholder='Удобное время для звонка' name='f_time' required)
+                label(class='main-form__label--button')
+                    button(class='main-form__button' type='submit') Записаться

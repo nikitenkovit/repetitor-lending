@@ -1,0 +1,222 @@
+.olympiads-top {
+  height: 360px;
+  background: url("./images/olympiads-bg-320.png") no-repeat center;
+  background-size: cover;
+
+  .olympiads-top__wrapper {
+    position: relative;
+    padding-top: 50px;
+  }
+
+  .olympiads-top__title {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 292px;
+    height: 41px;
+    background: url("./images/olympiads__title__bg--320.png") no-repeat center;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  p {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 245px;
+    margin: 0 auto;
+    padding: 0 5px;
+    border: 4px solid #ffffff;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #ffffff;
+    text-align: center;
+    letter-spacing: -.3px;
+    word-spacing: -.5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      right: -20px;
+      width: 37px;
+      height: 103px;
+      background: url("./images/olympiads__description-icon2-320.png") no-repeat center;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -65px;
+      left: -20px;
+      width: 135px;
+      height: 110px;
+      background: url("./images/olympiads__description-icon1-320.png") no-repeat center;
+    }
+  }
+}
+
+@media (min-width: $bigPhone) {
+  .olympiads-top {
+    height: 289px;
+    background: url("./images/olympiads-bg-480.png") no-repeat center;
+    background-size: cover;
+
+    .olympiads-top__title {
+      top: -22px;
+      width: 444px;
+      height: 41px;
+      background: url("./images/olympiads__title__bg--480.png") no-repeat center;
+      font-size: 24px;
+    }
+
+    p {
+      width: 416px;
+      height: 189px;
+      padding: 0 10px;
+      border: 5px solid #ffffff;
+
+      &::before {
+        top: -15px;
+        right: -36px;
+        width: 68px;
+        height: 179px;
+        background: url("./images/olympiads__description-icon2-480.png") no-repeat center;
+        background-size: cover;
+      }
+
+      &::after {
+        bottom: -40px;
+        left: -30px;
+        width: 134px;
+        height: 107px;
+        background: url("./images/olympiads__description-icon1-480.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .olympiads-top {
+    height: 303px;
+    background: url("./images/olympiads-bg-768.png") no-repeat center;
+    background-size: cover;
+
+    .olympiads-top__title {
+      top: -27px;
+      width: 728px;
+      height: 50px;
+      background: url("./images/olympiads__title__bg--768.png") no-repeat center;
+      font-size: 28.15px;
+    }
+
+    p {
+      width: 726px;
+      height: 191px;
+      padding: 0 70px;
+      border: 5px solid #ffffff;
+      font-size: 17.09px;
+      line-height: 23.12px;
+
+      &::before {
+        top: 10px;
+        right: -17px;
+        width: 113px;
+        height: 172px;
+        background: url("./images/olympiads__description-icon2-768.png") no-repeat center;
+        background-size: cover;
+      }
+
+      &::after {
+        bottom: -35px;
+        left: -17px;
+        width: 161px;
+        height: 129px;
+        background: url("./images/olympiads__description-icon1-768.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .olympiads-top {
+    height: 291px;
+    margin-top: -22px;
+    background: url("./images/olympiads-bg-980.png") no-repeat center;
+
+    .olympiads-top__wrapper {
+      padding: 0;
+    }
+
+    .olympiads-top__title {
+      position: static;
+      padding-top: 5px;
+      width: 940px;
+      height: auto;
+      transform: none;
+      margin: 0 auto 30px;
+      background: none;
+      font-size: 36px;
+    }
+
+    p {
+      display: block;
+      width: 990px;
+      height: 243px;
+      padding: 48px 140px 0;
+      border: none;
+      font-size: 18.32px;
+      line-height: 120%;
+      background: url("./images/olympiads-top-elements-980.png") no-repeat center;
+      z-index: 2;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

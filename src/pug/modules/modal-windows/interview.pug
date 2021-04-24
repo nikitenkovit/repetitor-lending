@@ -1,0 +1,55 @@
+section.interview
+    button.showInterview(aria-label='открыть форму для записи')
+    button(class='interview__button-close' aria-label='закрыть форму для записи')
+    div(class='interview__wrapper interview__wrapper--top')
+        h2.h2.center Запишись на
+            span  бесплатное
+            |  собеседование!
+        form.ajaxForm.nc-form(name='adminForm' enctype='multipart/form-data' method='post' action='/netcat/add.php?isNaked=1')
+            div(id='nc_moderate_form')
+                div(class='nc_clear')
+                input(name='admin_mode' type='hidden' value='')
+                input(type='hidden' name='nc_token' value='cfad6074a81e9390c4e701e328c163de')
+                input(name='catalogue' type='hidden' value='1')
+                input(name='cc' type='hidden' value='8')
+                input(name='sub' type='hidden' value='15')
+                input(name='posting' type='hidden' value='1')
+                input(name='curPos' type='hidden' value='0')
+                input(name='f_Parent_Message_ID' type='hidden' value='')
+                input(type='hidden' name='f_Checked' value='1')
+            span.warnText Заявка успешно отправлена!
+            label
+                | Имя
+                input(class='interview__input' name='f_objectName' size='50' type='text' maxlength='255' required)
+            label
+                | Телефон
+                input(class='interview__input f_phone' name='f_objectPhone' size='50' type='text' maxlength='255' required)
+            label
+                button.greenModal
+                    span.preloader
+                    | Записаться
+    div(class='interview__wrapper interview__wrapper--bottom')
+        h2.h2.center Подпишись на нашу рассылку
+            br
+            | для абитуриентов и получи много полезной информации о том, как
+            | сдать и поступить!
+        form.ajaxForm.nc-form(action='/netcat/subscribe.php?isNaked=1')
+            input(type='hidden' name='catalogue' value='1')
+            input(type='hidden' name='sub' value='18')
+            input(type='hidden' name='cc' value='16')
+            input(type='hidden' name='posting' value='1')
+            span.warnText Заявка успешно отправлена!
+            label
+                | Имя
+                input(class='interview__input' type='text' name='fields[Login]' required)
+            label
+                | E-mail
+                input(class='interview__input' type='email' name='fields[Email]' required)
+            div(class='interview__form-group')
+                input#interviewParent(class='visually-hidden interview__checkbox' type='checkbox' value='1' name='fields[Type]')
+                label(class='interview__label--checkbox' for='interviewParent') Родитель
+            div(class='interview__form-group')
+                input#interviewEnrollee(class='visually-hidden interview__checkbox' type='checkbox' value='2' name='fields[Type]')
+                label(class='interview__label--checkbox' for='interviewEnrollee') Абитуриент
+            label
+                button.redModal Записаться

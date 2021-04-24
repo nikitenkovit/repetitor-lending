@@ -1,0 +1,12 @@
+header.header
+    .header__wrapper.wrapper
+        .header__logo
+            picture.header__picture
+                source(srcset="./images/logo-320.png", media='(max-width: 479px)')
+                source(srcset="./images/logo-480.png", media='(max-width: 767px)')
+                source(srcset="./images/logo-768.png", media='(max-width: 979px)')
+                img.header__image(src="./images/logo-980.png", alt='Логотип компании Репетитор Дона')
+        .header__contacts
+            a.header__link(href='tel:+7(908)5180715') 8 (908) 518 07 15
+            a.header__link(href='tel:+7(951)5267033') 8 (951) 526 70 33
+            button.header__button-request-a-call Заказать обратный звонок

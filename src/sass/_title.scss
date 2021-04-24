@@ -1,0 +1,60 @@
+.block-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 203px;
+  background: url("./images/title-bg-320.jpg") no-repeat center;
+  background-size: cover;
+
+  .block-title__title {
+    width: 210px;
+    font-family: 'PTSansBold', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+@media (min-width: $bigPhone) {
+  .block-title {
+    height: 203px;
+    background: url("./images/title-bg-480.jpg") no-repeat center;
+    background-size: cover;
+
+    .block-title__title {
+      width: 416px;
+      font-size: 24px;
+      line-height: 32.76px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .block-title {
+    height: 204px;
+    background: url("./images/title-bg-768.jpg") no-repeat center;
+    background-size: cover;
+
+    .block-title__title {
+      width: 726px;
+      font-size: 24px;
+      line-height: 120%;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .block-title {
+    height: 221px;
+    background: url("./images/title-bg-980.jpg") no-repeat center;
+    background-size: cover;
+
+    .block-title__title {
+      width: 940px;
+      font-size: 31.68px;
+      z-index: 2;
+    }
+  }
+}

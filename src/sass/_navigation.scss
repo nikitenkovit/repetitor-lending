@@ -1,0 +1,586 @@
+.navigation {
+  position: relative;
+  height: 115px;
+  background: #dce6f0;
+  box-shadow: 0 5px 10px 0 rgba(1, 1, 1, 0.5);
+
+  .navigation__wrapper {
+    width: 90.62%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .navigation__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .opening-hours {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 199px;
+    height: 29px;
+    margin-top: 18px;
+    padding-left: 40px;
+    opacity: 1;
+    transition: .3s ease-in;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 29px;
+      height: 29px;
+      background: url("./images/opening-hours-ico-320.png");
+    }
+
+    &--active {
+      opacity: 0;
+    }
+  }
+
+  .opening-hours__title {
+    font-family: 'PTSansBoldItalic', sans-serif;
+    font-weight: normal;
+    font-size: 12.11px;
+    line-height: 15.42px;
+    color: #ed1e24;
+  }
+
+  .opening-hours__description {
+    font-family: 'PTSansItalic', sans-serif;
+    font-size: 12.11px;
+    line-height: 15.42px;
+    color: #333333;
+  }
+
+  .opening-hours__description--red {
+    font-family: 'PTSansBoldItalic', sans-serif;
+    color: #ed1e24;
+  }
+
+  .navigation__button-check-in-a-course {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 199px;
+    height: 33px;
+    margin-top: 13px;
+    border: none;
+    background: #de5958;
+    font-family: 'PTSansRegular', sans-serif;
+    font-size: 15.86px;
+    line-height: 120%;
+    color: #ffffff;
+    box-shadow: 1px 1px #c74746,
+    2px 2px #c74746,
+    3px 3px #c74746,
+    4px 4px #c74746;
+    cursor: pointer;
+    outline: none;
+    opacity: 1;
+    transition: .3s ease-in;
+
+    &--active {
+      opacity: 0;
+    }
+  }
+
+  .navigation__toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 27px;
+    height: 21px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #c74746;
+      transition: transform .3s ease-in;
+    }
+
+    &::after {
+      top: auto;
+      bottom: 0;
+      box-shadow: 0 -9px #c74746;
+    }
+
+    &--active {
+      &::before {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+      }
+
+      &::after {
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+        box-shadow: none;
+      }
+    }
+  }
+
+  .navigation__list {
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 270px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    background-color: #dce6f0;
+    opacity: 0;
+    z-index: -1;
+    transition: .3s ease-in;
+
+    &--active {
+      opacity: 1;
+      z-index: 30 !important;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 220px;
+      background-color: #b2b2b2;
+    }
+  }
+
+  .navigation__list--first,
+  .navigation__list--second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .navigation__list--first {
+    padding-left: 15px;
+    align-items: flex-start;
+  }
+
+  .navigation__list--second {
+    padding-right: 15px;
+    align-items: flex-end;
+
+    .navigation__item {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .navigation__link {
+      text-align: right;
+    }
+  }
+
+  .navigation__item {
+    width: 130px;
+  }
+
+  .navigation__link {
+    color: #333333;
+    text-decoration: none;
+    font-family: 'PTSansItalic', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: $bigPhone) {
+  .navigation {
+    height: 76px;
+
+    .navigation__wrapper {
+      width: 93.75%;
+      height: 100%;
+    }
+
+    .navigation__container {
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
+    }
+
+    .opening-hours {
+      width: 192px;
+      height: 26px;
+      margin-top: 0;
+      padding-left: 35px;
+
+      &::before {
+        width: 26px;
+        height: 26px;
+        background-size: cover;
+      }
+    }
+
+    .opening-hours__title {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .opening-hours__description {
+      font-family: 'PTSansItalic', sans-serif;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .navigation__button-check-in-a-course {
+      width: 173px;
+      height: 30px;
+      margin-top: -5px;
+      margin-left: 25px;
+      font-family: 'PTSansRegular', sans-serif;
+      font-size: 14.14px;
+      box-shadow: 1px 1px #c74746,
+      2px 2px #c74746,
+      3px 3px #c74746;
+    }
+
+
+    .navigation__toggle-button {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 31px;
+      height: 23px;
+
+      &::after {
+        box-shadow: 0 -10px #c74746;
+      }
+
+      &--active {
+        &::after {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .navigation__list {
+      height: 234px;
+
+      &::before {
+        height: 175px;
+      }
+    }
+
+    .navigation__item {
+      width: 210px;
+    }
+
+    .navigation__link {
+      font-size: 15px;
+      line-height: 15px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .navigation {
+    height: 105px;
+    padding: 0;
+
+    .navigation__wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 726px;
+      margin: 0 auto;
+    }
+
+    .navigation__container {
+      flex-direction: column;
+      width: 205px;
+      margin: 0;
+      margin-right: 21px;
+    }
+
+    .opening-hours {
+      width: 205px;
+      height: 30px;
+      margin-top: 14px;
+      margin-bottom: 9px;
+      padding-left: 35px;
+
+      &::before {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .opening-hours__title {
+      margin-top: -5px;
+      font-size: 13.07px;
+      line-height: 12.12px;
+    }
+
+    .opening-hours__description {
+      font-size: 13.07px;
+      line-height: 12.12px;
+    }
+
+    .navigation__button-check-in-a-course {
+      width: 195px;
+      height: 34px;
+      margin-top: 0;
+      margin-left: 0;
+      font-size: 14.68px;
+      box-shadow: 1px 1px #c74746,
+      2px 2px #c74746;
+    }
+
+    .navigation__toggle-button {
+      display: none;
+    }
+
+    .navigation__list {
+      position: static;
+      top: auto;
+      left: auto;
+      transform: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 497px;
+      height: 50px;
+      margin: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: transparent;
+      opacity: 1;
+      z-index: 1;
+      transition: none;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .navigation__list--first,
+    .navigation__list--second {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .navigation__list--first {
+      position: relative;
+      padding-left: 0;
+      align-items: flex-start;
+
+      .navigation__item {
+        display: flex;
+        align-items: flex-start;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #c6cacf;
+        box-shadow: 0 1px 0 0 #d1d8df;
+      }
+
+      .navigation__link {
+        font-family: 'PTSansBold', sans-serif;
+        font-size: 11.06px;
+        line-height: 10.93px;
+        text-transform: uppercase;
+      }
+    }
+
+    .navigation__list--second {
+      padding-right: 0;
+      align-items: flex-end;
+
+      .navigation__item {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .navigation__link {
+        text-align: right;
+        font-size: 14px;
+        line-height: 10px;
+        letter-spacing: -.3px;
+      }
+    }
+
+    .navigation__item {
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .navigation {
+
+    .navigation__wrapper {
+      justify-content: space-between;
+      width: 940px;
+    }
+
+    .navigation__container {
+      width: 220px;
+      padding: 0;
+    }
+
+    .opening-hours {
+      width: 220px;
+      height: 30px;
+      margin-bottom: 12px;
+      padding-left: 39px;
+
+      &::before {
+        width: 28px;
+        height: 28px;
+        background: url("./images/opening-hours-ico-768.png");
+        background-size: cover;
+      }
+    }
+
+    .opening-hours__title {
+      margin-top: 0;
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .opening-hours__description {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    .navigation__button-check-in-a-course {
+      width: 213px;
+      height: 38px;
+      font-size: 18px;
+      box-shadow: 1px 1px #c74746,
+      2px 2px #c74746,
+      3px 3px #c74746;
+      transition: transform .2s ease-in;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.1);
+      }
+
+      &:active {
+        top: 3px;
+        right: -3px;
+        box-shadow: none;
+      }
+    }
+
+    .navigation__list {
+      width: 640px;
+      height: 56px;
+    }
+
+    .navigation__list--first {
+      &::before {
+        background-color: #b2b2b2;
+      }
+
+      .navigation__link {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+
+    .navigation__list--second {
+      .navigation__item {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .navigation__link {
+        text-align: right;
+        font-size: 18px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

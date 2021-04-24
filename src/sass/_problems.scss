@@ -1,0 +1,329 @@
+.problems {
+  position: relative;
+  overflow: hidden;
+  height: 395px;
+  background: url("./images/problems-bg-320.png") no-repeat bottom;
+  background-size: 100%;
+  margin-bottom: -15px;
+
+  .problems__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93px;
+    background-color: #f3eaeb;
+  }
+
+  .problems__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    margin: 0 auto;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 120%;
+    color: #ff3600;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: -.3px;
+    word-spacing: -.4px;
+  }
+
+  .problems__container {
+    padding-top: 58px;
+  }
+
+  .problems__list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 133px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    list-style: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 208px;
+      height: 123px;
+      background-color: #dfe0da;
+      border: 1px dotted #959592;
+      border-radius: 7px;
+      z-index: 1;
+      opacity: 0.61;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 226px;
+      height: 107px;
+      background-color: #dfe0da;
+      border: 1px dotted #959592;
+      border-radius: 7px;
+      z-index: 0;
+      opacity: 0.58;
+    }
+  }
+
+  .problems__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    height: 133px;
+    padding: 15px 0 0;
+    background-color: #dfe0da;
+    border: 1px dotted #959592;
+    border-radius: 7px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #686868;
+    text-align: center;
+    z-index: 2;
+    transition: left 1.5s ease;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -23.5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 47px;
+      height: 47px;
+      background: url("./images/problems-sign-320.png") no-repeat center;
+    }
+  }
+
+
+  .problems__slider-indicators {
+    position: absolute;
+    bottom: 72px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    margin: 0 auto;
+    list-style: none;
+  }
+
+  .slider-indicators__item {
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #c9cfc5;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .slider-indicators__item--active {
+    background-color: #6eb33a;
+  }
+}
+
+@media (min-width: $bigPhone) {
+  .problems {
+    z-index: 2;
+    height: 376px;
+    background: url("./images/problems-bg-480.png") no-repeat bottom;
+    background-size: 100%;
+
+
+    .problems__title {
+      width: 350px;
+      padding: 0;
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: 0;
+      word-spacing: 0;
+    }
+
+    .problems__container {
+      padding-top: 58px;
+    }
+
+    .problems__list {
+      width: 290px;
+      height: 119px;
+
+      &::before {
+        width: 320px;
+        height: 103px;
+      }
+
+      &::after {
+        width: 342px;
+        height: 89px;
+      }
+    }
+
+    .problems__item {
+      width: 290px;
+      height: 119px;
+      padding: 15px 5px 0;
+      font-size: 15px;
+      line-height: 17px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .problems {
+    height: 450px;
+    margin-bottom: 0;
+    background: url("./images/problems-bg-768.jpg") no-repeat bottom;
+    background-size: 100%;
+
+    .problems__title {
+      width: 350px;
+      padding: 0;
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: 0;
+      word-spacing: 0;
+    }
+
+    .problems__container {
+      padding-top: 58px;
+    }
+
+    .problems__list {
+      width: 464px;
+      height: 188px;
+
+      &::before {
+        width: 512px;
+        height: 163px;
+      }
+
+      &::after {
+        width: 548px;
+        height: 143px;
+      }
+    }
+
+    .problems__item {
+      width: 464px;
+      height: 188px;
+      padding: 15px 5px 0;
+      font-size: 15px;
+      line-height: 17px;
+
+      &::before {
+        top: -37px;
+        left: 50%;
+        width: 75px;
+        height: 75px;
+        background: url("./images/problems-sign-768.png") no-repeat center;
+      }
+
+      &:nth-child(n+3) {
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .problems__slider-indicators {
+      bottom: 50px;
+      width: 726px;
+    }
+
+    .slider-indicators__item {
+      width: 15px;
+      height: 15px;
+      margin-right: 14px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .problems {
+    height: 938px;
+    margin-bottom: -46px;
+    background: url("./images/problems-bg-980.png") no-repeat bottom;
+    background-size: cover;
+
+    .problems__title-container {
+      height: 78px;
+    }
+
+    .problems__title {
+      width: 100%;
+      font-size: 36.88px;
+    }
+
+    .problems__container {
+      width: 940px;
+      margin: 0 auto;
+      padding-top: 72px;
+    }
+
+    .problems__list {
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: flex-start;
+      align-content: flex-start;
+      width: 100%;
+      height: 610px;
+      margin-bottom: 0;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .problems__item {
+      position: relative;
+      width: 300px;
+      height: 115px;
+      margin-bottom: 0;
+      margin-top: 50px;
+      margin-right: 15px;
+      padding: 15px 3px 0;
+      font-size: 16px;
+      line-height: 120%;
+
+      &::before {
+        top: -30px;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        background: url("./images/problems-sign-768.png") no-repeat center;
+        background-size: cover;
+      }
+
+      &:nth-child(n+3) {
+        &::before {
+          display: block;
+        }
+      }
+
+      &:nth-child(4n - 3) {
+        margin-top: 0;
+      }
+    }
+
+    .problems__slider-indicators {
+      display: none;
+    }
+  }
+}

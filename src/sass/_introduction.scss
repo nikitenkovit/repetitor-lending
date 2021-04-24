@@ -1,0 +1,193 @@
+.introduction {
+  position: relative;
+  min-height: 205px;
+  padding-top: 32px;
+  background: url("./images/introduction-bg-320.jpg") no-repeat bottom;
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 225px;
+    background: url("./images/introduction-mgu-320.png") no-repeat center;
+    z-index: 2;
+  }
+
+  .introduction__red-pentagon {
+    position: absolute;
+    bottom: -53px;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translateX(-50%);
+    width: 304px;
+    height: 68px;
+    padding-top: 12px;
+    background: url("./images/introduction-red-320.png") no-repeat center;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .introduction__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 311px;
+    min-height: 72px;
+    margin: 0 auto;
+    border: 2px solid #d9dada;
+    border-left: 1px solid #d9dada;
+    border-right: 1px solid #d9dada;
+    font-family: 'PTSansBold', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+
+    &--left {
+      position: relative;
+      width: 137px;
+      z-index: 4;
+    }
+
+    &--right {
+      position: relative;
+      width: 141px;
+      z-index: 4;
+    }
+  }
+}
+
+@media (min-width: $bigPhone) {
+  .introduction {
+    min-height: 225px;
+    padding-top: 31px;
+    background: url("./images/introduction-bg-480.jpg") no-repeat bottom;
+    background-size: cover;
+
+    &::before {
+      bottom: 0;
+      width: 399px;
+      height: 210px;
+      background: url("./images/introduction-mgu-480.png") no-repeat center;
+    }
+
+    .introduction__red-pentagon {
+      bottom: -54px;
+      width: 422px;
+      height: 68px;
+      background: url("./images/introduction-red-480.png") no-repeat center;
+      background-size: cover;
+      font-size: 20px;
+      line-height: 20px;
+      z-index: 4;
+    }
+
+    .introduction__description {
+      width: 93.75%;
+      min-height: 74px;
+      border: 2px solid #d9dada;
+      font-size: 18px;
+      line-height: 23.63px;
+
+      &--left {
+        width: 46.6%;
+      }
+
+      &--right {
+        width: 46.6%;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .introduction {
+    min-height: 312px;
+    padding-top: 46px;
+    background: url("./images/introduction-bg-768.jpg") no-repeat bottom;
+    background-size: cover;
+
+    &::before {
+      bottom: 0;
+      width: 681px;
+      height: 360px;
+      background: url("./images/introduction-mgu-768.png") no-repeat center;
+    }
+
+    .introduction__red-pentagon {
+      bottom: -42px;
+      width: 604px;
+      height: 88px;
+      background: url("./images/introduction-red-768.png") no-repeat center;
+      background-size: cover;
+      font-size: 28.15px;
+      line-height: 120%;
+    }
+
+    .introduction__description {
+      width: 692px;
+      min-height: 80px;
+      border: 3px solid #d9dada;
+      font-size: 20.1px;
+      line-height: 120%;
+
+      &--left {
+        width: 290px;
+      }
+
+      &--right {
+        width: 290px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .introduction {
+    min-height: 358px;
+    padding-top: 26px;
+    background: url("./images/introduction-bg-980.jpg") no-repeat bottom;
+    background-size: cover;
+
+    &::before {
+      width: 939px;
+      height: 496px;
+      background: url("./images/introduction-mgu-980.png") no-repeat center;
+      background-size: cover;
+      z-index: 1;
+    }
+
+    .introduction__red-pentagon {
+      bottom: -57px;
+      width: 780px;
+      height: 126px;
+      padding-top: 20px;
+      background: url("./images/introduction-red-980.png") no-repeat center;
+      background-size: cover;
+      font-size: 33.57px;
+    }
+
+    .introduction__description {
+      width: 940px;
+      font-size: 22px;
+
+      &--left {
+        width: 400px;
+      }
+
+      &--right {
+        width: 400px;
+      }
+    }
+  }
+}

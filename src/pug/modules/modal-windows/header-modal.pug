@@ -1,0 +1,21 @@
+section(class='header__modal-window header__modal-window--overlay modal-window__overlay--close')
+    .modalWindow
+        button.closeModalWindow(aria-label='закрыть окно формы')
+        h2.title Заказать обратный звонок
+        form#adminForm.ajaxForm(name='adminForm' enctype='multipart/form-data' method='post' action='/netcat/add.php?isNaked=1')
+            input(name='catalogue' type='hidden' value='1')
+            input(name='cc' type='hidden' value='14')
+            input(name='sub' type='hidden' value='16')
+            input(name='posting' type='hidden' value='1')
+            input(name='curPos' type='hidden' value='0')
+            input(name='f_Parent_Message_ID' type='hidden' value='')
+            span.warnText Заявка успешно отправлена!
+            label.block
+                input(name='f_objectName' size='50' type='text' maxlength='255' placeholder='Ваше имя' required)
+            label.block
+                input(class='f_phone' name='f_objectPhone' size='50' type='text' maxlength='255' placeholder='Ваш телефон' required)
+            label.block
+                input(name='f_objectTime' size='50' type='text' placeholder='Удобное время для звонк' maxlength='255' required)
+            .formButton
+                label
+                    button.pull-right Записаться

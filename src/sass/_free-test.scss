@@ -1,0 +1,82 @@
+.free-test {
+  padding-top: 40px;
+  background-color: #8eb3dd;
+
+  .free-test__title {
+    margin-bottom: 14px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .free-test__description {
+    width: 294px;
+    margin-bottom: 22px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 120%;
+    color: #ffffff;
+    text-align: center;
+  }
+}
+
+@media (min-width: $bigPhone) {
+  .free-test {
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    .free-test__title {
+      font-size: 24px;
+    }
+
+    .free-test__description {
+      width: 350px;
+      margin: 0 auto;
+      margin-bottom: 22px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .free-test {
+    padding-top: 70px;
+    padding-bottom: 16px;
+
+    .free-test__title {
+      font-size: 28.15px;
+    }
+
+    .free-test__description {
+      width: 479px;
+      margin-bottom: 30px;
+      font-size: 18.09px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .free-test {
+    height: 230px;
+    padding-top: 40px;
+    padding-bottom: 0;
+
+    .free-test__title {
+      font-size: 37.63px;
+      margin-bottom: 7px;
+    }
+
+    .free-test__description {
+      width: 100%;
+      margin-bottom: 27px;
+      font-size: 25.45px;
+    }
+
+    .main-form__button {
+      font-size: 19px;
+    }
+  }
+}

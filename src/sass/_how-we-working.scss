@@ -1,0 +1,690 @@
+.how-we-working {
+  position: relative;
+  padding-bottom: 67px;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: #666666;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 64px;
+    height: 130px;
+    background: url("./images/how-we-working-ico1-320.png") no-repeat center;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    width: 73px;
+    height: 123px;
+    background: url("./images/how-we-working-ico2-320.png") no-repeat center;
+    background-size: cover;
+    z-index: 2;
+  }
+
+  .how-we-working__title {
+    width: 100%;
+    height: 87px;
+    margin: 0 auto 30px;
+    padding-top: 20px;
+    background: url("./images/how-we-working__title-320.png") no-repeat center;
+    background-size: cover;
+    font-family: 'Myriad Pro', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #747474;
+
+    span {
+      color: #d9472e;
+    }
+  }
+
+  & article {
+    position: relative;
+    width: 272px;
+    margin: 0 auto 44px;
+    padding: 70px 5px 5px;
+    background-image: radial-gradient(#ebf4f0, #ffffff);
+    border: 4px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 2px #e7e7e7,
+    0 0 0 1px #e7e7e7;
+    z-index: 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & p {
+      margin-bottom: 18px;
+    }
+
+    ul {
+      margin-bottom: 18px;
+      padding-left: 5px;
+      list-style: none;
+      text-align: left;
+      letter-spacing: -.2px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 10px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #666666;
+      }
+    }
+  }
+
+  .how-we-working__subtitle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -6px;
+    left: -19px;
+    width: 301px;
+    height: 58px;
+    border-radius: 0 30px 30px 0;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #727271;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      width: 14px;
+      height: 9px;
+      background-color: #3c3c3b;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: -6px;
+      transform: rotate(32deg);
+      width: 17px;
+      height: 17px;
+      background-color: #ffffff;
+    }
+  }
+
+  .number-of-lessons__title {
+    background-color: #4a5b79;
+    border-radius: 30px 0 0 30px;
+
+    &::before {
+      left: auto;
+      right: 0;
+      background-color: #364257;
+    }
+
+    &::after {
+      left: auto;
+      right: -6px;
+      transform: rotate(-32deg);
+    }
+  }
+
+  .test-papers__title {
+    background-color: #6eb33a;
+    letter-spacing: -.3px;
+
+    &::before {
+      background-color: #4c8a19;
+    }
+  }
+
+  .intensives__title {
+    background-color: #d9472e;
+    border-radius: 30px 0 0 30px;
+
+    &::before {
+      left: auto;
+      right: 0;
+      background-color: #912714;
+    }
+
+    &::after {
+      left: auto;
+      right: -6px;
+      transform: rotate(-32deg);
+    }
+  }
+}
+
+@media (min-width: $bigPhone) {
+  .how-we-working {
+    position: relative;
+    padding-bottom: 60px;
+    font-size: 16px;
+
+    &::before {
+      top: -68px;
+      right: 0;
+      width: 94px;
+      height: 182px;
+      background: url("./images/how-we-working-ico1-480.png") no-repeat center;
+      background-size: cover;
+    }
+
+    &::after {
+      bottom: 14px;
+      width: 119px;
+      height: 166px;
+      background: url("./images/how-we-working-ico2-480.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .how-we-working__title {
+      height: 87px;
+      margin: 0 auto 8px;
+      padding-top: 18px;
+      background: url("./images/how-we-working__title-480.png") no-repeat center;
+      background-size: cover;
+      font-size: 24px;
+    }
+
+    & article {
+      position: relative;
+      width: 354px;
+      margin: 0 auto 42px;
+      padding: 90px 5px 5px;
+      border: 5px solid #ffffff;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -180px;
+        right: -64px;
+        width: 56px;
+        height: 185px;
+        background: url("./images/how-we-working-arow-480.png") no-repeat center;
+        background-size: cover;
+      }
+    }
+
+    .number-of-lessons::after {
+      right: auto;
+      left: -64px;
+      width: 56px;
+      height: 185px;
+      transform: scale(-1, 1);
+      background: url("./images/how-we-working-arow-480.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .intensives::after {
+      display: none;
+    }
+
+    .how-we-working__subtitle {
+      top: -6px;
+      left: -30px;
+      width: 422px;
+      height: 69px;
+      border-radius: 0 40px 40px 0;
+      font-size: 24px;
+
+      &::before {
+        bottom: -20px;
+        left: 0;
+        width: 24px;
+        height: 20px;
+      }
+
+      &::after {
+        bottom: -24px;
+        left: -9px;
+        transform: rotate(39deg);
+        width: 31px;
+        height: 15px;
+      }
+    }
+
+    .number-of-lessons__title {
+      left: auto;
+      right: -30px;
+      border-radius: 40px 0 0 40px;
+
+      &::before {
+        left: auto;
+        right: 0;
+      }
+
+      &::after {
+        left: auto;
+        right: -9px;
+        transform: rotate(-39deg);
+      }
+    }
+
+    .intensives__title {
+      left: auto;
+      right: -30px;
+      background-color: #d9472e;
+      border-radius: 30px 0 0 30px;
+
+      &::before {
+        left: auto;
+        right: 0;
+        background-color: #912714;
+      }
+
+      &::after {
+        left: auto;
+        right: -9px;
+        transform: rotate(-39deg);
+      }
+    }
+
+    .intensives p:last-child {
+      padding-left: 30px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .how-we-working {
+    padding-bottom: 72px;
+    font-size: 16.08px;
+
+    &::before {
+      top: -114px;
+      width: 146px;
+      height: 276px;
+      background: url("./images/how-we-working-ico1-768.png") no-repeat center;
+      background-size: cover;
+    }
+
+    &::after {
+      bottom: 26px;
+      width: 149px;
+      height: 214px;
+      background: url("./images/how-we-working-ico2-768.png") no-repeat center;
+      background-size: cover;
+    }
+
+    .how-we-working__title {
+      height: 87px;
+      margin: 0 auto 29px;
+      padding-top: 15px;
+      background: url("./images/how-we-working__title-768.png") no-repeat center;
+      background-size: cover;
+      font-size: 28.15px;
+    }
+
+    & article {
+      position: relative;
+      width: 430px;
+      margin: 0 auto 49px;
+      padding: 83px 5px 5px;
+      border: 7px solid #ffffff;
+
+      &::after {
+        bottom: -137px;
+        right: -92px;
+      }
+    }
+
+    .number-of-lessons::after {
+      right: auto;
+      bottom: -137px;
+      left: -92px;
+    }
+
+    .intensives::after {
+      display: none;
+    }
+
+    .how-we-working__subtitle {
+      top: -8px;
+      left: -30px;
+      width: 478px;
+      height: 56px;
+      border-radius: 0 30px 30px 0;
+      font-size: 24px;
+
+      &::before {
+        bottom: -9px;
+        left: 0;
+        width: 22px;
+        height: 9px;
+      }
+
+      &::after {
+        bottom: -13px;
+        left: -8px;
+        transform: rotate(24deg);
+        width: 28px;
+        height: 10px;
+      }
+    }
+
+    .number-of-lessons__title {
+      left: auto;
+      right: -30px;
+      border-radius: 30px 0 0 30px;
+
+      &::before {
+        left: auto;
+        right: 0;
+      }
+
+      &::after {
+        left: auto;
+        right: -8px;
+        transform: rotate(-24deg);
+      }
+    }
+
+    .intensives__title {
+      left: auto;
+      right: -30px;
+      border-radius: 30px 0 0 30px;
+
+      &::before {
+        left: auto;
+        right: 0;
+        background-color: #912714;
+      }
+
+      &::after {
+        left: auto;
+        right: -8px;
+        transform: rotate(-24deg);
+      }
+    }
+
+    .intensives p:last-child {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .how-we-working {
+    padding-bottom: 0;
+    font-size: 16px;
+
+    &::before {
+      top: -107px;
+      width: 352px;
+      height: 661px;
+      background: url("./images/how-we-working-ico1-980.png") no-repeat center;
+      z-index: 0;
+    }
+
+    &::after {
+      bottom: 11px;
+      width: 554px;
+      height: 741px;
+      background: url("./images/how-we-working-ico2-980.png") no-repeat center;
+      z-index: 0;
+    }
+
+    .how-we-working__title {
+      height: 205px;
+      margin: 0 auto;
+      padding-top: 50px;
+      background: url("./images/how-we-working__title-980.png") no-repeat center;
+      background-size: cover;
+      font-size: 36px;
+    }
+
+    .how-we-working__wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 980px;
+      margin: 0 auto;
+      padding-bottom: 95px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 5px;
+        height: calc(100% - 37px);
+        background-color: #c1c1c3;
+        z-index: 2;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -21px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 42px;
+        height: 42px;
+        border: 4px solid #727271;
+        border-radius: 50%;
+        background-color: #ebebeb;
+        z-index: 11;
+      }
+    }
+
+    & article {
+      width: 353px;
+      margin: 0;
+      padding: 90px 5px 5px;
+      border: 7px solid #ffffff;
+
+      br {
+        display: none;
+      }
+
+      p {
+        margin-bottom: 21px;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        right: -202px;
+        transform: translateX(-50%);
+        width: 57px;
+        height: 57px;
+        border: 6px solid #727271;
+        border-radius: 50%;
+        background-color: #ebebeb;
+      }
+
+      &::after {
+        bottom: 80px;
+        right: -300px;
+        width: 99px;
+        height: 150px;
+        background: url("./images/how-we-working-arow-1-980.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+
+    .number-of-lessons {
+      margin-top: 0;
+      margin-right: 0;
+      position: absolute;
+      top: 200px;
+      right: 20px;
+
+      &::before {
+        left: -123px;
+        border: 6px solid #e9b018;
+      }
+
+      &::after {
+        top: 80px;
+        bottom: auto;
+        left: -320px !important;
+        right: auto;
+        width: 102px;
+        height: 82px;
+        background: url("./images/how-we-working-arow-2-980.png") no-repeat center;
+        background-size: cover;
+        transform: none;
+      }
+    }
+
+    .test-papers {
+      margin-top: 112px;
+
+      &::before {
+        border: 6px solid #70b437;
+      }
+
+      &::after {
+        bottom: -150px;
+        right: -85px;
+        width: 181px;
+        height: 123px;
+        background: url("./images/how-we-working-arow-3-980.png") no-repeat center;
+        background-size: cover;
+        transform: none;
+      }
+    }
+
+    .intensives {
+      align-self: flex-end;
+      margin-top: 74px;
+      margin-right: 20px;
+
+      &::before {
+        left: -123px;
+        border: 6px solid #d9472e;
+      }
+    }
+
+    .number-of-lessons::after {
+      right: auto;
+      bottom: -137px;
+      left: -92px;
+    }
+
+    .intensives::after {
+      display: none;
+    }
+
+    .how-we-working__subtitle {
+      top: -8px;
+      left: -29px;
+      width: 420px;
+      height: 68px;
+      border-radius: 0 40px 40px 0;
+      font-size: 26px;
+
+      &::before {
+        bottom: -20px;
+        left: 0;
+        width: 21px;
+        height: 20px;
+      }
+
+      &::after {
+        bottom: -24px;
+        left: -10px;
+        transform: rotate(43deg);
+        width: 29px;
+        height: 15px;
+      }
+    }
+
+    .number-of-lessons__title {
+      left: auto;
+      right: -29px;
+      border-radius: 40px 0 0 40px;
+
+      &::before {
+        left: auto;
+        right: 0;
+      }
+
+      &::after {
+        left: auto;
+        right: -10px;
+        transform: rotate(-43deg);
+      }
+    }
+
+    .intensives__title {
+      left: auto;
+      right: -29px;
+      border-radius: 40px 0 0 40px;
+
+      &::before {
+        left: auto;
+        right: 0;
+        background-color: #912714;
+      }
+
+      &::after {
+        left: auto;
+        right: -10px;
+        transform: rotate(-43deg);
+      }
+    }
+
+    .intensives p:last-child {
+      padding-left: 0;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

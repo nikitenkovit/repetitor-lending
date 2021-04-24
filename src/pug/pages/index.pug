@@ -1,0 +1,40 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Репетитор Дона';
+    - var description = 'Нужен репетитор в Ростове-на-Дону? Центр репетиторов проводит подготовительные курсы по ✔ Математике ✔ Русскому языку ✔ Физике ✔ Истории ✔ Английскому языку ✔ Информатике ☆  Низкие цены! Найти нас можно по ☏ 8 (908) 511-911-6';
+    - var keywords = 'репетитор, Ростов-на-Дону, подготовительные, курсы, центр, подбор, найти, сайт, агентство, уроки, услуги, часы, Репетитор Дона';
+    - var pageClass = 'index-page';
+
+block content
+    include ../modules/header
+    include ../modules/navigation
+
+    main(class="main")
+        include ../modules/title
+        include ../modules/introduction
+        include ../modules/knowledge-level
+        include ../modules/facts
+        include ../modules/results
+        include ../modules/free-test
+        include ../modules/problems
+        include ../modules/why-are-we
+        include ../modules/olympiads-top
+        include ../modules/olympiads-bottom
+        include ../modules/as-well-as
+        include ../modules/action--green
+        include ../modules/mini-groups
+        include ../modules/action--red
+        include ../modules/teachers
+        include ../modules/reviews
+        include ../modules/how-we-working
+        include ../modules/make-appointment
+        include ../modules/contacts
+
+    include ../modules/footer
+
+    button.up-button.up-button--hidden(type='button' aria-label='Кнопка вверх')
+
+    include ../modules/modal-windows/interview
+    include ../modules/modal-windows/header-modal
+
